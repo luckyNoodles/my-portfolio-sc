@@ -230,10 +230,12 @@ html {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
+  border: 1px solid grey;
 }
 
 html {
   background-color: #f6f0de;
+  font-size: 125%;
 }
 
 body {
@@ -258,16 +260,18 @@ nav,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 2px solid black;
 }
 
 .navItems li {
-  border: 2px solid black;
   width: 55px;
   margin: 5px 10px;
   padding: 5px;
 }
 
 .headerBody {
-  height: 66vh;
+  height: 45vh;
+}
+
+.skills {
+  height: auto;
 }

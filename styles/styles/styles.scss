@@ -1,4 +1,7 @@
 @use './partials/setup';
 @use './partials/variables' as *;
 @use './partials/baseStyles';
-@use './partials/header'
+@use './partials/header';
+@use './partials/skills';
+@use './partials/latestWork';
+@use './partials/about';
