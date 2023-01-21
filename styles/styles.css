@@ -226,6 +226,48 @@ html {
   overflow: hidden;
 }
 
-body {
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+html {
   background-color: #f6f0de;
+}
+
+body {
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+nav,
+.stickyBar,
+.navList,
+.navItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stickyBar,
+.navItems {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid black;
+}
+
+.navItems li {
+  border: 2px solid black;
+  width: 55px;
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.headerBody {
+  height: 66vh;
 }

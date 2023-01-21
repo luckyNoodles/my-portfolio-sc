@@ -1,5 +1,19 @@
 @use './variables' as *;
 
-body {
+.wrapper {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+html {
     background-color: $body-color;
+}
+
+body {
+    border: 2px solid black;
+}
+
+li {
+    list-style: none;
 }
