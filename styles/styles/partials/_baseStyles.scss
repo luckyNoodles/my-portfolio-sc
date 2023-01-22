@@ -12,10 +12,24 @@ html {
     font-size: 125%;
 }
 
-body {
-    border: 2px solid black;
-}
+// body {
+//     border: 2px solid black;
+// }
+
 
 li {
     list-style: none;
+    
+}
+
+h2 {
+    font-family: $roboto-bold;
+}
+
+p {
+    font-family: $lora-font;
+}
+
+button {
+    background-color: $button-color;
 }
