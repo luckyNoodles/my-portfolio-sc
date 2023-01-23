@@ -1,5 +1,28 @@
 @use 'variables' as *;
 
+.skills,
+.iconGroup,
+.icon {
+    display: flex;
+    justify-content: center;
+}
 .skills {
     height: auto;
+    flex-direction: column;
+    .skillTitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .icon {
+        width: 130px;
+        flex-direction: column;
+        margin: 0 25px;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+.firebase img{
+    width: 120px;
 }

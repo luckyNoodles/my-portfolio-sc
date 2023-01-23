@@ -313,8 +313,42 @@ nav,
   height: 45vh;
 }
 
+.skills,
+.iconGroup,
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .skills {
   height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.skills .skillTitle {
+  font-size: 2rem;
+  text-align: center;
+}
+.skills .icon {
+  width: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+}
+.skills .icon p {
+  text-align: center;
+}
+
+.firebase img {
+  width: 120px;
 }
 
 button {
