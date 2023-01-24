@@ -24,6 +24,7 @@ li {
 
 h2 {
     font-family: $roboto-bold;
+    // font-size: 3rem;
 }
 
 p {
@@ -33,3 +34,17 @@ p {
 button {
     background-color: $button-color;
 }
+
+blockquote {
+    font-size: 1.5rem;
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+hr {
+    height: 1px;
+    width: 60%;
+    background-color: black;
+}
+

@@ -24,7 +24,16 @@ nav,
 }
 
 .headerBody {
-    height: 45vh;
+    height: 55vh;
+    p {
+        font-size: 1.9rem;
+        span:hover {
+            color: $text-rust;
+            font-size: 1.1em;
+            font-weight: bold;
+
+        }
+    }
     
 }
 
