@@ -300,6 +300,11 @@ hr {
   background-color: black;
 }
 
+.fa-brands,
+.firebaseLogo {
+  color: whitesmoke;
+}
+
 nav,
 .stickyBar,
 .navList,
@@ -346,18 +351,20 @@ nav,
 }
 
 .skills {
-  height: 55vh;
+  height: 75vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #365c46;
 }
 .skills .skillTitle {
   font-size: 2rem;
   text-align: center;
+  color: whitesmoke;
 }
 .skills .icon {
-  width: 130px;
+  width: 120px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -366,6 +373,7 @@ nav,
 }
 .skills .icon p {
   text-align: center;
+  color: whitesmoke;
 }
 
 .firebase img {
@@ -374,7 +382,7 @@ nav,
 
 .latestWork {
   height: 55vh;
-  margin: 5rem;
+  background-color: #f8f4f3;
 }
 
 button {
@@ -383,6 +391,7 @@ button {
 
 .about {
   height: 55vh;
+  background-color: whitesmoke;
 }
 
 .footerSection,
@@ -396,15 +405,21 @@ button {
 }
 
 .footerSection {
-  width: 70%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  background-color: #b6caa2;
+  height: 25vh;
 }
 .footerSection h3 {
   margin: 5px auto;
+}
+.footerSection .footFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .footerMenu {
@@ -432,19 +447,25 @@ button {
 }
 
 .logo {
-  width: 200px;
+  width: 120px;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px 0 80px;
 }
 .logo .logoContainer {
   width: 120px;
 }
 .logo .logoContainer img {
   width: 100%;
+}
+
+.copyRights {
+  background-color: #365c46;
+  color: whitesmoke;
 }
 
 .allRights {
