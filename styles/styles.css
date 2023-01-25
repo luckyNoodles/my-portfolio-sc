@@ -260,31 +260,12 @@ html {
   overflow: hidden;
 }
 
-.wrapper {
-  max-width: 1440px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-html {
-  background-color: #f6f0de;
-  font-size: 125%;
-}
-
-li {
-  list-style: none;
-}
-
 h2 {
   font-family: "Roboto", sans-serif;
 }
 
 p {
   font-family: "Lora", serif;
-}
-
-button {
-  background-color: #42a676;
 }
 
 blockquote {
@@ -294,10 +275,23 @@ blockquote p {
   font-size: 1.5rem;
 }
 
-hr {
-  height: 1px;
-  width: 60%;
-  background-color: black;
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+html {
+  background-color: whitesmoke;
+  font-size: 125%;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: #42a676;
 }
 
 .fa-brands,
@@ -329,6 +323,7 @@ nav,
 
 .headerBody {
   height: 55vh;
+  background-color: whitesmoke;
 }
 .headerBody p {
   font-size: 1.9rem;
