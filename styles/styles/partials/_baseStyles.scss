@@ -12,40 +12,13 @@ html {
     font-size: 125%;
 }
 
-// body {
-//     border: 2px solid black;
-// }
-
-
 li {
     list-style: none;
     
 }
 
-h2 {
-    font-family: $roboto-bold;
-    // font-size: 3rem;
-}
-
-p {
-    font-family: $lora-font;
-}
-
 button {
     background-color: $button-color;
-}
-
-blockquote {
-    font-size: 1.5rem;
-    p {
-        font-size: 1.5rem;
-    }
-}
-
-hr {
-    height: 1px;
-    width: 60%;
-    background-color: black;
 }
 
 .fa-brands,
