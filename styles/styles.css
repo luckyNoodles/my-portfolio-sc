@@ -277,7 +277,7 @@ blockquote p {
 
 .wrapper {
   max-width: 1440px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -310,21 +310,23 @@ nav,
 
 .stickyBar,
 .navItems {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navItems li {
-  width: 55px;
-  margin: 5px 10px;
-  padding: 5px;
+  width: 85px;
+  margin: 5px 45px;
+  padding: 15px;
+  font-size: 1.2rem;
 }
 
 header {
   background-size: cover;
   background-image: url("../images/pexels-max-deroin-51415.jpg");
   background-color: #365c46;
+  color: whitesmoke;
 }
 
 .headerBody {
@@ -418,22 +420,23 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footerMenu {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  padding: 0px;
+  padding-right: 30px;
+  height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.friends {
+.contactMe {
+  height: 200px;
+}
+.contactMe .friends {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -442,8 +445,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-.friends li {
-  padding-left: 0px;
+.contactMe .friends li {
+  padding-left: 30px;
 }
 
 .logo {
