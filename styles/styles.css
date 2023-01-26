@@ -321,9 +321,14 @@ nav,
   padding: 5px;
 }
 
+header {
+  background-size: cover;
+  background-image: url("../images/pexels-max-deroin-51415.jpg");
+  background-color: #365c46;
+}
+
 .headerBody {
   height: 55vh;
-  background-color: whitesmoke;
 }
 .headerBody p {
   font-size: 1.9rem;

@@ -22,10 +22,19 @@ nav,
     }
 
 }
+header {
+    background-size: cover;
+    // width: 500px;
+    // height: 500px;
+    background-image: url("../images/pexels-max-deroin-51415.jpg");
+    background-color: $skills-background;
+    
+}
 
 .headerBody {
     height: 55vh;
-    background-color: whitesmoke;
+    // background-color: whitesmoke;
+   
     p {
         font-size: 1.9rem;
         span:hover {
