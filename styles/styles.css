@@ -424,6 +424,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+.footerSection .footFlex ul {
+  font-size: 1.5rem;
+}
+.footerSection .footFlex ul li {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
 
 .footerMenu {
   padding-right: 30px;
@@ -450,7 +457,7 @@ button {
 }
 
 .logo {
-  width: 120px;
+  width: 255px;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -460,7 +467,7 @@ button {
   margin: 0 30px 0 80px;
 }
 .logo .logoContainer {
-  width: 120px;
+  width: 100%;
 }
 .logo .logoContainer img {
   width: 100%;

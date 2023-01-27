@@ -18,42 +18,48 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        ul {
+            font-size: 1.5rem;
+            li {
+                font-size: 1.3rem;
+               
+
+        }
     }
 }
+
+ a {
+    color: red;
+    text-decoration: none;
+ }
 .footerMenu {
     padding-right: 30px;
     height: 200px;
-    // flex-direction: column;
     justify-content: center;
-    // padding: 0px;
-    // border: 1px solid black;
-    
+
 }
 
 .contactMe {
     height: 200px;
     .friends {
-            flex-direction: column;
-            align-items: center;
-            
+        flex-direction: column;
+        align-items: center;
             li {
                 padding-left: 30px;
             }
         }
 }
 
-
 .logo {
-    width: 120px;
+    width: 255px;
     justify-content:right;
     align-items:center;
     margin: 0 30px 0 80px;
     // border: 1px solid black;
     .logoContainer {
-        width: 120px;
-        
+        width: 100%;
         img {
-            width: 100%;
+            width:100%;
         }
     }
 }
