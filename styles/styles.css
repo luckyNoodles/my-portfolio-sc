@@ -289,6 +289,9 @@ html {
 li {
   list-style: none;
 }
+li a {
+  text-decoration: none;
+}
 
 button {
   background-color: #42a676;
@@ -320,6 +323,9 @@ nav,
   margin: 5px 45px;
   padding: 15px;
   font-size: 1.2rem;
+}
+.navItems li a {
+  color: whitesmoke;
 }
 
 header {
@@ -428,8 +434,11 @@ button {
   font-size: 1.5rem;
 }
 .footerSection .footFlex ul li {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+.footerSection .footFlex ul li a {
   text-decoration: none;
+  color: whitesmoke;
 }
 
 .footerMenu {

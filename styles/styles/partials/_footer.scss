@@ -21,17 +21,18 @@
         ul {
             font-size: 1.5rem;
             li {
-                font-size: 1.3rem;
-               
+                font-size: 1.2rem;
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    }
 
         }
     }
 }
+}
 
- a {
-    color: red;
-    text-decoration: none;
- }
+
 .footerMenu {
     padding-right: 30px;
     height: 200px;
