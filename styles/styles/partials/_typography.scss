@@ -1,0 +1,23 @@
+@use './variables' as *;
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: $roboto-bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: $lora-font;
+}
+
+blockquote {
+    font-size: 1.5rem;
+
+    p {
+        font-size: 1.5rem;
+    }
+}

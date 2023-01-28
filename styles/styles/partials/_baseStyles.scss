@@ -1,0 +1,33 @@
+@use './variables' as *;
+
+.wrapper {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+    // border: 1px solid grey;
+}
+
+html {
+    background-color: whitesmoke;
+    font-size: 125%;
+
+}
+
+li {
+    list-style: none;
+    a {
+            text-decoration: none;
+        }
+}
+
+
+button {
+    background-color: $button-color;
+    align-self: center;
+}
+
+.fa-brands,
+.firebaseLogo,
+.fa-regular {
+    color:whitesmoke
+}

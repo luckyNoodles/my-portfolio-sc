@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.skills,
+.iconGroup,
+.icon {
+    display: flex;
+    justify-content: center;
+}
+.skills {
+    height: 75vh;
+    flex-direction: column;
+    background-color: $skills-background;
+    .skillTitle {
+        font-size: 2rem;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .icon {
+        width: 120px;
+        flex-direction: column;
+        margin: 0 25px;
+        p{
+            text-align: center;
+            color: whitesmoke;
+        }
+    }
+}
+
+.firebase img{
+    width: 120px;
+}

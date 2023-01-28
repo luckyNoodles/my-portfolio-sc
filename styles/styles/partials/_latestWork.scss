@@ -1,0 +1,20 @@
+@use 'variables' as *;
+.latestWork,
+.project,
+.moreWork {
+    display: flex;
+}
+
+.latestWork {
+    height: 55vh;
+    background-color: $project-background;
+    .moreWork {
+        justify-content: center;
+    }
+}
+
+button {
+
+    background-color: $button-color;
+}
+
