@@ -1,26 +1,26 @@
 const projects = [
     {
-        preview: 'URL',
-        title: 'project',
-        stackUsed: 'JavaScript, React, HTML, CSS, SASS,', 
+        preview: './images/project-2.png', 
+        title: 'World Cup 2022',
+        stackUsed: 'JavaScript, HTML, CSS, SASS', 
         description: 'lorem',
-        preview: 'URL',
+        live: 'https://worldcup-app.netlify.app/',
+        code: 'https://github.com/luckyNoodles/project-2/tree/main'
+    },
+    {
+        preview: './images/psd-conversion2.png',
+        title: 'Willow\'s Blog',
+        stackUsed: 'HTML, CSS, SASS',
+        description: 'lorem',
+        live: 'URL',
         code: 'URL'
     },
     {
-        preview: 'URL',
+        preview: './images/psd-conversion1.png',
         title: 'project',
-        stackUsed: 'JavaScript, React, HTML, CSS, SASS,',
+        stackUsed: 'HTML, CSS', 
         description: 'lorem',
-        preview: 'URL',
-        code: 'URL'
-    },
-    {
-        preview: 'URL',
-        title: 'project',
-        stackUsed: 'JavaScript, React, HTML, CSS, SASS,', 
-        description: 'lorem',
-        preview: 'URL',
+        live: 'URL',
         code: 'URL'
     }
 ]
@@ -40,7 +40,7 @@ const displayProjects = () => {
         projectContainer.appendChild(imageContainer);
 
         const projectImage = document.createElement('img');
-        projectImage.setAttribute('src',project.preview);
+        projectImage.setAttribute('src', project.preview);
         projectImage.setAttribute('alt','image of webpage');
         projectImage.classList.add('projectImg')
         imageContainer.appendChild(projectImage);
@@ -66,7 +66,7 @@ const displayProjects = () => {
         projectContainer.appendChild(linkButtons);
 
         const projectLive = document.createElement('a');
-        projectLive.setAttribute('href', project.preview);
+        projectLive.setAttribute('href', project.live);
         projectLive.innerText = 'View Live';
         linkButtons.appendChild(projectLive);
 

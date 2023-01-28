@@ -419,23 +419,67 @@ header {
 
 .latestWork,
 .project,
-.moreWork {
+.latest {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .latestWork {
-  height: 55vh;
   background-color: #f8f4f3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.latestWork .moreWork {
+.latestWork .latest {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.latestWork .project {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: white;
+  width: 50%;
+  margin: 2% auto;
+}
+.latestWork .project .imgContainer {
+  width: 90%;
+  height: 40%;
+  margin: 5px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.latestWork .project .imgContainer img {
+  width: 100%;
+}
+.latestWork .projText h3 {
+  margin: 0 auto;
+}
+.latestWork .projText p {
+  margin: 0 auto;
+  font-size: 0.9rem;
 }
 
-button {
+.linkButton > a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  width: 30%;
+  margin: 5px;
+  padding: 5px;
   background-color: #42a676;
 }
 
