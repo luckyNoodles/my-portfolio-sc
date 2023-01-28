@@ -401,12 +401,12 @@ header {
   color: whitesmoke;
 }
 .skills .icon {
-  width: 120px;
+  width: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 25px;
+  margin: 0 50px;
 }
 .skills .icon p {
   text-align: center;
