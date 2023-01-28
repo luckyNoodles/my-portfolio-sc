@@ -1,20 +1,57 @@
 @use 'variables' as *;
+
 .latestWork,
 .project,
-.moreWork {
+.latest {
     display: flex;
 }
 
 .latestWork {
-    height: 55vh;
-    background-color: $project-background;
-    .moreWork {
+    // height: 55vh;
+    background-color: #f8f4f3;
+    flex-direction: column;
+    .latest {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project {
+        flex-direction: column;
         justify-content: center;
+        // align-items: center;
+        background-color: white;
+        width: 50%;
+        margin: 2% auto;
+        // border: 1px solid black;
+        .imgContainer {
+            width: 90%;
+            height: 40%;
+            margin: 5px auto;
+            align-items: center;
+            // border: 1px solid black;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .projText {
+        // border: 1px solid blue;
+        h3 {
+            margin: 0 auto;
+        }
+        p {
+            margin: 0 auto;
+            font-size: .9rem;
+        }
     }
 }
 
-button {
-
+.linkButton > a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
     background-color: $button-color;
 }
-
