@@ -1,8 +1,13 @@
 @use './variables' as *;
 
+h1 {
+    font-size: 5rem;
+}
+
 h2 {
     font-family: $roboto-bold;
-    // font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 p {

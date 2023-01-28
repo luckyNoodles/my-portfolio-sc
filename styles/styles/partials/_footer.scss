@@ -10,26 +10,44 @@
 
 .footerSection {
     background-color: $contact-background;
-    height: 25vh;
-    h3 {
+    height: 30vh;
+    h2 {
         margin: 5px auto;
+        font-size: 2rem;
     }
     .footFlex {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
-        ul {
-            font-size: 1.5rem;
-            li {
-                font-size: 1.2rem;
-                a {
-                    text-decoration: none;
-                    color: whitesmoke;
+            .contactMe {
+                width: 350px;
+                text-align: center;
+                padding: 5px auto;
+                flex-direction: column;
+            }
+            .divFriends {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+            }
+            .friends {
+                font-size: 1.5rem;
+                justify-content: center;
+                padding: 0px;
+                margin: 0px;
+                border: 1px solid white;
+                li {
+                    width: 50px;
+                    padding: 15px;
+                    // border: 1px solid white;
+                    a {
+                        text-decoration: none;
+                        color: whitesmoke;
                     }
-
-        }
+                }
+            }
     }
-}
 }
 
 
@@ -37,32 +55,6 @@
     padding-right: 30px;
     height: 200px;
     justify-content: center;
-
-}
-
-.contactMe {
-    height: 200px;
-    .friends {
-        flex-direction: column;
-        align-items: center;
-            li {
-                padding-left: 30px;
-            }
-        }
-}
-
-.logo {
-    width: 255px;
-    justify-content:right;
-    align-items:center;
-    margin: 0 30px 0 80px;
-    // border: 1px solid black;
-    .logoContainer {
-        width: 100%;
-        img {
-            width:100%;
-        }
-    }
 }
 
 .copyRights {

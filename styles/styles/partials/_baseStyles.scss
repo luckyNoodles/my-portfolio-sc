@@ -23,9 +23,11 @@ li {
 
 button {
     background-color: $button-color;
+    align-self: center;
 }
 
 .fa-brands,
-.firebaseLogo {
+.firebaseLogo,
+.fa-regular {
     color:whitesmoke
 }

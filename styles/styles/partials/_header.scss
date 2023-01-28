@@ -3,7 +3,9 @@
 nav,
 .stickyBar,
 .navList,
-.navItems  {
+.navItems,
+.headerBody,
+.title  {
     display: flex;
     // border: 2px solid white;
 }
@@ -23,10 +25,9 @@ nav,
         margin: 5px 45px;
         padding: 15px;
         font-size: 1.2rem;
-        a{
+            a{
             color: whitesmoke;
         }
-        
 }
 
 }
@@ -35,22 +36,35 @@ header {
     background-image: url("../images/pexels-max-deroin-51415.jpg");
     background-color: $skills-background;
     color: whitesmoke;
-    
 }
 
 .headerBody {
-    height: 55vh;
-    // background-color: whitesmoke;
-   
-    p {
-        font-size: 1.9rem;
-        span:hover {
-            color: $text-rust;
-            font-size: 1.1em;
-            font-weight: bold;
-
-        }
+    height: 50vh; 
+    // align-items: center;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+            h1 {
+                    text-align: center;
+                    margin: 20px auto;
+                    font-weight: bold;
+                }
+            
+                p {
+                    width: 80%;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 10px auto;
+                    span:hover {
+                        color: $button-background;
+                        font-size: 1.1em;
+                        // font-weight: bold;
+                    }
+                }
+        
+        
     }
-    
 }
 

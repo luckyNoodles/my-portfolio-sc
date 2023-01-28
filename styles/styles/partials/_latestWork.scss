@@ -1,9 +1,16 @@
 @use 'variables' as *;
+.latestWork,
+.project,
+.moreWork {
+    display: flex;
+}
 
 .latestWork {
     height: 55vh;
-    // margin: 5rem;
     background-color: $project-background;
+    .moreWork {
+        justify-content: center;
+    }
 }
 
 button {

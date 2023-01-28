@@ -1,6 +1,12 @@
 @use 'variables' as *;
-
+.about,
+.moreAboutMe {
+    display: flex;
+}
 .about {
     height: 55vh;
     background-color: whitesmoke;
+}
+.moreAboutMe {
+    justify-content: center;
 }
