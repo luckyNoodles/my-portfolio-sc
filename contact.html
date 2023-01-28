@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d8e6107ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Scott Cheung</title>
+</head>
+<body>
+    <header class='contactHeader'>
+        <div class="wrapper">
+            <nav class="stickyBar">
+
+                <div class="navList">
+                    <ul class="navItems">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#work">Work</a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@scottcx2/coding-bootcamp-my-why-183dc37edbc7">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <section class="headerBody">
+            <div class="wrapper">
+                <div class="title">
+                    <h1 id="home">Scott Cheung</h1>
+                </div>
+                <p><span>Web Developer</span> based in the <span>Greater Toronto Area</span>.</p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="contactText">
+                <p>Hey, if you think we'd make a great team, let's grab a coffee and chat about how I can be a part of your
+                    organization.</p>
+            </div>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                            <option value="leader">Leader</option>
+                            <option value="follower">Follower</option>
+                        </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+        </div>       
+    </footer>
+    <section class="copyRights">
+        <div class="wrapper">
+            <div class="allRights">
+                <p>Made with coffee..</p>
+                <p>&#169; 2023 all rights reserved</p>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./app.js" ></script>
+</body>
+
+</html>

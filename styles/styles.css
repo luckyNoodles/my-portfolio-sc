@@ -376,6 +376,13 @@ header {
   font-size: 1.1em;
 }
 
+.contactHeader {
+  height: 40vh;
+}
+.contactHeader p {
+  display: none;
+}
+
 .skills,
 .iconGroup,
 .icon {
@@ -560,7 +567,6 @@ header {
           justify-content: center;
   padding: 0px;
   margin: 0px;
-  border: 1px solid white;
 }
 .footerSection .footFlex .friends li {
   width: 50px;
