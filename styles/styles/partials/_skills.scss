@@ -2,26 +2,39 @@
 
 .skills,
 .iconGroup,
-.icon {
+.icon,
+.group {
     display: flex;
     justify-content: center;
+    
 }
 .skills {
-    height: 75vh;
     flex-direction: column;
     background-color: $skills-background;
-    .skillTitle {
-        font-size: 2rem;
-        text-align: center;
-        color: whitesmoke;
-    }
-    .icon {
-        width: 80px;
-        flex-direction: column;
-        margin: 0 50px;
-        p{
+    .wrapper {
+        padding: 5%;
+        h2 {
+            font-size: 3rem;
             text-align: center;
             color: whitesmoke;
+            margin-bottom: 5%;
+        }
+        .iconGroup {
+            flex-direction: column;
+            .group {
+                flex-wrap: wrap;
+            }
+        }
+        .icon {
+            width: 120px;
+            flex-direction: column;
+            margin: 0 50px;
+    
+            p {
+                text-align: center;
+                color: whitesmoke;
+                font-size: 1em;
+            }
         }
     }
 }

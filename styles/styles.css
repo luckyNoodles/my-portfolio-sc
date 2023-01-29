@@ -274,13 +274,6 @@ p {
   font-family: "Lora", serif;
 }
 
-blockquote {
-  font-size: 1.5rem;
-}
-blockquote p {
-  font-size: 1.5rem;
-}
-
 .wrapper {
   max-width: 1440px;
   width: 80%;
@@ -385,7 +378,8 @@ header {
 
 .skills,
 .iconGroup,
-.icon {
+.icon,
+.group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,29 +389,43 @@ header {
 }
 
 .skills {
-  height: 75vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #365c46;
 }
-.skills .skillTitle {
-  font-size: 2rem;
+.skills .wrapper {
+  padding: 5%;
+}
+.skills .wrapper h2 {
+  font-size: 3rem;
   text-align: center;
   color: whitesmoke;
+  margin-bottom: 5%;
 }
-.skills .icon {
-  width: 80px;
+.skills .wrapper .iconGroup {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.skills .wrapper .iconGroup .group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills .wrapper .icon {
+  width: 120px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 50px;
 }
-.skills .icon p {
+.skills .wrapper .icon p {
   text-align: center;
   color: whitesmoke;
+  font-size: 1em;
 }
 
 .firebase img {
@@ -426,7 +434,9 @@ header {
 
 .latestWork,
 .project,
-.latest {
+.latest,
+.recent,
+.projText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,10 +444,9 @@ header {
 
 .latestWork {
   background-color: #f8f4f3;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+.latestWork h2 {
+  font-size: 3rem;
 }
 .latestWork .latest {
   -webkit-box-orient: vertical;
@@ -448,6 +457,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+.latestWork .latest .recent {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .latestWork .project {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -457,25 +470,38 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  width: 50%;
-  margin: 2% auto;
+  width: 350px;
+  margin: 2% 15px;
 }
 .latestWork .project .imgContainer {
   width: 90%;
-  height: 40%;
   margin: 5px auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 7px 7px 3px grey;
+          box-shadow: 7px 7px 3px grey;
 }
 .latestWork .project .imgContainer img {
   width: 100%;
+  height: 100%;
+}
+.latestWork .projText {
+  height: 190px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .latestWork .projText h3 {
-  margin: 0 auto;
+  margin: 10px 10px;
 }
-.latestWork .projText p {
-  margin: 0 auto;
+.latestWork .projText .stack {
+  margin: 5px 10px;
+  font-size: 0.7rem;
+}
+.latestWork .projText .description {
+  margin: 5px 10px;
   font-size: 0.9rem;
 }
 
@@ -484,28 +510,58 @@ header {
   text-decoration: none;
   text-align: center;
   color: black;
-  width: 30%;
-  margin: 5px;
+  width: 110px;
+  margin: 10px;
   padding: 5px;
   background-color: #42a676;
+  -webkit-box-shadow: 6px 4px 2px grey;
+          box-shadow: 6px 4px 2px grey;
 }
 
 .about,
-.moreAboutMe {
+.myPhoto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .about {
-  height: 55vh;
   background-color: whitesmoke;
+  padding: 5% auto;
 }
-
-.moreAboutMe {
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% auto;
+}
+.about .wrapper .myPhoto {
+  width: 20%;
+  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.about .wrapper .myPhoto img {
+  width: 90%;
+  border-radius: 10%;
+}
+.about .wrapper h2 {
+  font-size: 3rem;
+  margin: 7px;
+}
+.about .wrapper p {
+  width: 70%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .footerSection,
