@@ -12,9 +12,6 @@
     // height: 55vh;
     background-color: #f8f4f3;
     // flex-direction: column;
-    h2 {
-        font-size: 3rem;
-    }
     .latest {
         flex-direction: column;
         align-items: center;
@@ -27,6 +24,7 @@
         justify-content: center;
         // align-items: center;
         background-color: white;
+        box-shadow: 7px 7px 3px grey;
         width: 350px;
         margin: 2% 15px;
         // border: 1px solid black;
@@ -35,7 +33,7 @@
             // height: 40%;
             margin: 5px auto;
             align-items: center;
-            box-shadow: 7px 7px 3px grey;
+            box-shadow: 5px 5px 3px grey;
             // border: 1px solid black;
             img{
                 width: 100%;
@@ -69,5 +67,5 @@
     margin: 10px;
     padding: 5px;
     background-color: $button-color;
-    box-shadow: 6px 4px 2px grey;
+    box-shadow: 2px 2px 2px grey;
 }

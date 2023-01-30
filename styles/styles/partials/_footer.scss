@@ -10,10 +10,10 @@
 
 .footerSection {
     background-color: $contact-background;
-    height: 30vh;
+    padding: 5%;
+    // height: 30vh;
     h2 {
         margin: 5px auto;
-        font-size: 2rem;
     }
     .footFlex {
         display: flex;
@@ -21,30 +21,38 @@
         flex-direction: column;
         align-items: center;
             .contactMe {
-                width: 350px;
+                // width: 350px;
                 text-align: center;
                 padding: 5px auto;
                 flex-direction: column;
+                justify-content: center;
             }
             .divFriends {
                 width: 350px;
                 display: flex;
-                flex-direction: column;
-            }
-            .friends {
-                font-size: 1.5rem;
                 justify-content: center;
-                padding: 0px;
-                margin: 0px;
-                // border: 1px solid white;
-                li {
-                    width: 50px;
-                    padding: 10px;
-                    // border: 1px solid white;
+                // flex-direction: column;
+                .friends {
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2px;
+                    margin: 2px;
+                    li {
+                        width: 70px;
+                        // padding: 10px;
+                        // border: 1px solid white;
+                    }
                     a {
                         text-decoration: none;
                         color: whitesmoke;
                     }
+                }
+            }
+            .footerWords {
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                    color: white;
                 }
             }
     }
