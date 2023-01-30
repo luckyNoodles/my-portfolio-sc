@@ -78,8 +78,6 @@ const displayProjects = () => {
             linkButtons.appendChild(projectCode);
 
         } else return;
-
-
     })
 }
 

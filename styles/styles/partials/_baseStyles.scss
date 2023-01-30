@@ -4,13 +4,11 @@
     max-width: 1200px;
     width: 80%;
     margin: 0 auto;
-    // border: 1px solid grey;
 }
 
 html {
     background-color: whitesmoke;
     font-size: 125%;
-
 }
 
 li {
@@ -20,9 +18,8 @@ li {
         }
 }
 
-
 button {
-    background-color: $button-color;
+    background-color: $button-background;
     align-self: center;
 }
 
@@ -30,5 +27,4 @@ button {
 .firebaseLogo,
 .fa-regular {
     color:whitesmoke;
-    
 }
