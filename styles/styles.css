@@ -668,8 +668,45 @@ header {
   text-align: center;
 }
 
+.contactMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10%;
+}
+.contactMain .wrapper {
+  width: 60%;
+}
+
+.contactStickyBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactStickyBar li {
+  margin: 0px 5px;
+}
+
+.homeButton {
+  margin: 20px;
+}
+.homeButton a {
+  text-decoration: none;
+  color: white;
+}
+
 .contactMeText {
   font-size: 3.3vw;
+}
+
+.userInput {
+  width: 52vw;
 }
 
 @media (max-width: 320px) {
