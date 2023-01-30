@@ -47,22 +47,24 @@
                         color: whitesmoke;
                     }
                 }
+                .friends2 {
+                    display: none;
+                }
             }
             .footerWords {
                 p {
-                    
                     text-align: center;
                     font-weight: bold;
-                    
                 }
             }
             .footerButton {
 
                 a {
                     text-decoration: none;
-                    width: 110px;
                     padding: 5px 10px;
-                    background-color: $button-color;
+                    color: black;
+                    background-color: $button-background;
+                    box-shadow: 2px 2px 2px grey;
                 }
             }
     }
