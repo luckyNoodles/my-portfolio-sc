@@ -1,8 +1,5 @@
 @use './variables' as *;
 
-        // 320px — 480px: Mobile devices. 481px — 768px: iPads,
-        // Tablets. 769px — 1024px: Small screens,
-
 @media (max-width: 320px) {
 .wrapper {
         width: 100%;

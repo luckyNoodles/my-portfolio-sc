@@ -11,7 +11,6 @@
 .footerSection {
     background-color: $contact-background;
     padding: 5%;
-    // height: 30vh;
     h2 {
         margin: 5px auto;
     }
@@ -21,7 +20,6 @@
         flex-direction: column;
         align-items: center;
             .contactMe {
-                // width: 350px;
                 text-align: center;
                 padding: 5px auto;
                 flex-direction: column;
@@ -31,7 +29,6 @@
                 width: 350px;
                 display: flex;
                 justify-content: center;
-                // flex-direction: column;
                 .friends {
                     justify-content: center;
                     align-items: center;
@@ -39,8 +36,6 @@
                     margin: 2px;
                     li {
                         width: 70px;
-                        // padding: 10px;
-                        // border: 1px solid white;
                     }
                     a {
                         text-decoration: none;
@@ -70,7 +65,6 @@
     }
 }
 
-
 .footerMenu {
     padding-right: 30px;
     height: 200px;
@@ -84,13 +78,11 @@
 .allRights {
     height: 5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    // flex-direction: column;
     p {
         font-size: 0.6rem;
-        // line-height: .2rem;
         text-align: center;
-        // margin: 10px 20px;
+        margin: 5px;
     }
 }

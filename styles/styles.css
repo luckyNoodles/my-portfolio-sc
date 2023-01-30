@@ -295,7 +295,7 @@ li a {
 }
 
 button {
-  background-color: #42a676;
+  background-color: #db9999;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -461,7 +461,7 @@ header {
   background-color: white;
   -webkit-box-shadow: 7px 7px 3px grey;
           box-shadow: 7px 7px 3px grey;
-  width: 400px;
+  width: 440px;
   margin: 2% 15px;
 }
 .latestWork .project .imgContainer {
@@ -656,9 +656,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -666,6 +666,7 @@ header {
 .allRights p {
   font-size: 0.6rem;
   text-align: center;
+  margin: 5px;
 }
 
 .contactMain {
