@@ -14,7 +14,6 @@
     .wrapper {
         padding: 5%;
         h2 {
-            font-size: 3rem;
             text-align: center;
             color: whitesmoke;
             margin-bottom: 5%;
@@ -26,14 +25,14 @@
             }
         }
         .icon {
-            width: 120px;
+            width: 5vw;
             flex-direction: column;
             margin: 0 50px;
     
             p {
                 text-align: center;
                 color: whitesmoke;
-                font-size: 1em;
+                font-size: 1vw;
             }
         }
     }

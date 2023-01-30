@@ -261,21 +261,23 @@ html {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 9vw;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 5.5vw;
   text-align: center;
+  text-shadow: 2px 2px 3px rgba(81, 67, 21, 0.8);
 }
 
 p {
+  font-size: 2vw;
   font-family: "Lora", serif;
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;
 }
@@ -306,8 +308,8 @@ button {
 
 nav,
 .stickyBar,
-.navList,
-.navItems,
+.shareIconsGroup,
+.ulShare,
 .headerBody,
 .title {
   display: -webkit-box;
@@ -315,21 +317,16 @@ nav,
   display: flex;
 }
 
-.stickyBar,
-.navItems {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.stickyBar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-
-.navItems li {
-  width: 85px;
-  margin: 5px 45px;
-  padding: 15px;
-  font-size: 1.2rem;
+.stickyBar .shareIconsGroup .ulShare {
+  margin: 5px 5px;
 }
-.navItems li a {
-  color: whitesmoke;
+.stickyBar .shareIconsGroup .ulShare li {
+  margin: 5px 10px;
 }
 
 header {
@@ -337,11 +334,9 @@ header {
   background-image: url("../images/pexels-max-deroin-51415.jpg");
   background-color: #365c46;
   color: whitesmoke;
+  padding-bottom: 10%;
 }
 
-.headerBody {
-  height: 50vh;
-}
 .headerBody .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,11 +351,13 @@ header {
   text-align: center;
   margin: 20px auto;
   font-weight: bold;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 .headerBody .wrapper p {
   width: 80%;
-  font-size: 2.1rem;
+  font-size: 3vw;
   font-weight: bold;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
   text-align: center;
   margin: 10px auto;
 }
@@ -399,7 +396,6 @@ header {
   padding: 5%;
 }
 .skills .wrapper h2 {
-  font-size: 3rem;
   text-align: center;
   color: whitesmoke;
   margin-bottom: 5%;
@@ -415,7 +411,7 @@ header {
       flex-wrap: wrap;
 }
 .skills .wrapper .icon {
-  width: 120px;
+  width: 5vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -425,7 +421,7 @@ header {
 .skills .wrapper .icon p {
   text-align: center;
   color: whitesmoke;
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 .firebase img {
@@ -444,9 +440,6 @@ header {
 
 .latestWork {
   background-color: #f8f4f3;
-}
-.latestWork h2 {
-  font-size: 3rem;
 }
 .latestWork .latest {
   -webkit-box-orient: vertical;
@@ -470,6 +463,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
+  -webkit-box-shadow: 7px 7px 3px grey;
+          box-shadow: 7px 7px 3px grey;
   width: 350px;
   margin: 2% 15px;
 }
@@ -479,8 +474,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 7px 7px 3px grey;
-          box-shadow: 7px 7px 3px grey;
+  -webkit-box-shadow: 5px 5px 3px grey;
+          box-shadow: 5px 5px 3px grey;
 }
 .latestWork .project .imgContainer img {
   width: 100%;
@@ -514,8 +509,8 @@ header {
   margin: 10px;
   padding: 5px;
   background-color: #42a676;
-  -webkit-box-shadow: 6px 4px 2px grey;
-          box-shadow: 6px 4px 2px grey;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
 }
 
 .about,
@@ -554,12 +549,10 @@ header {
   border-radius: 10%;
 }
 .about .wrapper h2 {
-  font-size: 3rem;
   margin: 7px;
 }
 .about .wrapper p {
   width: 70%;
-  font-size: 1.2rem;
   text-align: center;
   margin-top: 5px;
 }
@@ -576,11 +569,10 @@ header {
 
 .footerSection {
   background-color: #b6caa2;
-  height: 30vh;
+  padding: 5%;
 }
 .footerSection h2 {
   margin: 5px auto;
-  font-size: 2rem;
 }
 .footerSection .footFlex {
   display: -webkit-box;
@@ -598,39 +590,51 @@ header {
           align-items: center;
 }
 .footerSection .footFlex .contactMe {
-  width: 350px;
   text-align: center;
   padding: 5px auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footerSection .footFlex .divFriends {
   width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.footerSection .footFlex .friends {
-  font-size: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0px;
-  margin: 0px;
 }
-.footerSection .footFlex .friends li {
-  width: 50px;
-  padding: 15px;
+.footerSection .footFlex .divFriends .friends {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+  margin: 2px;
 }
-.footerSection .footFlex .friends li a {
+.footerSection .footFlex .divFriends .friends li {
+  width: 70px;
+}
+.footerSection .footFlex .divFriends .friends a {
   text-decoration: none;
   color: whitesmoke;
+}
+.footerSection .footFlex .footerWords p {
+  text-align: center;
+  font-weight: bold;
+}
+.footerSection .footFlex .footerButton a {
+  text-decoration: none;
+  width: 110px;
+  padding: 5px 10px;
+  background-color: #42a676;
 }
 
 .footerMenu {
@@ -651,14 +655,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .allRights p {
   font-size: 0.9rem;
   line-height: 0.2rem;
   text-align: center;
-  margin: 7px auto;
+  margin: 10px 20px;
+}
+
+.contactMeText {
+  font-size: 3.3vw;
 }
