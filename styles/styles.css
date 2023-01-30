@@ -625,9 +625,11 @@ header {
 .footerSection .footFlex .divFriends .friends2 {
   display: none;
 }
+.footerSection .footFlex .footerWords {
+  width: 60%;
+}
 .footerSection .footFlex .footerWords p {
   text-align: center;
-  font-weight: bold;
 }
 .footerSection .footFlex .footerButton a {
   text-decoration: none;
