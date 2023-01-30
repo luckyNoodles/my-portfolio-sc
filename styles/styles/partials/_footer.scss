@@ -50,9 +50,19 @@
             }
             .footerWords {
                 p {
+                    
                     text-align: center;
                     font-weight: bold;
-                    color: white;
+                    
+                }
+            }
+            .footerButton {
+
+                a {
+                    text-decoration: none;
+                    width: 110px;
+                    padding: 5px 10px;
+                    background-color: $button-color;
                 }
             }
     }

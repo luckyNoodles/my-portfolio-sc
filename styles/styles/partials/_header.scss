@@ -28,10 +28,11 @@ header {
     background-image: url("../images/pexels-max-deroin-51415.jpg");
     background-color: $skills-background;
     color: whitesmoke;
+    padding-bottom: 10%;
 }
 
 .headerBody {
-    height: 50vh; 
+    // height: 50vh; 
     // align-items: center;
     .wrapper {
         display: flex;

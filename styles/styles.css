@@ -334,11 +334,9 @@ header {
   background-image: url("../images/pexels-max-deroin-51415.jpg");
   background-color: #365c46;
   color: whitesmoke;
+  padding-bottom: 10%;
 }
 
-.headerBody {
-  height: 50vh;
-}
 .headerBody .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,7 +629,12 @@ header {
 .footerSection .footFlex .footerWords p {
   text-align: center;
   font-weight: bold;
-  color: white;
+}
+.footerSection .footFlex .footerButton a {
+  text-decoration: none;
+  width: 110px;
+  padding: 5px 10px;
+  background-color: #42a676;
 }
 
 .footerMenu {
