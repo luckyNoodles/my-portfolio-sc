@@ -47,22 +47,24 @@
                         color: whitesmoke;
                     }
                 }
+                .friends2 {
+                    display: none;
+                }
             }
             .footerWords {
                 p {
-                    
                     text-align: center;
                     font-weight: bold;
-                    
                 }
             }
             .footerButton {
 
                 a {
                     text-decoration: none;
-                    width: 110px;
                     padding: 5px 10px;
-                    background-color: $button-color;
+                    color: black;
+                    background-color: $button-background;
+                    box-shadow: 2px 2px 2px grey;
                 }
             }
     }
@@ -82,13 +84,13 @@
 .allRights {
     height: 5vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     // flex-direction: column;
     p {
-        font-size: 0.9rem;
-        line-height: .2rem;
+        font-size: 0.6rem;
+        // line-height: .2rem;
         text-align: center;
-        margin: 10px 20px;
+        // margin: 10px 20px;
     }
 }

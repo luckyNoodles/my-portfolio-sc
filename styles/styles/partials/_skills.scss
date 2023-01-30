@@ -9,7 +9,7 @@
     
 }
 .skills {
-    flex-direction: column;
+    // flex-direction: column;
     background-color: $skills-background;
     .wrapper {
         padding: 5%;
@@ -17,17 +17,20 @@
             text-align: center;
             color: whitesmoke;
             margin-bottom: 5%;
+            justify-content: center;
         }
         .iconGroup {
-            flex-direction: column;
-            .group {
-                flex-wrap: wrap;
-            }
+            // flex-direction: column;
+            // width: 80%;
+            flex-wrap: wrap;
+            // .group {
+            //     flex-wrap: wrap;
+            // }
         }
         .icon {
             width: 5vw;
             flex-direction: column;
-            margin: 0 50px;
+            margin: 15px 35px;
     
             p {
                 text-align: center;
@@ -39,5 +42,5 @@
 }
 
 .firebase img{
-    width: 120px;
+    width: 65px;
 }
