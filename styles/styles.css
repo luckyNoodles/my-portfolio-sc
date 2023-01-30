@@ -416,7 +416,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 50px;
+  margin: 15px 35px;
 }
 .skills .wrapper .icon p {
   text-align: center;
@@ -425,7 +425,7 @@ header {
 }
 
 .firebase img {
-  width: 120px;
+  width: 65px;
 }
 
 .latestWork,
@@ -655,18 +655,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .allRights p {
-  font-size: 0.9rem;
-  line-height: 0.2rem;
+  font-size: 0.6rem;
   text-align: center;
-  margin: 10px 20px;
 }
 
 .contactMeText {
