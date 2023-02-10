@@ -1,26 +1,41 @@
 @use 'variables' as *;
 
 nav,
-.stickyBar,
-.shareIconsGroup,
-.ulShare,
+.topNavBar,
+.nav,
+.topNav,
 .headerBody,
 .title  {
-    display: flex
+    display: flex;
 }
 
-.stickyBar {
-        justify-content: flex-end;
-    .shareIconsGroup {
-
-        .ulShare {
-            margin: 5px 5px;
-            li {
-                margin: 5px 10px;
+.topNavBar {
+    
+    .nav {
+        width: 100%;
+        justify-content: center;
+        .topNav {
+            justify-content: space-around;
+            width: 80%;
+            li > a {
+                color: whitesmoke;
             }
         }
     }
+
 }
+
+// .topNavBar {
+//         // justify-content: flex-end;
+//     .shareIconsGroup {
+//         .ulShare {
+//             margin: 5px 5px;
+//             li {
+//                 margin: 5px 10px;
+//             }
+//         }
+//     }
+// }
 
 header {
     background-size: cover;
@@ -28,6 +43,7 @@ header {
     background-color: $skills-background;
     color: whitesmoke;
     padding-bottom: 10%;
+    height: 60vh;
 }
 
 .headerBody {
@@ -58,9 +74,9 @@ header {
     }
 }
 
-.contactHeader {
-    height: 40vh;
-    p {
-        display: none;
-    }
-}
+// .contactHeader {
+//     height: 60vh;
+//     p {
+//         display: none;
+//     }
+// }
