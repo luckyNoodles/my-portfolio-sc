@@ -43,6 +43,7 @@ header {
     background-color: $skills-background;
     color: whitesmoke;
     padding-bottom: 10%;
+    height: 60vh;
 }
 
 .headerBody {
@@ -73,9 +74,9 @@ header {
     }
 }
 
-.contactHeader {
-    height: 40vh;
-    p {
-        display: none;
-    }
-}
+// .contactHeader {
+//     height: 60vh;
+//     p {
+//         display: none;
+//     }
+// }

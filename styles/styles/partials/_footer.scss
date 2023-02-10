@@ -17,51 +17,38 @@
     .footFlex {
         display: flex;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
-            .contactMe {
-                text-align: center;
-                padding: 5px auto;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .divFriends {
-                width: 350px;
-                display: flex;
-                justify-content: center;
-                .friends {
-                    justify-content: center;
-                    align-items: center;
-                    padding: 2px;
-                    margin: 2px;
-                    li {
-                        width: 70px;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: whitesmoke;
-                    }
-                }
-                .friends2 {
-                    display: none;
-                }
-            }
-            .footerWords {
-                width: 60%;
-                p {
-                    text-align: center;
-                }
-            }
-            .footerButton {
+            // .contactMe {
+            //     text-align: center;
+            //     padding: 5px auto;
+            //     flex-direction: column;
+            //     justify-content: center;
+            // }
+    }
+    .contactMe {
+        flex-direction: column;
+        width: 30%;
+        margin-right: 50px;
+        text-align: left;
+        p {
+            font-size: 1rem;
+        }
+    }
+    .contactForm {
+        width: 70%;
+        p {
+            font-size: 1rem;
+        }
+        input {
+            width: 90%;
+            display: block;
+        }
+        textarea {
+            display: block;
+            width: 90%;
+            height: 200px;
 
-                a {
-                    text-decoration: none;
-                    padding: 5px 10px;
-                    color: black;
-                    background-color: $button-background;
-                    box-shadow: 2px 2px 2px grey;
-                }
-            }
+        }
     }
 }
 

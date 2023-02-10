@@ -1,27 +1,33 @@
 @use './variables' as *;
 
-@media (max-width: 320px) {
-.wrapper {
-        width: 100%;
-}
-h1 {
-        font-size: 12vw;
-}
-h2 {
-        font-size: 6.5vw;
-}
-p {
-        font-size: 5vw;
-}
-
-.headerBody {
+@media (min-width: 320px) and (max-width: 480px) {
         .wrapper {
-                p {
-                font-size: 5vw;
-                }
-
+                width: 100%;
         }
-}
+
+        h1 {
+        font-size: 12vw;
+        }
+
+        h2 {
+        font-size: 6.5vw;
+        }
+
+        p {
+        font-size: 5vw;
+        }
+
+        header {
+                height: 40vh;
+        }
+        .headerBody {
+                .wrapper {
+                        p {
+                        font-size: 5vw;
+                        padding: o 20px;;
+                        }
+                 }
+        }
 
 .about {
         .wrapper {
@@ -53,7 +59,7 @@ p {
 }
 .latestWork {
         .project {
-                width: 300px;
+                width: 95vw;
                 margin: 5% 15px;
                 }
         .projText {
@@ -63,30 +69,20 @@ p {
 
 .footerSection {
         .footFlex {
+                flex-direction: column;
                 .contactMe {
+                        width: 95vw;
+                        margin: 0;
                         h2 {
                                 font-size: 7vw;
                         }
+                        
                 }
-                .divFriends {
-                        .friends {
-                                display: none;
-                        }
-                        .friends2 {
-                                display: block;
-                                padding-left: 0px;
-                                margin: 0px auto;
-                                li {
-                                        margin-bottom: 5px;
-                                        a {
-                                                color: whitesmoke;
-                                                font-weight: bold;
-                                                // background-color: $button-color;
-                                                // box-shadow: 5px 5px 3px grey;
-                                        }
-                                }
-                        }
+                .contactForm {
+                        width: 95vw;
+                        margin: 0;
                 }
+                
         }
 
 }

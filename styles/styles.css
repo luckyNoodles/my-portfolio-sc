@@ -338,6 +338,7 @@ header {
   background-color: #365c46;
   color: whitesmoke;
   padding-bottom: 10%;
+  height: 60vh;
 }
 
 .headerBody .wrapper {
@@ -367,13 +368,6 @@ header {
 .headerBody .wrapper p span:hover {
   color: #db9999;
   font-size: 1.1em;
-}
-
-.contactHeader {
-  height: 40vh;
-}
-.contactHeader p {
-  display: none;
 }
 
 .skills,
@@ -580,67 +574,36 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.footerSection .footFlex .contactMe {
-  text-align: center;
-  padding: 5px auto;
+.footerSection .contactMe {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 30%;
+  margin-right: 50px;
+  text-align: left;
 }
-.footerSection .footFlex .divFriends {
-  width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.footerSection .contactMe p {
+  font-size: 1rem;
 }
-.footerSection .footFlex .divFriends .friends {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2px;
-  margin: 2px;
+.footerSection .contactForm {
+  width: 70%;
 }
-.footerSection .footFlex .divFriends .friends li {
-  width: 70px;
+.footerSection .contactForm p {
+  font-size: 1rem;
 }
-.footerSection .footFlex .divFriends .friends a {
-  text-decoration: none;
-  color: whitesmoke;
+.footerSection .contactForm input {
+  width: 90%;
+  display: block;
 }
-.footerSection .footFlex .divFriends .friends2 {
-  display: none;
-}
-.footerSection .footFlex .footerWords {
-  width: 60%;
-}
-.footerSection .footFlex .footerWords p {
-  text-align: center;
-}
-.footerSection .footFlex .footerButton a {
-  text-decoration: none;
-  padding: 5px 10px;
-  color: black;
-  background-color: #db9999;
-  -webkit-box-shadow: 2px 2px 2px grey;
-          box-shadow: 2px 2px 2px grey;
+.footerSection .contactForm textarea {
+  display: block;
+  width: 90%;
+  height: 200px;
 }
 
 .footerMenu {
@@ -715,7 +678,7 @@ header {
   width: 52vw;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .wrapper {
     width: 100%;
   }
@@ -728,8 +691,12 @@ header {
   p {
     font-size: 5vw;
   }
+  header {
+    height: 40vh;
+  }
   .headerBody .wrapper p {
     font-size: 5vw;
+    padding: o 20px;
   }
   .about .wrapper p {
     width: 100%;
@@ -749,29 +716,28 @@ header {
     font-size: 4vw;
   }
   .latestWork .project {
-    width: 300px;
+    width: 95vw;
     margin: 5% 15px;
   }
   .latestWork .projText {
     height: auto;
   }
+  .footerSection .footFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerSection .footFlex .contactMe {
+    width: 95vw;
+    margin: 0;
+  }
   .footerSection .footFlex .contactMe h2 {
     font-size: 7vw;
   }
-  .footerSection .footFlex .divFriends .friends {
-    display: none;
-  }
-  .footerSection .footFlex .divFriends .friends2 {
-    display: block;
-    padding-left: 0px;
-    margin: 0px auto;
-  }
-  .footerSection .footFlex .divFriends .friends2 li {
-    margin-bottom: 5px;
-  }
-  .footerSection .footFlex .divFriends .friends2 li a {
-    color: whitesmoke;
-    font-weight: bold;
+  .footerSection .footFlex .contactForm {
+    width: 95vw;
+    margin: 0;
   }
   .allRights {
     display: -webkit-box;
