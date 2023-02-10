@@ -307,9 +307,9 @@ button {
 }
 
 nav,
-.stickyBar,
-.shareIconsGroup,
-.ulShare,
+.topNavBar,
+.nav,
+.topNav,
 .headerBody,
 .title {
   display: -webkit-box;
@@ -317,16 +317,19 @@ nav,
   display: flex;
 }
 
-.stickyBar {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.topNavBar .nav {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.stickyBar .shareIconsGroup .ulShare {
-  margin: 5px 5px;
+.topNavBar .nav .topNav {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
 }
-.stickyBar .shareIconsGroup .ulShare li {
-  margin: 5px 10px;
+.topNavBar .nav .topNav li > a {
+  color: whitesmoke;
 }
 
 header {
