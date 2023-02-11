@@ -122,7 +122,7 @@
         // flex-direction: column;
 }
         header {
-        height: 35vh;
+        height: 40vh;
 }
 
 .headerBody {
@@ -142,13 +142,15 @@
                 p {
                         width: 100%;
                         padding: 0px 5px;
-                        font-size: 3vw;
+                        font-size: 4vw;
                 }
 
         }
 }
 
 .skills {
+        margin: 10% auto;
+        padding: 10% 0;
        .wrapper {
 
                .icon {
@@ -167,9 +169,13 @@
 
 
 .latestWork {
+        margin: 5vh;
         .latest {
                 .recent {
                         justify-content: center;
+                        .project {
+                                margin: 5% 5%;
+                        }
                 }
 
         }
@@ -179,13 +185,16 @@
         .footFlex {
                 width: 95%;
                 flex-direction: column;
-
+                align-items: initial;
                 .contactMe {
-                        width: 95vw;
-                        margin: 0;
+                        width: 80vw;
+                        align-items: center;
 
                         h2 {
                                 font-size: 7vw;
+                        }
+                        p {
+                                width: 100%;
                         }
 
                 }
@@ -196,6 +205,7 @@
                         p {
                                 font-size: 1.3rem;
                                 width: 100%;
+                              
                         }
                 }
 
@@ -204,6 +214,399 @@
 }
 
 } // *****  end of 481 px to 767px *****
+
+@media (min-width: 768px) and (max-width: 991px) {
+header {
+        height: 45vh;
+
+}
+
+.headerBody {
+        .wrapper {
+                p {
+                        font-size: 5vw;
+                        padding: 0 20px;
+
+                }
+        }
+}
+
+.about {
+        margin: 50px auto;
+
+        .wrapper {
+
+                h2 {
+                        margin: 25px;
+                }
+                p {
+                        width: 100%;
+                        padding: 0px 5px;
+                        font-size: 3vw;
+                }
+
+        }
+}
+
+.skills {
+        margin: 10% auto;
+        padding: 10% 0;
+
+        .wrapper {
+                width: 85%;
+                .icon {
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        margin-right: 45px;
+
+                        p {
+                                font-size: 1.5vw;
+                        }
+                }
+        }
+
+}
+
+
+
+
+.latestWork {
+        margin: 5vh;
+
+        .latest {
+                width: 100%;
+                .recent {
+                        justify-content: center;
+
+                        .project {
+                                width: 600px;
+                                margin: 5% 5%;
+                                .imageContainer {
+                                        margin: 25% auto;
+                                }
+                                .projText {
+                                        width: 90%;
+                                        margin: 2% 2%;
+                                }
+                                .linkButton {
+                                        margin-bottom: 5%;
+                                        a {
+                                                font-size: 1.5rem;
+                                                width: fit-content;
+
+                                        }
+                                }
+                        }
+                }
+
+        }
+}
+
+.footerSection {
+        .footFlex {
+                width: 95%;
+                flex-direction: column;
+                align-items: initial;
+
+                .contactMe {
+                        width: 80vw;
+                        align-items: center;
+
+                        h2 {
+                                font-size: 7vw;
+                        }
+
+                        p {
+                                width: 100%;
+                                font-size: 2rem;
+                        }
+
+                }
+
+                .contactForm {
+                        width: 95vw;
+                        margin: 0;
+
+                        p {
+                                font-size: 1.3rem;
+                                width: 100%;
+
+                                input {
+                                        align-self: center;
+                                }
+                        }
+                }
+
+        }
+
+}
+
+}
+// ------------end of 768 to 991 ---------------
+
+@media (min-width: 992px) and (max-width:1199px) {
+.wrapper {
+                width: 95%;
+        }
+
+        header {
+                height: 50vh;
+        }
+
+        .headerBody {
+                margin-top: 5%;
+        }
+
+        .about {
+                margin: 50px auto;
+
+                .wrapper {
+                        h2 {
+                                margin: 40px;
+                        }
+                        // margin: 15%;
+                        p {
+                                width: 100%;
+                                padding: 0px 5px;
+                                font-size: 3vw;
+                        }
+
+                }
+        }
+
+        .skills {
+                margin: 10% auto;
+                padding: 10% 0;
+
+                .wrapper {
+
+                        .icon {
+                                margin-top: 15px;
+                                margin-left: 15px;
+                                margin-right: 45px;
+
+                                p {
+                                        font-size: 2vw;
+                                }
+                        }
+                }
+
+        }
+
+
+.latestWork {
+        margin: 4vh;
+
+        .latest {
+                width: 100%;
+
+                .recent {
+                        justify-content: center;
+
+                        .project {
+                                width: 600px;
+                                margin: 5% 5%;
+
+                                .imageContainer {
+                                        width: 100%;
+                                        margin: 25% auto;
+                                }
+
+                                .projText {
+                                        width: 90%;
+                                        margin: 2% 2%;
+                                }
+
+                                .linkButton {
+                                        margin-bottom: 5%;
+
+                                        a {
+                                                font-size: 1.5rem;
+                                                width: fit-content;
+
+                                        }
+                                }
+                        }
+                }
+
+        }
+}
+
+        .footerSection {
+                .footFlex {
+                        width: 95%;
+                        flex-direction: column;
+                        align-items: initial;
+
+                        .contactMe {
+                                width: 80vw;
+                                align-items: center;
+
+                                h2 {
+                                        font-size: 7vw;
+                                }
+
+                                p {
+                                        width: 100%;
+                                }
+
+                        }
+
+                        .contactForm {
+                                width: 95vw;
+                                margin: 0;
+
+                                p {
+                                        font-size: 1.3rem;
+                                        width: 100%;
+
+               
+                                }
+                        }
+
+                }
+
+        }
+
+}
+
+// *****  end of 1199px *****
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//         header {
+//                 height: 45vh;
+
+//         }
+
+//         .headerBody {
+//                 .wrapper {
+//                         p {
+//                                 font-size: 5vw;
+//                                 padding: 0 20px;
+
+//                         }
+//                 }
+//         }
+
+//         .about {
+//                 margin: 50px auto;
+
+//                 .wrapper {
+
+//                         h2 {
+//                                 margin: 25px;
+//                         }
+
+//                         p {
+//                                 width: 100%;
+//                                 padding: 0px 5px;
+//                                 font-size: 3vw;
+//                         }
+
+//                 }
+//         }
+
+//         .skills {
+//                 margin: 10% auto;
+//                 padding: 10% 0;
+
+//                 .wrapper {
+//                         width: 85%;
+
+//                         .icon {
+//                                 margin-top: 15px;
+//                                 margin-left: 15px;
+//                                 margin-right: 45px;
+
+//                                 p {
+//                                         font-size: 1.5vw;
+//                                 }
+//                         }
+//                 }
+
+//         }
+
+
+
+
+//         .latestWork {
+//                 margin: 5vh;
+
+//                 .latest {
+//                         width: 100%;
+
+//                         .recent {
+//                                 justify-content: center;
+
+//                                 .project {
+//                                         width: 600px;
+//                                         margin: 5% 5%;
+
+//                                         .imageContainer {
+//                                                 margin: 25% auto;
+//                                         }
+
+//                                         .projText {
+//                                                 width: 90%;
+//                                                 margin: 2% 2%;
+//                                         }
+
+//                                         .linkButton {
+//                                                 margin-bottom: 5%;
+
+//                                                 a {
+//                                                         font-size: 1.5rem;
+//                                                         width: fit-content;
+
+//                                                 }
+//                                         }
+//                                 }
+//                         }
+
+//                 }
+//         }
+
+//         .footerSection {
+//                 .footFlex {
+//                         width: 95%;
+//                         flex-direction: column;
+//                         align-items: initial;
+
+//                         .contactMe {
+//                                 width: 80vw;
+//                                 align-items: center;
+
+//                                 h2 {
+//                                         font-size: 7vw;
+//                                 }
+
+//                                 p {
+//                                         width: 100%;
+//                                         font-size: 2rem;
+//                                 }
+
+//                         }
+
+//                         .contactForm {
+//                                 width: 95vw;
+//                                 margin: 0;
+
+//                                 p {
+//                                         font-size: 1.3rem;
+//                                         width: 100%;
+
+//                                         input {
+//                                                 align-self: center;
+//                                         }
+//                                 }
+//                         }
+
+//                 }
+
+//         }
+
+
+// }
 
 @media only screen and (min-width: 1200px) {
 h1 {
