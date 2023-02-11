@@ -80,7 +80,7 @@
         .footFlex {
                 flex-direction: column;
                 .contactMe {
-                        width: 95vw;
+                        width: 90vw;
                         margin: 0;
                         h2 {
                                 font-size: 7vw;
@@ -88,7 +88,7 @@
                         
                 }
                 .contactForm {
-                        width: 95vw;
+                        width: 90vw;
                         margin: 0;
                 }
                 
@@ -122,10 +122,11 @@
         // flex-direction: column;
 }
         header {
-        height: 40vh;
+        height: 750px;
 }
 
 .headerBody {
+        margin-top: 120px;
         .wrapper {
                 p {
                 font-size: 5vw;
@@ -222,9 +223,10 @@ header {
 }
 
 .headerBody {
+        margin-top: 100px;
         .wrapper {
                 p {
-                        font-size: 5vw;
+                        font-size: 30px;
                         padding: 0 20px;
 
                 }
@@ -279,7 +281,7 @@ header {
                         justify-content: center;
 
                         .project {
-                                width: 600px;
+                                width: 400px;
                                 margin: 5% 5%;
                                 .imageContainer {
                                         margin: 25% auto;
@@ -317,7 +319,7 @@ header {
                         }
 
                         p {
-                                width: 100%;
+                                width: 95%;
                                 font-size: 2rem;
                         }
 
@@ -326,10 +328,11 @@ header {
                 .contactForm {
                         width: 95vw;
                         margin: 0;
+                        padding: 10px;
 
                         p {
-                                font-size: 1.3rem;
-                                width: 100%;
+                                font-size: 1.1rem;
+                                width: 95%;
 
                                 input {
                                         align-self: center;
@@ -350,11 +353,21 @@ header {
         }
 
         header {
-                height: 50vh;
+                height: 85vh;
+               
         }
 
         .headerBody {
-                margin-top: 5%;
+                margin-top: 110px;
+                .wrapper {
+                        p {
+                                font-size: 5vw;
+                                // padding: 0 20px;
+                        
+                                }
+
+                }
+       
         }
 
         .about {
@@ -366,27 +379,36 @@ header {
                         }
                         // margin: 15%;
                         p {
-                                width: 100%;
+                                width: 80%;
                                 padding: 0px 5px;
-                                font-size: 3vw;
+                                font-size: 25px;
                         }
 
                 }
         }
 
         .skills {
-                margin: 10% auto;
+                margin: 5% auto;
                 padding: 10% 0;
 
                 .wrapper {
-
+        
                         .icon {
+                                width: 120px;
                                 margin-top: 15px;
                                 margin-left: 15px;
-                                margin-right: 45px;
-
+                                margin-right: 70px;
+        
+                                .fa-3x {
+                                        font-size: 7em;
+                                }
+        
                                 p {
-                                        font-size: 2vw;
+                                        font-size: 1vw;
+                                }
+        
+                                .firebaseLogo {
+                                        width: 150px
                                 }
                         }
                 }
@@ -404,12 +426,12 @@ header {
                         justify-content: center;
 
                         .project {
-                                width: 600px;
-                                margin: 5% 5%;
+                                width: 490px;
+                                // margin: 5% 5%;
 
-                                .imageContainer {
-                                        width: 100%;
-                                        margin: 25% auto;
+                                .imgContainer {
+                                        width: 90%;
+                                        margin: 5% auto;
                                 }
 
                                 .projText {
@@ -434,7 +456,7 @@ header {
 
         .footerSection {
                 .footFlex {
-                        width: 95%;
+                        width: 80%;
                         flex-direction: column;
                         align-items: initial;
 
@@ -448,19 +470,24 @@ header {
 
                                 p {
                                         width: 100%;
+                                        font-size: 35px;
                                 }
 
                         }
 
                         .contactForm {
-                                width: 95vw;
+                                width: 80vw;
                                 margin: 0;
 
                                 p {
-                                        font-size: 1.3rem;
+                                        font-size: 1.5rem;
                                         width: 100%;
 
                
+                                }
+                                .contactButton {
+                                        width: 110px;
+                                        padding: 5px;
                                 }
                         }
 
@@ -472,143 +499,8 @@ header {
 
 // *****  end of 1199px *****
 
-// @media (min-width: 768px) and (max-width: 991px) {
-//         header {
-//                 height: 45vh;
 
-//         }
-
-//         .headerBody {
-//                 .wrapper {
-//                         p {
-//                                 font-size: 5vw;
-//                                 padding: 0 20px;
-
-//                         }
-//                 }
-//         }
-
-//         .about {
-//                 margin: 50px auto;
-
-//                 .wrapper {
-
-//                         h2 {
-//                                 margin: 25px;
-//                         }
-
-//                         p {
-//                                 width: 100%;
-//                                 padding: 0px 5px;
-//                                 font-size: 3vw;
-//                         }
-
-//                 }
-//         }
-
-//         .skills {
-//                 margin: 10% auto;
-//                 padding: 10% 0;
-
-//                 .wrapper {
-//                         width: 85%;
-
-//                         .icon {
-//                                 margin-top: 15px;
-//                                 margin-left: 15px;
-//                                 margin-right: 45px;
-
-//                                 p {
-//                                         font-size: 1.5vw;
-//                                 }
-//                         }
-//                 }
-
-//         }
-
-
-
-
-//         .latestWork {
-//                 margin: 5vh;
-
-//                 .latest {
-//                         width: 100%;
-
-//                         .recent {
-//                                 justify-content: center;
-
-//                                 .project {
-//                                         width: 600px;
-//                                         margin: 5% 5%;
-
-//                                         .imageContainer {
-//                                                 margin: 25% auto;
-//                                         }
-
-//                                         .projText {
-//                                                 width: 90%;
-//                                                 margin: 2% 2%;
-//                                         }
-
-//                                         .linkButton {
-//                                                 margin-bottom: 5%;
-
-//                                                 a {
-//                                                         font-size: 1.5rem;
-//                                                         width: fit-content;
-
-//                                                 }
-//                                         }
-//                                 }
-//                         }
-
-//                 }
-//         }
-
-//         .footerSection {
-//                 .footFlex {
-//                         width: 95%;
-//                         flex-direction: column;
-//                         align-items: initial;
-
-//                         .contactMe {
-//                                 width: 80vw;
-//                                 align-items: center;
-
-//                                 h2 {
-//                                         font-size: 7vw;
-//                                 }
-
-//                                 p {
-//                                         width: 100%;
-//                                         font-size: 2rem;
-//                                 }
-
-//                         }
-
-//                         .contactForm {
-//                                 width: 95vw;
-//                                 margin: 0;
-
-//                                 p {
-//                                         font-size: 1.3rem;
-//                                         width: 100%;
-
-//                                         input {
-//                                                 align-self: center;
-//                                         }
-//                                 }
-//                         }
-
-//                 }
-
-//         }
-
-
-// }
-
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
 h1 {
         font-size: 5.5em;
         }
@@ -622,5 +514,142 @@ p {
         font-size: 2vw;
         font-family: $lora-font;
         }
+
+        header {
+                height: 85vh;
+        }
+.headerBody {
+        margin-top: 100px;
+
+        .wrapper {
+                width: 100%;
+                p {
+                font-size: 50px;
+                // padding: 0 20px;
+
+                }
+
+        }
+
+}
+
+.about {
+        margin: 50px auto;
+
+        .wrapper {
+                h2 {
+                        margin: 40px;
+                }
+
+                // margin: 15%;
+                p {
+                        width: 100%;
+                        padding: 0px 5px;
+                        font-size: 25px;
+                }
+
+        }
+}
+        
+.skills {
+        margin: 10% auto;
+        padding: 0;
+
+        .wrapper {
+
+                .icon {
+                        width: 120px;
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        margin-right: 70px;
+                        .fa-3x {
+                                font-size: 7em;
+                        }
+                        p {
+                                font-size: 1vw;
+                        }
+                        .firebaseLogo{
+                                width: 150px
+                        }
+                }
+        }
+
+}
+        
+        
+.latestWork {
+        margin: 4vh;
+
+        .latest {
+                width: 100%;
+
+                .recent {
+                        justify-content: center;
+
+                        .project {
+                                width: 490px;
+                                // margin: 5% 5%;
+
+                                .imgContainer {
+                                        width: 90%;
+                                        margin: 5% auto;
+                                }
+
+                                .projText {
+                                        width: 90%;
+                                        margin: 2% 2%;
+                                }
+
+                                .linkButton {
+                                        margin-bottom: 5%;
+
+                                        a {
+                                                font-size: 1.5rem;
+                                                width: fit-content;
+
+                                        }
+                                }
+                        }
+                }
+
+        }
+}
+        
+                .footerSection {
+                        .footFlex {
+                                width: 95%;
+                                // flex-direction: column;
+                                align-items: initial;
+        
+                                .contactMe {
+                                        width: 500px;
+                                        align-items: center;
+        
+                                        h2 {
+                                                font-size: 7vw;
+                                        }
+        
+                                        p {
+                                                width: 90%;
+                                                font-size: 1.5rem;
+                                        }
+        
+                                }
+        
+                                .contactForm {
+                                        width: 95vw;
+                                        margin: 0;
+        
+                                        p {
+                                                font-size: 1.5rem;
+                                                width: 100%;
+        
+        
+                                        }
+                                }
+        
+                        }
+        
+                }
 
 } // *****  end of @media min 1200px *****

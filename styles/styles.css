@@ -733,14 +733,14 @@ header {
             flex-direction: column;
   }
   .footerSection .footFlex .contactMe {
-    width: 95vw;
+    width: 90vw;
     margin: 0;
   }
   .footerSection .footFlex .contactMe h2 {
     font-size: 7vw;
   }
   .footerSection .footFlex .contactForm {
-    width: 95vw;
+    width: 90vw;
     margin: 0;
   }
   .allRights {
@@ -767,7 +767,10 @@ header {
     width: 95%;
   }
   header {
-    height: 40vh;
+    height: 750px;
+  }
+  .headerBody {
+    margin-top: 120px;
   }
   .headerBody .wrapper p {
     font-size: 5vw;
@@ -839,8 +842,11 @@ header {
   header {
     height: 45vh;
   }
+  .headerBody {
+    margin-top: 100px;
+  }
   .headerBody .wrapper p {
-    font-size: 5vw;
+    font-size: 30px;
     padding: 0 20px;
   }
   .about {
@@ -881,7 +887,7 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    width: 600px;
+    width: 400px;
     margin: 5% 5%;
   }
   .latestWork .latest .recent .project .imageContainer {
@@ -920,16 +926,17 @@ header {
     font-size: 7vw;
   }
   .footerSection .footFlex .contactMe p {
-    width: 100%;
+    width: 95%;
     font-size: 2rem;
   }
   .footerSection .footFlex .contactForm {
     width: 95vw;
     margin: 0;
+    padding: 10px;
   }
   .footerSection .footFlex .contactForm p {
-    font-size: 1.3rem;
-    width: 100%;
+    font-size: 1.1rem;
+    width: 95%;
   }
   .footerSection .footFlex .contactForm p input {
     -ms-flex-item-align: center;
@@ -941,10 +948,13 @@ header {
     width: 95%;
   }
   header {
-    height: 50vh;
+    height: 85vh;
   }
   .headerBody {
-    margin-top: 5%;
+    margin-top: 110px;
+  }
+  .headerBody .wrapper p {
+    font-size: 5vw;
   }
   .about {
     margin: 50px auto;
@@ -953,21 +963,28 @@ header {
     margin: 40px;
   }
   .about .wrapper p {
-    width: 100%;
+    width: 80%;
     padding: 0px 5px;
-    font-size: 3vw;
+    font-size: 25px;
   }
   .skills {
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 10% 0;
   }
   .skills .wrapper .icon {
+    width: 120px;
     margin-top: 15px;
     margin-left: 15px;
-    margin-right: 45px;
+    margin-right: 70px;
+  }
+  .skills .wrapper .icon .fa-3x {
+    font-size: 7em;
   }
   .skills .wrapper .icon p {
-    font-size: 2vw;
+    font-size: 1vw;
+  }
+  .skills .wrapper .icon .firebaseLogo {
+    width: 150px;
   }
   .latestWork {
     margin: 4vh;
@@ -981,12 +998,11 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    width: 600px;
-    margin: 5% 5%;
+    width: 490px;
   }
-  .latestWork .latest .recent .project .imageContainer {
-    width: 100%;
-    margin: 25% auto;
+  .latestWork .latest .recent .project .imgContainer {
+    width: 90%;
+    margin: 5% auto;
   }
   .latestWork .latest .recent .project .projText {
     width: 90%;
@@ -1002,7 +1018,7 @@ header {
     width: fit-content;
   }
   .footerSection .footFlex {
-    width: 95%;
+    width: 80%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1022,17 +1038,22 @@ header {
   }
   .footerSection .footFlex .contactMe p {
     width: 100%;
+    font-size: 35px;
   }
   .footerSection .footFlex .contactForm {
-    width: 95vw;
+    width: 80vw;
     margin: 0;
   }
   .footerSection .footFlex .contactForm p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 100%;
   }
+  .footerSection .footFlex .contactForm .contactButton {
+    width: 110px;
+    padding: 5px;
+  }
 }
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   h1 {
     font-size: 5.5em;
   }
@@ -1043,5 +1064,105 @@ header {
   p {
     font-size: 2vw;
     font-family: "Lora", serif;
+  }
+  header {
+    height: 85vh;
+  }
+  .headerBody {
+    margin-top: 100px;
+  }
+  .headerBody .wrapper {
+    width: 100%;
+  }
+  .headerBody .wrapper p {
+    font-size: 50px;
+  }
+  .about {
+    margin: 50px auto;
+  }
+  .about .wrapper h2 {
+    margin: 40px;
+  }
+  .about .wrapper p {
+    width: 100%;
+    padding: 0px 5px;
+    font-size: 25px;
+  }
+  .skills {
+    margin: 10% auto;
+    padding: 0;
+  }
+  .skills .wrapper .icon {
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 70px;
+  }
+  .skills .wrapper .icon .fa-3x {
+    font-size: 7em;
+  }
+  .skills .wrapper .icon p {
+    font-size: 1vw;
+  }
+  .skills .wrapper .icon .firebaseLogo {
+    width: 150px;
+  }
+  .latestWork {
+    margin: 4vh;
+  }
+  .latestWork .latest {
+    width: 100%;
+  }
+  .latestWork .latest .recent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .latestWork .latest .recent .project {
+    width: 490px;
+  }
+  .latestWork .latest .recent .project .imgContainer {
+    width: 90%;
+    margin: 5% auto;
+  }
+  .latestWork .latest .recent .project .projText {
+    width: 90%;
+    margin: 2% 2%;
+  }
+  .latestWork .latest .recent .project .linkButton {
+    margin-bottom: 5%;
+  }
+  .latestWork .latest .recent .project .linkButton a {
+    font-size: 1.5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footerSection .footFlex {
+    width: 95%;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .footerSection .footFlex .contactMe {
+    width: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerSection .footFlex .contactMe h2 {
+    font-size: 7vw;
+  }
+  .footerSection .footFlex .contactMe p {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .footerSection .footFlex .contactForm {
+    width: 95vw;
+    margin: 0;
+  }
+  .footerSection .footFlex .contactForm p {
+    font-size: 1.5rem;
+    width: 100%;
   }
 }
