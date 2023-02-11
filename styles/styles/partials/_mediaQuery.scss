@@ -103,9 +103,9 @@
         }
 }
     
-} // *****  end of @media 320px *****
+} // *****  end of @media 320px to 480px *****
 
-@media (max-width: 810px) {
+@media (min-width: 481px) and (max-width: 767px) {
 
 .latestWork {
         .latest {
@@ -117,7 +117,7 @@
 }
 
 
-} // *****  end of @media 780px *****
+} // *****  end of 481 px to 767px *****
 
 @media only screen and (min-width: 1200px) {
 h1 {
