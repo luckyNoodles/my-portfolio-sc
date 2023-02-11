@@ -1,5 +1,11 @@
 @use './variables' as *;
 
+    // xs (extra small) screens: widths between 320px to 480px 
+    // sm (small) screens: widths between 481px and 767px 
+    // md (medium) screens: widths between 768px and 991px 
+    // lg (large) screens: widths between 992px and 1199px 
+    // xl (extra large) screens: widths of 1200px or greater
+
 @media (min-width: 320px) and (max-width: 480px) {
         .wrapper {
                 width: 100%;
@@ -29,15 +35,18 @@
                  }
         }
 
-.about {
+.about { 
+        margin: 50px auto;
         .wrapper {
                 p {
-                        width: 100%;
+                        width: 90%;
                         padding: 0px 5px;
+                        font-size: 4vw;
                 }
 
         }
 }
+
 .skills {
         .wrapper {
                 width: 100%;
@@ -59,7 +68,7 @@
 }
 .latestWork {
         .project {
-                width: 95vw;
+                width: 90vw;
                 margin: 5% 15px;
                 }
         .projText {
@@ -106,6 +115,56 @@
 } // *****  end of @media 320px to 480px *****
 
 @media (min-width: 481px) and (max-width: 767px) {
+.wrapper {
+        width: 95%;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+}
+        header {
+        height: 35vh;
+}
+
+.headerBody {
+        .wrapper {
+                p {
+                font-size: 5vw;
+                padding: o 20px;
+                
+                }
+        }
+}
+
+.about {
+        margin: 50px auto;
+        .wrapper {
+                // margin: 15%;
+                p {
+                        width: 100%;
+                        padding: 0px 5px;
+                        font-size: 3vw;
+                }
+
+        }
+}
+
+.skills {
+       .wrapper {
+
+               .icon {
+                       margin-top: 15px;
+                       margin-left: 15px;
+                       margin-right: 45px;
+                       p {
+                        font-size: 2vw ;
+                       }
+               }
+       }
+        
+}
+
+
+
 
 .latestWork {
         .latest {
@@ -116,6 +175,33 @@
         }
 }
 
+.footerSection {
+        .footFlex {
+                width: 95%;
+                flex-direction: column;
+
+                .contactMe {
+                        width: 95vw;
+                        margin: 0;
+
+                        h2 {
+                                font-size: 7vw;
+                        }
+
+                }
+
+                .contactForm {
+                        width: 95vw;
+                        margin: 0;
+                        p {
+                                font-size: 1.3rem;
+                                width: 100%;
+                        }
+                }
+
+        }
+
+}
 
 } // *****  end of 481 px to 767px *****
 

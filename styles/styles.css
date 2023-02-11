@@ -698,9 +698,13 @@ header {
     font-size: 5vw;
     padding: o 20px;
   }
+  .about {
+    margin: 50px auto;
+  }
   .about .wrapper p {
-    width: 100%;
+    width: 90%;
     padding: 0px 5px;
+    font-size: 4vw;
   }
   .skills .wrapper {
     width: 100%;
@@ -716,7 +720,7 @@ header {
     font-size: 4vw;
   }
   .latestWork .project {
-    width: 95vw;
+    width: 90vw;
     margin: 5% 15px;
   }
   .latestWork .projText {
@@ -758,11 +762,59 @@ header {
     margin: 10px;
   }
 }
-@media (max-width: 810px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .wrapper {
+    width: 95%;
+  }
+  header {
+    height: 35vh;
+  }
+  .headerBody .wrapper p {
+    font-size: 5vw;
+    padding: o 20px;
+  }
+  .about {
+    margin: 50px auto;
+  }
+  .about .wrapper p {
+    width: 100%;
+    padding: 0px 5px;
+    font-size: 3vw;
+  }
+  .skills .wrapper .icon {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 45px;
+  }
+  .skills .wrapper .icon p {
+    font-size: 2vw;
+  }
   .latestWork .latest .recent {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footerSection .footFlex {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerSection .footFlex .contactMe {
+    width: 95vw;
+    margin: 0;
+  }
+  .footerSection .footFlex .contactMe h2 {
+    font-size: 7vw;
+  }
+  .footerSection .footFlex .contactForm {
+    width: 95vw;
+    margin: 0;
+  }
+  .footerSection .footFlex .contactForm p {
+    font-size: 1.3rem;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
