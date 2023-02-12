@@ -1,3 +1,10 @@
+const navToggle = document.querySelector('.material-symbols-outlined');
+const mainNav = document.querySelector('.topNav');
+
+navToggle.addEventListener('click', function() {
+ mainNav.classList.toggle('mobileNav')
+})
+
 const projects = [
     {
         preview: './images/project-2.png', 
@@ -22,8 +29,7 @@ const projects = [
         description: 'The goal of this project was to convert a PSD (Photoshop) file into a static website that is responsive using only HTML and CSS.',
         live: 'https://psd-conversion1.netlify.app/',
         code: 'https://github.com/luckyNoodles/assignment-one-scott-cheung'
-    }
-]
+    }]
 
 const displayProjects = () => {
    

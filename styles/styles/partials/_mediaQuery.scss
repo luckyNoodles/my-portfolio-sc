@@ -7,33 +7,70 @@
     // xl (extra large) screens: widths of 1200px or greater
 
 @media (min-width: 320px) and (max-width: 480px) {
+.wrapper {
+        width: 100%;
+       
+}
+
+.hamburger {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        .material-symbols-outlined {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+        }
+}
+
+h1 {
+font-size: 12vw;
+}
+
+h2 {
+font-size: 6.5vw;
+}
+
+p {
+font-size: 5vw;
+}
+
+header {
+        height: 40vh;
+}
+.headerBody {
+        margin-top: 100px;
         .wrapper {
+                p {
+                font-size: 5vw;
+                padding: o 20px;;
+                }
+                }
+}
+
+
+.nav {
+position: relative;
+        .topNav {
+                flex-direction: column;
+                position: absolute;
                 width: 100%;
+                
+                top: -25px;
+                transform: translateX(-155px);
+                transition: transform 0.5s ease-in-out;
         }
 
-        h1 {
-        font-size: 12vw;
+        .mobileNav {
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+        
+                top: 0px;
+                transform: translateX(-50px);
+                transition: transform 0.5s ease-in-out;
         }
-
-        h2 {
-        font-size: 6.5vw;
-        }
-
-        p {
-        font-size: 5vw;
-        }
-
-        header {
-                height: 40vh;
-        }
-        .headerBody {
-                .wrapper {
-                        p {
-                        font-size: 5vw;
-                        padding: o 20px;;
-                        }
-                 }
-        }
+}
 
 .about { 
         margin: 50px auto;
@@ -121,6 +158,43 @@
         // justify-content: center;
         // flex-direction: column;
 }
+
+.hamburger {
+        position: relative;
+        top: 10px;
+        left: 10px;
+
+        .material-symbols-outlined {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+        }
+}
+
+.nav {
+        position: relative;
+
+        .topNav {
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+
+                top: -25px;
+                transform: translateX(-200px);
+                transition: transform 0.5s ease-in-out;
+        }
+
+        .mobileNav {
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+
+                top: 0px;
+                transform: translateX(-50px);
+                transition: transform 0.5s ease-in-out;
+        }
+}
+
         header {
         height: 750px;
 }
@@ -218,8 +292,12 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 header {
-        height: 45vh;
+        height: 90vh;
 
+}
+
+.hamburger {
+        display: none;
 }
 
 .headerBody {
@@ -351,17 +429,20 @@ header {
 .wrapper {
                 width: 95%;
         }
+.hamburger {
+        display: none;
+}
 
         header {
-                height: 85vh;
+                height: 90vh;
                
         }
 
         .headerBody {
-                margin-top: 110px;
+                margin-top: 90px;
                 .wrapper {
                         p {
-                                font-size: 5vw;
+                                font-size: 4vw;
                                 // padding: 0 20px;
                         
                                 }
@@ -379,28 +460,34 @@ header {
                         }
                         // margin: 15%;
                         p {
-                                width: 80%;
+                                width: 65%;
                                 padding: 0px 5px;
-                                font-size: 25px;
+                                font-size: 18px;
                         }
 
                 }
         }
 
         .skills {
-                margin: 5% auto;
-                padding: 10% 0;
+                // margin: 5% auto;
+                // padding: 10% 0;
 
                 .wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        .iconGroup {
+                                width: 70%;
+                                align-self: center;
+                        }
         
                         .icon {
-                                width: 120px;
+                                width: 55px;
                                 margin-top: 15px;
                                 margin-left: 15px;
                                 margin-right: 70px;
         
                                 .fa-3x {
-                                        font-size: 7em;
+                                        font-size: 4em;
                                 }
         
                                 p {
@@ -408,7 +495,7 @@ header {
                                 }
         
                                 .firebaseLogo {
-                                        width: 150px
+                                        width: 100px
                                 }
                         }
                 }
@@ -426,7 +513,7 @@ header {
                         justify-content: center;
 
                         .project {
-                                width: 490px;
+                                width: 325px;
                                 // margin: 5% 5%;
 
                                 .imgContainer {
@@ -515,8 +602,12 @@ p {
         font-family: $lora-font;
         }
 
+.hamburger {
+        display: none;
+}
+
         header {
-                height: 85vh;
+                height: 90vh;
         }
 .headerBody {
         margin-top: 100px;
@@ -534,7 +625,7 @@ p {
 }
 
 .about {
-        margin: 50px auto;
+        height: 70vh;
 
         .wrapper {
                 h2 {
@@ -543,16 +634,16 @@ p {
 
                 // margin: 15%;
                 p {
-                        width: 100%;
+                        width: 80%;
                         padding: 0px 5px;
-                        font-size: 25px;
+                        font-size: 20px;
                 }
 
         }
 }
         
 .skills {
-        margin: 10% auto;
+        margin: 5% auto;
         padding: 0;
 
         .wrapper {
@@ -561,9 +652,9 @@ p {
                         width: 120px;
                         margin-top: 15px;
                         margin-left: 15px;
-                        margin-right: 70px;
+                        margin-right: 50px;
                         .fa-3x {
-                                font-size: 7em;
+                                font-size: 4em;
                         }
                         p {
                                 font-size: 1vw;
@@ -578,16 +669,20 @@ p {
         
         
 .latestWork {
-        margin: 4vh;
+        margin: 100px;
 
         .latest {
                 width: 100%;
+                padding: 50px auto;
+                h2 {
+                        margin: 0px;
+                }
 
                 .recent {
                         justify-content: center;
 
                         .project {
-                                width: 490px;
+                                width: 365px;
                                 // margin: 5% 5%;
 
                                 .imgContainer {
@@ -598,13 +693,17 @@ p {
                                 .projText {
                                         width: 90%;
                                         margin: 2% 2%;
+                                        .stack {
+                                                font-style: italic;
+                                                font-weight: bold;
+                                        }
                                 }
 
                                 .linkButton {
                                         margin-bottom: 5%;
 
                                         a {
-                                                font-size: 1.5rem;
+                                                font-size: 1rem;
                                                 width: fit-content;
 
                                         }
@@ -617,31 +716,32 @@ p {
         
                 .footerSection {
                         .footFlex {
-                                width: 95%;
+                                width: 100%;
                                 // flex-direction: column;
                                 align-items: initial;
         
                                 .contactMe {
-                                        width: 500px;
+                                        width: 250px;
                                         align-items: center;
         
                                         h2 {
-                                                font-size: 7vw;
+                                                font-size: 6vw;
                                         }
         
                                         p {
                                                 width: 90%;
-                                                font-size: 1.5rem;
+                                                font-size: 1.3rem;
+                                                margin: 0px;
                                         }
         
                                 }
         
                                 .contactForm {
-                                        width: 95vw;
+                                        width: 35vw;
                                         margin: 0;
         
                                         p {
-                                                font-size: 1.5rem;
+                                                font-size: 1.2rem;
                                                 width: 100%;
         
         
