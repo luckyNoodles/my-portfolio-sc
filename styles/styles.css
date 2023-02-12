@@ -948,16 +948,16 @@ header {
     margin: 25px;
   }
   .about .wrapper p {
-    width: 100%;
+    width: 80%;
     padding: 0px 5px;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .skills {
     margin: 10% auto;
     padding: 10% 0;
   }
   .skills .wrapper {
-    width: 85%;
+    width: 75%;
   }
   .skills .wrapper .icon {
     margin-top: 15px;
@@ -968,7 +968,7 @@ header {
     font-size: 1.5vw;
   }
   .latestWork {
-    margin: 5vh;
+    margin: 4vh;
   }
   .latestWork .latest {
     width: 100%;
@@ -979,60 +979,57 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    width: 400px;
-    margin: 5% 5%;
+    width: 310px;
   }
-  .latestWork .latest .recent .project .imageContainer {
-    margin: 25% auto;
+  .latestWork .latest .recent .project .imgContainer {
+    width: 90%;
+    margin: 5% auto;
   }
   .latestWork .latest .recent .project .projText {
     width: 90%;
     margin: 2% 2%;
   }
+  .latestWork .latest .recent .project .projText .description {
+    font-size: 0.8rem;
+  }
   .latestWork .latest .recent .project .linkButton {
     margin-bottom: 5%;
   }
   .latestWork .latest .recent .project .linkButton a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   .footerSection .footFlex {
-    width: 95%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
   }
   .footerSection .footFlex .contactMe {
-    width: 80vw;
+    width: 250px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: 10px;
   }
   .footerSection .footFlex .contactMe h2 {
     font-size: 7vw;
+    padding-top: 15px;
   }
   .footerSection .footFlex .contactMe p {
-    width: 95%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 1.2rem;
+    margin-top: 15px;
   }
   .footerSection .footFlex .contactForm {
-    width: 95vw;
+    width: 40vw;
     margin: 0;
-    padding: 10px;
   }
   .footerSection .footFlex .contactForm p {
-    font-size: 1.1rem;
-    width: 95%;
-  }
-  .footerSection .footFlex .contactForm p input {
-    -ms-flex-item-align: center;
-        align-self: center;
+    font-size: 1rem;
+    width: 100%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1113,49 +1110,47 @@ header {
     width: 90%;
     margin: 2% 2%;
   }
+  .latestWork .latest .recent .project .projText .description {
+    font-size: 0.8rem;
+  }
   .latestWork .latest .recent .project .linkButton {
     margin-bottom: 5%;
   }
   .latestWork .latest .recent .project .linkButton a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   .footerSection .footFlex {
-    width: 80%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
   }
   .footerSection .footFlex .contactMe {
-    width: 80vw;
+    width: 250px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: 10px;
   }
   .footerSection .footFlex .contactMe h2 {
-    font-size: 7vw;
+    font-size: 6vw;
+    padding-top: 15px;
   }
   .footerSection .footFlex .contactMe p {
-    width: 100%;
-    font-size: 35px;
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 0px;
   }
   .footerSection .footFlex .contactForm {
-    width: 80vw;
+    width: 35vw;
     margin: 0;
   }
   .footerSection .footFlex .contactForm p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
-  }
-  .footerSection .footFlex .contactForm .contactButton {
-    width: 110px;
-    padding: 5px;
   }
 }
 @media (min-width: 1200px) {
