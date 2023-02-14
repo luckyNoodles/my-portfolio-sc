@@ -415,7 +415,7 @@ header {
 }
 
 .firebase img {
-  width: 65px;
+  width: 95px;
 }
 
 .latestWork,
@@ -692,8 +692,9 @@ header {
     top: 5px;
     left: 10px;
   }
-  h1 {
+  .headerBody .title h1 {
     font-size: 12vw;
+    margin: 65px auto 5px auto;
   }
   h2 {
     font-size: 6.5vw;
@@ -721,7 +722,7 @@ header {
             flex-direction: column;
     position: absolute;
     width: 100%;
-    top: -25px;
+    top: 30px;
     -webkit-transform: translateX(-155px);
             transform: translateX(-155px);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -736,7 +737,7 @@ header {
             flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 0px;
+    top: 30px;
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -822,17 +823,18 @@ header {
     top: 5px;
     left: 5px;
   }
-  .nav {
+  .topNavBar .nav {
     position: relative;
   }
-  .nav .topNav {
+  .topNavBar .nav .topNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
     width: 100%;
-    top: -25px;
+    margin-top: 20px;
+    top: 30px;
     -webkit-transform: translateX(-200px);
             transform: translateX(-200px);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -840,16 +842,17 @@ header {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
-  .nav .mobileNav {
+  .topNavBar .nav .mobileNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 0px;
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
+    margin-top: 20px;
+    top: 30px;
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -884,6 +887,9 @@ header {
   }
   .skills .wrapper .icon p {
     font-size: 2vw;
+  }
+  .skills .wrapper .firebaseLogo {
+    width: 90px;
   }
   .latestWork {
     margin: 5vh;
@@ -1085,8 +1091,8 @@ header {
   .skills .wrapper .icon p {
     font-size: 1vw;
   }
-  .skills .wrapper .icon .firebaseLogo {
-    width: 100px;
+  .skills .wrapper .firebaseLogo {
+    width: 90px;
   }
   .latestWork {
     margin: 4vh;
@@ -1181,7 +1187,12 @@ header {
     font-size: 50px;
   }
   .about {
-    height: 70vh;
+    height: 80vh;
+  }
+  .about .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about .wrapper h2 {
     margin: 40px;
@@ -1206,9 +1217,6 @@ header {
   }
   .skills .wrapper .icon p {
     font-size: 1vw;
-  }
-  .skills .wrapper .icon .firebaseLogo {
-    width: 150px;
   }
   .latestWork {
     margin: 100px;

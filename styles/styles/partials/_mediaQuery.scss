@@ -23,8 +23,15 @@
         }
 }
 
-h1 {
-font-size: 12vw;
+.headerBody{
+        .title {
+                h1 {
+                font-size: 12vw;
+                margin: 65px auto 5px auto;
+                }
+        
+        }
+
 }
 
 h2 {
@@ -44,19 +51,18 @@ header {
                 p {
                 font-size: 5vw;
                 padding: o 20px;;
-                }
-                }
+        }
+}
 }
 
 
 .nav {
-position: relative;
+        position: relative;
         .topNav {
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
-                
-                top: -25px;
+                top: 30px;
                 transform: translateX(-155px);
                 transition: transform 0.5s ease-in-out;
         }
@@ -65,8 +71,7 @@ position: relative;
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
-        
-                top: 0px;
+                top: 30px;
                 transform: translateX(-50px);
                 transition: transform 0.5s ease-in-out;
         }
@@ -171,28 +176,33 @@ position: relative;
         }
 }
 
-.nav {
-        position: relative;
 
-        .topNav {
-                flex-direction: column;
-                position: absolute;
-                width: 100%;
 
-                top: -25px;
-                transform: translateX(-200px);
-                transition: transform 0.5s ease-in-out;
+.topNavBar {
+        .nav {
+                position: relative;
+        
+                .topNav {
+                        flex-direction: column;
+                        position: absolute;
+                        width: 100%;
+                        margin-top: 20px;
+                        top: 30px;
+                        transform: translateX(-200px);
+                        transition: transform 0.5s ease-in-out;
+                }
+        
+                .mobileNav {
+                        flex-direction: column;
+                        position: absolute;
+                        width: 100%;
+                        margin-top: 20px;
+                        top: 30px;
+                        transform: translateX(-25px);
+                        transition: transform 0.5s ease-in-out;
+                }
         }
 
-        .mobileNav {
-                flex-direction: column;
-                position: absolute;
-                width: 100%;
-
-                top: 0px;
-                transform: translateX(-50px);
-                transition: transform 0.5s ease-in-out;
-        }
 }
 
         header {
@@ -235,6 +245,9 @@ position: relative;
                        p {
                         font-size: 2vw ;
                        }
+               }
+               .firebaseLogo {
+                width: 90px;
                }
        }
         
@@ -501,17 +514,17 @@ header {
         
                                 p {
                                         font-size: 1vw;
-                                }
-        
-                                .firebaseLogo {
-                                        width: 100px
-                                }
+                                }       
                         }
-                }
+                        .firebaseLogo {
+                                width: 90px
+                        }
 
+                }
+                
         }
 
-
+        
 .latestWork {
         margin: 4vh;
 
@@ -637,9 +650,10 @@ p {
 }
 
 .about {
-        height: 70vh;
+        height: 80vh;
 
         .wrapper {
+                justify-content: center;
                 h2 {
                         margin: 40px;
                 }
@@ -671,14 +685,11 @@ p {
                         p {
                                 font-size: 1vw;
                         }
-                        .firebaseLogo{
-                                width: 150px
-                        }
                 }
         }
-
-}
         
+}
+
         
 .latestWork {
         margin: 100px;
