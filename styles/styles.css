@@ -590,6 +590,21 @@ header {
 .footerSection .contactMe p {
   font-size: 1rem;
 }
+.footerSection .ulShare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px;
+}
+.footerSection .ulShare li {
+  margin: 5px;
+}
+.footerSection .ulShare li .navIcons {
+  width: 35px;
+}
 .footerSection .contactForm {
   width: 70%;
 }
