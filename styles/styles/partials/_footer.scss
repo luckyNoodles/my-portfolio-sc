@@ -34,6 +34,17 @@
             font-size: 1rem;
         }
     }
+    .ulShare {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        li {
+            margin: 5px;
+            .navIcons {
+                width: 35px;
+            }
+        }
+    }
     .contactForm {
         width: 70%;
         p {
