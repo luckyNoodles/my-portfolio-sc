@@ -702,10 +702,20 @@ header {
     top: 10px;
     left: 10px;
   }
-  .hamburger .material-symbols-outlined {
+  .hamburger .menu {
+    display: block;
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 5px;
+  }
+  .hamburger .close {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .hamburger .hide {
+    display: none;
   }
   .headerBody .title h1 {
     font-size: 12vw;
@@ -718,7 +728,7 @@ header {
     font-size: 5vw;
   }
   header {
-    height: 40vh;
+    height: 50vh;
   }
   .headerBody {
     margin-top: 100px;
@@ -833,10 +843,20 @@ header {
     top: 10px;
     left: 10px;
   }
-  .hamburger .material-symbols-outlined {
+  .hamburger .menu {
+    display: block;
     position: absolute;
     top: 5px;
     left: 5px;
+  }
+  .hamburger .close {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .hamburger .hide {
+    display: none;
   }
   .topNavBar .nav {
     position: relative;
@@ -874,7 +894,7 @@ header {
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   header {
-    height: 750px;
+    height: 550px;
   }
   .headerBody {
     margin-top: 120px;

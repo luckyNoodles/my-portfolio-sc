@@ -1,9 +1,21 @@
 const navToggle = document.querySelector('.material-symbols-outlined');
 const mainNav = document.querySelector('.topNav');
+const menu = document.querySelector('.menu');
+const closeMenu = document.querySelector('.close');
 
 navToggle.addEventListener('click', function() {
  mainNav.classList.toggle('mobileNav')
+ menu.classList.toggle('hide');
+ closeMenu.classList.toggle('hide');
 })
+
+closeMenu.addEventListener('click', function() {
+ menu.classList.toggle('hide');
+ closeMenu.classList.toggle('hide');
+ mainNav.classList.toggle('mobileNav')
+
+})
+
 
 const projects = [
     {
