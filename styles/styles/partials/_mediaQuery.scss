@@ -16,11 +16,23 @@
         position: relative;
         top: 10px;
         left: 10px;
-        .material-symbols-outlined {
-                position: absolute;
-                top: 5px;
-                left: 10px;
-        }
+        .menu {
+                        display: block;
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                }
+        
+                .close {
+                        display: block;
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                }
+        
+                .hide {
+                        display: none;
+                }
 }
 
 .headerBody{
@@ -43,7 +55,7 @@ font-size: 5vw;
 }
 
 header {
-        height: 40vh;
+        height: 50vh;
 }
 .headerBody {
         margin-top: 100px;
@@ -169,11 +181,24 @@ header {
         top: 10px;
         left: 10px;
 
-        .material-symbols-outlined {
+        .menu {
+                display: block;
                 position: absolute;
                 top: 5px;
                 left: 5px;
         }
+
+        .close {
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+        }
+
+        .hide {
+                display: none;
+        }
+                
 }
 
 
@@ -190,6 +215,7 @@ header {
                         top: 30px;
                         transform: translateX(-200px);
                         transition: transform 0.5s ease-in-out;
+                        
                 }
         
                 .mobileNav {
@@ -200,13 +226,14 @@ header {
                         top: 30px;
                         transform: translateX(-25px);
                         transition: transform 0.5s ease-in-out;
+                        
                 }
         }
 
 }
 
         header {
-        height: 750px;
+        height: 550px;
 }
 
 .headerBody {
