@@ -677,7 +677,7 @@ p {
 }
 
 .about {
-        height: 80vh;
+        min-height: 25vh;
 
         .wrapper {
                 justify-content: center;
@@ -696,21 +696,23 @@ p {
 }
         
 .skills {
-        margin: 5% auto;
-        padding: 0;
-
+        // margin: 5% auto;
+        // padding: 0;
+        min-height: 36vh;
         .wrapper {
-
                 .icon {
-                        width: 120px;
-                        margin-top: 15px;
-                        margin-left: 15px;
-                        margin-right: 50px;
+                        width:12%;
+                        align-content: center;
                         .fa-3x {
                                 font-size: 4em;
+                                align-self: center;
                         }
                         p {
                                 font-size: 1vw;
+                        }
+                        img {
+                                width: 70%;
+                                align-self: center;
                         }
                 }
         }
@@ -719,38 +721,33 @@ p {
 
         
 .latestWork {
-        margin: 100px;
+        min-height: 75vh;
 
         .latest {
                 width: 100%;
-                padding: 50px auto;
                 h2 {
-                        margin: 0px;
+                        margin: 5%;
                 }
-
                 .recent {
                         justify-content: center;
-
                         .project {
-                                width: 425px;
-                                // margin: 5% 5%;
-
+                                width: 45%;
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
+                                        min-height: 60%;
                                 }
-
                                 .projText {
                                         width: 90%;
+                                        min-height: 20%;
                                         margin: 2% 2%;
                                         .stack {
                                                 font-style: italic;
                                                 font-weight: bold;
                                         }
                                 }
-
                                 .linkButton {
-                                        margin-bottom: 5%;
+                                        margin: 0 0 1% 2%;
 
                                         a {
                                                 font-size: 1rem;
@@ -764,42 +761,42 @@ p {
         }
 }
         
-                .footerSection {
-                        .footFlex {
-                                width: 100%;
-                                // flex-direction: column;
-                                align-items: initial;
-        
-                                .contactMe {
-                                        width: 250px;
-                                        align-items: center;
-        
-                                        h2 {
-                                                font-size: 6vw;
-                                        }
-        
-                                        p {
-                                                width: 90%;
-                                                font-size: 1.3rem;
-                                                margin: 0px;
-                                        }
-        
-                                }
-        
-                                .contactForm {
-                                        width: 35vw;
-                                        margin: 0;
-        
-                                        p {
-                                                font-size: 1.2rem;
-                                                width: 100%;
-        
-        
-                                        }
-                                }
-        
+.footerSection {
+        .footFlex {
+                width: 60%;
+                justify-content: space-between;
+                align-items: initial;
+
+                .contactMe {
+                        width: 15vw;
+                        align-items: center;
+
+                        h2 {
+                                font-size: 6vw;
                         }
-        
+
+                        p {
+                                width: 90%;
+                                font-size: 1.3rem;
+                                margin: 0;
+                        }
+
                 }
+
+                .contactForm {
+                        width: 35vw;
+                        margin: 0;
+
+                        p {
+                                font-size: 1.2rem;
+                                width: 100%;
+
+
+                        }
+                }
+
+        }
+
+}
 
 } // *****  end of @media min 1200px *****

@@ -338,9 +338,12 @@ header {
   background-color: #365c46;
   color: whitesmoke;
   padding-bottom: 10%;
-  height: 60vh;
+  min-height: 80vh;
 }
 
+.headerBody {
+  min-height: 55vh;
+}
 .headerBody .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +352,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 5%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .headerBody .wrapper h1 {
   text-align: center;
@@ -1222,7 +1226,7 @@ header {
     font-size: 50px;
   }
   .about {
-    height: 80vh;
+    min-height: 25vh;
   }
   .about .wrapper {
     -webkit-box-pack: center;
@@ -1238,30 +1242,34 @@ header {
     font-size: 20px;
   }
   .skills {
-    margin: 5% auto;
-    padding: 0;
+    min-height: 36vh;
   }
   .skills .wrapper .icon {
-    width: 120px;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 50px;
+    width: 12%;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .skills .wrapper .icon .fa-3x {
     font-size: 4em;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .skills .wrapper .icon p {
     font-size: 1vw;
   }
+  .skills .wrapper .icon img {
+    width: 70%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
   .latestWork {
-    margin: 100px;
+    min-height: 75vh;
   }
   .latestWork .latest {
     width: 100%;
-    padding: 50px auto;
   }
   .latestWork .latest h2 {
-    margin: 0px;
+    margin: 5%;
   }
   .latestWork .latest .recent {
     -webkit-box-pack: center;
@@ -1269,14 +1277,16 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    width: 425px;
+    width: 45%;
   }
   .latestWork .latest .recent .project .imgContainer {
     width: 90%;
     margin: 5% auto;
+    min-height: 60%;
   }
   .latestWork .latest .recent .project .projText {
     width: 90%;
+    min-height: 20%;
     margin: 2% 2%;
   }
   .latestWork .latest .recent .project .projText .stack {
@@ -1284,7 +1294,7 @@ header {
     font-weight: bold;
   }
   .latestWork .latest .recent .project .linkButton {
-    margin-bottom: 5%;
+    margin: 0 0 1% 2%;
   }
   .latestWork .latest .recent .project .linkButton a {
     font-size: 1rem;
@@ -1293,13 +1303,16 @@ header {
     width: fit-content;
   }
   .footerSection .footFlex {
-    width: 100%;
+    width: 60%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
   }
   .footerSection .footFlex .contactMe {
-    width: 250px;
+    width: 15vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1310,7 +1323,7 @@ header {
   .footerSection .footFlex .contactMe p {
     width: 90%;
     font-size: 1.3rem;
-    margin: 0px;
+    margin: 0;
   }
   .footerSection .footFlex .contactForm {
     width: 35vw;
