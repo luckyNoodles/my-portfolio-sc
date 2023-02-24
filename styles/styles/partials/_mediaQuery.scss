@@ -9,7 +9,6 @@
 @media (min-width: 320px) and (max-width: 480px) {
 .wrapper {
         width: 100%;
-       
 }
 
 .hamburger {
@@ -55,9 +54,11 @@ font-size: 5vw;
 }
 
 header {
-        height: 50vh;
+        min-height: 71vh;
 }
+
 .headerBody {
+        min-height: 25vh;
         margin-top: 100px;
         .wrapper {
                 p {
@@ -71,15 +72,17 @@ header {
 .nav {
         position: relative;
         .topNav {
+                line-height: 1.5em;
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
                 top: 30px;
-                transform: translateX(-155px);
+                transform: translateX(-165px);
                 transition: transform 0.5s ease-in-out;
         }
 
         .mobileNav {
+                line-height: 1.5em;
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
@@ -101,25 +104,34 @@ header {
         }
 }
 
-.skills {
-        .wrapper {
-                width: 100%;
-                .iconGroup {
-                        .icon {
-                                width: 18vw;
-                                margin: 15px 18px;
-                                .fa-brands {
-                                        width: 100%;
-                                }
-                                p {
-                                        font-size: 4vw;
-                                }
-                        }
-                
-                }
 
+.skills {
+
+        min-height: 36vh;
+
+        .wrapper {
+                .icon {
+                        width: 17%;
+                        align-content: center;
+
+                        .fa-3x {
+                                font-size: 4em;
+                                align-self: center;
+                        }
+
+                        p {
+                                font-size: 3vw;
+                        }
+
+                        img {
+                                width: 100%;
+                                align-self: center;
+                        }
+                }
         }
+
 }
+
 .latestWork {
         .project {
                 width: 90vw;
@@ -171,9 +183,6 @@ header {
 @media (min-width: 481px) and (max-width: 767px) {
 .wrapper {
         width: 95%;
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: column;
 }
 
 .hamburger {
@@ -208,6 +217,7 @@ header {
                 position: relative;
         
                 .topNav {
+                        line-height: 1.5em;
                         flex-direction: column;
                         position: absolute;
                         width: 100%;
@@ -219,6 +229,7 @@ header {
                 }
         
                 .mobileNav {
+                        line-height: 1.5em;
                         flex-direction: column;
                         position: absolute;
                         width: 100%;
@@ -232,12 +243,13 @@ header {
 
 }
 
-        header {
-        height: 550px;
+header {
+        min-height: 80vh;
+
 }
 
 .headerBody {
-        margin-top: 120px;
+        min-height: 60vh;
         .wrapper {
                 p {
                 font-size: 5vw;
@@ -261,35 +273,76 @@ header {
 }
 
 .skills {
-        margin: 10% auto;
-        padding: 10% 0;
-       .wrapper {
 
-               .icon {
-                       margin-top: 15px;
-                       margin-left: 15px;
-                       margin-right: 45px;
-                       p {
-                        font-size: 2vw ;
-                       }
-               }
-               .firebaseLogo {
-                width: 90px;
-               }
-       }
-        
+        min-height: 36vh;
+
+        .wrapper {
+                .icon {
+                        width: 25%;
+                        align-content: center;
+
+                        .fa-3x {
+                                font-size: 5em;
+                                align-self: center;
+                        }
+
+                        p {
+                                font-size: 3vw;
+                        }
+
+                        img {
+                                width: 100%;
+                                align-self: center;
+                        }
+                }
+        }
+
 }
 
 
-
-
 .latestWork {
-        margin: 5vh;
+        min-height: 80vh;
+
         .latest {
+                width: 100%;
+                margin: 10% auto;
+
+                h2 {
+                        margin: 5%;
+                }
+
                 .recent {
                         justify-content: center;
+
                         .project {
-                                margin: 5% 5%;
+                                width: 90%;
+                                min-height: 60vh;
+                                .imgContainer {
+                                        width: 90%;
+                                        margin: 5% auto;
+                                        min-height: 55%;
+                                }
+
+                                .projText {
+                                        width: 90%;
+                                        min-height: 20%;
+                                        margin: 2% 2%;
+
+                                        .stack {
+                                                font-style: italic;
+                                                font-size: 0.8rem
+                                        }
+                                }
+
+                                .linkButton {
+                                        margin: 0 0 1% 2%;
+
+                                        a {
+                                                font-size: 1rem;
+                                                width: fit-content;
+
+                                        }
+                                }
                         }
                 }
 
@@ -331,21 +384,26 @@ header {
 } // *****  end of 481 px to 767px *****
 
 @media (min-width: 768px) and (max-width: 991px) {
+
 header {
-        height: 90vh;
-
-}
-
-.hamburger {
+        height: 80vh;
+ }
+           
+ .hamburger {
         display: none;
 }
 
 .headerBody {
-        margin-top: 100px;
+
         .wrapper {
+                .title {
+                        h1 {
+                                font-size: 12vw;
+                        }
+                }
                 p {
-                        font-size: 30px;
-                        padding: 0 20px;
+                        font-size: 1.8rem;
+                        // padding: 0 20px;
 
                 }
         }
@@ -357,7 +415,7 @@ header {
         .wrapper {
 
                 h2 {
-                        margin: 25px;
+                        margin: 4%;
                 }
                 p {
                         width: 80%;
@@ -369,55 +427,71 @@ header {
 }
 
 .skills {
-        margin: 10% auto;
-        padding: 10% 0;
+
+        min-height: 36vh;
 
         .wrapper {
-                width: 75%;
                 .icon {
-                        margin-top: 15px;
-                        margin-left: 15px;
-                        margin-right: 45px;
+                        width: 20%;
+                        align-content: center;
+
+                        .fa-3x {
+                                font-size: 4em;
+                                align-self: center;
+                        }
 
                         p {
-                                font-size: 1.5vw;
+                                font-size: 2vw;
+                        }
+
+                        img {
+                                width: 100%;
+                                align-self: center;
                         }
                 }
         }
 
 }
 
-
-
 .latestWork {
-        margin: 4vh;
+        min-height: 80vh;
 
         .latest {
                 width: 100%;
+                margin: 10% auto;
+
+                h2 {
+                        margin: 5%;
+                }
 
                 .recent {
                         justify-content: center;
 
                         .project {
-                                width: 310px;
-                                // margin: 5% 5%;
+                                width: 45%;
+                                min-height: 55vh;
 
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
+                                        max-height: 47%;
+                                        // border: 1px solid red;
                                 }
 
                                 .projText {
-                                        width: 90%;
+                                        // width: 90%;
+                                        min-height: 30%;
                                         margin: 2% 2%;
 
-                                        .description {
+                                        .stack {
+                                                font-style: italic;
                                                 font-size: 0.8rem;
+                                                min-height: 2rem;
                                         }
                                 }
 
                                 .linkButton {
-                                        margin-bottom: 5%;
+                                        margin: 5% 0 1% 2%;
 
                                         a {
                                                 font-size: 1rem;
@@ -437,35 +511,36 @@ header {
                  // flex-direction: column;
                  align-items: initial;
 
-                 .contactMe {
-                         width: 250px;
-                         align-items: center;
-                         margin-right: 10px;
-
-                         h2 {
-                                 font-size: 7vw;
-                                 padding-top: 15px;
-                         }
-
-                         p {
-                                 width: 80%;
-                                 font-size: 1.2rem;
-                                 margin-top: 15px;
-                         }
-
-                 }
-
-                 .contactForm {
-                         width: 40vw;
-                         margin: 0;
-
-                         p {
-                                 font-size: 1rem;
-                                 width: 100%;
-
-
-                         }
-                 }
+                .contactMe {
+                                width: 29vw;
+                                margin-top: 2%;
+                                // align-items: left;
+                
+                                h2 {
+                                        font-size: 6vw;
+                                        text-align: left;
+                                        
+                                }
+                
+                                p {
+                                        width: 90%;
+                                        font-size: 1.3rem;
+                                        margin: 0;
+                                }
+                
+                        }
+                
+                        .contactForm {
+                                width: 40vw;
+                                margin: 0;
+                
+                                p {
+                                        font-size: 1.2rem;
+                                        width: 100%;
+                
+                
+                                }
+                        }
 
          }
 
@@ -482,105 +557,100 @@ header {
         display: none;
 }
 
-        header {
-                height: 90vh;
-               
-        }
-
-        .headerBody {
-                margin-top: 90px;
-                .wrapper {
-                        p {
-                                font-size: 4vw;
-                                // padding: 0 20px;
-                        
-                                }
-
-                }
-       
-        }
-
-        .about {
-                margin: 50px auto;
-
-                .wrapper {
-                        h2 {
-                                margin: 40px;
-                        }
-                        // margin: 15%;
-                        p {
-                                width: 65%;
-                                padding: 0px 5px;
-                                font-size: 18px;
+.headerBody {
+        // margin-top: 90px;
+        min-height: 65vh;
+        .wrapper {
+                p {
+                        font-size: 4vw;
+                        // padding: 0 20px;
+                
                         }
 
-                }
         }
 
-        .skills {
-                // margin: 5% auto;
-                // padding: 10% 0;
+}
 
-                .wrapper {
-                        display: flex;
-                        flex-direction: column;
-                        .iconGroup {
+.about {
+        margin: 50px auto;
+
+        .wrapper {
+                h2 {
+                        margin: 5%;
+                }
+                // margin: 15%;
+                p {
+                        width: 65%;
+                        padding: 0px 5px;
+                        font-size: 18px;
+                }
+
+        }
+}
+
+.skills {
+        min-height: 65vh;
+
+        .wrapper {
+                .icon {
+                        width: 12%;
+                        align-content: center;
+
+                        .fa-3x {
+                                font-size: 4em;
+                                align-self: center;
+                        }
+
+                        p {
+                                font-size: 1vw;
+                        }
+
+                        img {
                                 width: 70%;
                                 align-self: center;
                         }
-        
-                        .icon {
-                                width: 55px;
-                                margin-top: 15px;
-                                margin-left: 15px;
-                                margin-right: 70px;
-        
-                                .fa-3x {
-                                        font-size: 4em;
-                                }
-        
-                                p {
-                                        font-size: 1vw;
-                                }       
-                        }
-                        .firebaseLogo {
-                                width: 90px
-                        }
-
                 }
-                
         }
+
+}
 
         
 .latestWork {
-        margin: 4vh;
+        min-height: 75vh;
 
         .latest {
                 width: 100%;
+
+                h2 {
+                        margin: 5%;
+                }
 
                 .recent {
                         justify-content: center;
 
                         .project {
-                                width: 325px;
-                                // margin: 5% 5%;
+                                width: 45%;
+                                max-height: 45%;
 
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
+                                        max-height: 50%;
                                 }
 
                                 .projText {
                                         width: 90%;
+                                        min-height: 20%;
                                         margin: 2% 2%;
 
-                                        .description {
-                                                font-size: 0.8rem;
+                                        .stack {
+                                                font-style: italic;
+                                                font-weight: bold;
                                         }
                                 }
 
                                 .linkButton {
-                                        margin-bottom: 5%;
+                                        margin: 0 0 1% 2%;
 
                                         a {
                                                 font-size: 1rem;
@@ -619,7 +689,7 @@ header {
                  }
 
                  .contactForm {
-                         width: 35vw;
+                         width: 45vw;
                          margin: 0;
 
                          p {
@@ -640,9 +710,7 @@ header {
 
 
 @media (min-width: 1200px) {
-h1 {
-        font-size: 5.5em;
-        }
+
 
 h2 {
         font-family: $roboto-bold;
@@ -658,14 +726,14 @@ p {
         display: none;
 }
 
-        header {
-                height: 90vh;
-        }
 .headerBody {
-        margin-top: 100px;
+        min-height: 70vh;
 
         .wrapper {
                 width: 100%;
+                h1 {
+                                font-size: 5.5em;
+                        }
                 p {
                 font-size: 50px;
                 // padding: 0 20px;
@@ -677,12 +745,12 @@ p {
 }
 
 .about {
-        height: 80vh;
+        min-height: 25vh;
 
         .wrapper {
                 justify-content: center;
                 h2 {
-                        margin: 40px;
+                        margin: 5%;
                 }
 
                 // margin: 15%;
@@ -696,21 +764,21 @@ p {
 }
         
 .skills {
-        margin: 5% auto;
-        padding: 0;
-
+        min-height: 60vh;
         .wrapper {
-
                 .icon {
-                        width: 120px;
-                        margin-top: 15px;
-                        margin-left: 15px;
-                        margin-right: 50px;
+                        width:12%;
+                        align-content: center;
                         .fa-3x {
                                 font-size: 4em;
+                                align-self: center;
                         }
                         p {
                                 font-size: 1vw;
+                        }
+                        img {
+                                width: 70%;
+                                align-self: center;
                         }
                 }
         }
@@ -719,38 +787,34 @@ p {
 
         
 .latestWork {
-        margin: 100px;
+        min-height: 75vh;
 
         .latest {
                 width: 100%;
-                padding: 50px auto;
+                margin: 5% auto;
                 h2 {
-                        margin: 0px;
+                        margin: 5%;
                 }
-
                 .recent {
                         justify-content: center;
-
                         .project {
-                                width: 425px;
-                                // margin: 5% 5%;
-
+                                width: 45%;
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
+                                        min-height: 60%;
                                 }
-
                                 .projText {
                                         width: 90%;
+                                        min-height: 20%;
                                         margin: 2% 2%;
                                         .stack {
                                                 font-style: italic;
                                                 font-weight: bold;
                                         }
                                 }
-
                                 .linkButton {
-                                        margin-bottom: 5%;
+                                        margin: 0 0 1% 2%;
 
                                         a {
                                                 font-size: 1rem;
@@ -764,42 +828,41 @@ p {
         }
 }
         
-                .footerSection {
-                        .footFlex {
-                                width: 100%;
-                                // flex-direction: column;
-                                align-items: initial;
-        
-                                .contactMe {
-                                        width: 250px;
-                                        align-items: center;
-        
-                                        h2 {
-                                                font-size: 6vw;
-                                        }
-        
-                                        p {
-                                                width: 90%;
-                                                font-size: 1.3rem;
-                                                margin: 0px;
-                                        }
-        
-                                }
-        
-                                .contactForm {
-                                        width: 35vw;
-                                        margin: 0;
-        
-                                        p {
-                                                font-size: 1.2rem;
-                                                width: 100%;
-        
-        
-                                        }
-                                }
-        
+.footerSection {
+        .footFlex {
+                width: 60%;
+                justify-content: space-between;
+                align-items: initial;
+
+                .contactMe {
+                        width: 15vw;
+                        align-items: center;
+
+                        h2 {
+                                font-size: 6vw;
                         }
-        
+
+                        p {
+                                width: 90%;
+                                font-size: 1.3rem;
+                                margin: 0;
+                        }
+
                 }
+
+                .contactForm {
+                        width: 35vw;
+
+                        p {
+                                font-size: 1.2rem;
+                                width: 100%;
+
+
+                        }
+                }
+
+        }
+
+}
 
 } // *****  end of @media min 1200px *****

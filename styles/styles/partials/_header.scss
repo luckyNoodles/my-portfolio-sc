@@ -19,23 +19,12 @@ nav,
             width: 80%;
             li > a {
                 color: whitesmoke;
+                font-size: 1.2rem;
             }
         }
     }
 
 }
-
-// .topNavBar {
-//         // justify-content: flex-end;
-//     .shareIconsGroup {
-//         .ulShare {
-//             margin: 5px 5px;
-//             li {
-//                 margin: 5px 10px;
-//             }
-//         }
-//     }
-// }
 
 header {
     background-size: cover;
@@ -43,15 +32,16 @@ header {
     background-color: $skills-background;
     color: whitesmoke;
     padding-bottom: 10%;
-    height: 60vh;
+    min-height: 80vh;
 }
 
 .headerBody {
-
+    min-height: 55vh;
     .wrapper {
         display: flex;
         flex-direction: column;
-        margin-top: 5%;
+        align-self: center;
+
             h1 {
                     text-align: center;
                     margin: 20px auto;
@@ -74,9 +64,3 @@ header {
     }
 }
 
-// .contactHeader {
-//     height: 60vh;
-//     p {
-//         display: none;
-//     }
-// }
