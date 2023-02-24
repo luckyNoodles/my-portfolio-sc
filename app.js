@@ -19,6 +19,14 @@ closeMenu.addEventListener('click', function() {
 
 const projects = [
     {
+        preview: './images/podcastPlanner.png',
+        title: 'Podcast Planner',
+        stackUsed: 'React, Sass, Firebase, Axios, Sweet Alerts2, Framer Motion', 
+        description: 'Create your perfect podcast playlist for every walk. Search for podcasts by duration and topic to curate a personalized playlist for your journey.',
+        live: 'https://podcast-planner-app.netlify.app/',
+        code: 'https://github.com/Podcast-Planner/podcast-planner'
+    },
+    {
         preview: './images/news-app.png',
         title: 'Daily NYT Headlines',
         stackUsed: 'React, Sass, CSS Grid, HTML', 
@@ -26,14 +34,14 @@ const projects = [
         live: 'https://daily-times-headlines.netlify.app/',
         code: 'https://github.com/luckyNoodles/my-portfolio-sc'
     },
-    {
-        preview: './images/project-2.png', 
-        title: 'World Cup 2022',
-        stackUsed: 'JavaScript, HTML, CSS, SASS', 
-        description: 'The goal of this project was to create a dynamic stats website. The Fetch AJAX method is used to retrieve JSON data from an external source.',
-        live: 'https://worldcup-app.netlify.app/',
-        code: 'https://github.com/luckyNoodles/project-2/tree/main'
-    },
+    // {
+    //     preview: './images/project-2.png', 
+    //     title: 'World Cup 2022',
+    //     stackUsed: 'JavaScript, HTML, CSS, SASS', 
+    //     description: 'The goal of this project was to create a dynamic stats website. The Fetch AJAX method is used to retrieve JSON data from an external source.',
+    //     live: 'https://worldcup-app.netlify.app/',
+    //     code: 'https://github.com/luckyNoodles/project-2/tree/main'
+    // },
     {
         preview: './images/psd-conversion2.png',
         title: 'Willow\'s Blog',

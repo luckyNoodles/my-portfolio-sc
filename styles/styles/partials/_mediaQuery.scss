@@ -9,7 +9,6 @@
 @media (min-width: 320px) and (max-width: 480px) {
 .wrapper {
         width: 100%;
-       
 }
 
 .hamburger {
@@ -55,9 +54,11 @@ font-size: 5vw;
 }
 
 header {
-        height: 50vh;
+        min-height: 71vh;
 }
+
 .headerBody {
+        min-height: 25vh;
         margin-top: 100px;
         .wrapper {
                 p {
@@ -71,6 +72,7 @@ header {
 .nav {
         position: relative;
         .topNav {
+                line-height: 1.5em;
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
@@ -80,6 +82,7 @@ header {
         }
 
         .mobileNav {
+                line-height: 1.5em;
                 flex-direction: column;
                 position: absolute;
                 width: 100%;
@@ -101,25 +104,34 @@ header {
         }
 }
 
-.skills {
-        .wrapper {
-                width: 100%;
-                .iconGroup {
-                        .icon {
-                                width: 18vw;
-                                margin: 15px 18px;
-                                .fa-brands {
-                                        width: 100%;
-                                }
-                                p {
-                                        font-size: 4vw;
-                                }
-                        }
-                
-                }
 
+.skills {
+
+        min-height: 36vh;
+
+        .wrapper {
+                .icon {
+                        width: 17%;
+                        align-content: center;
+
+                        .fa-3x {
+                                font-size: 4em;
+                                align-self: center;
+                        }
+
+                        p {
+                                font-size: 3vw;
+                        }
+
+                        img {
+                                width: 100%;
+                                align-self: center;
+                        }
+                }
         }
+
 }
+
 .latestWork {
         .project {
                 width: 90vw;
@@ -171,9 +183,6 @@ header {
 @media (min-width: 481px) and (max-width: 767px) {
 .wrapper {
         width: 95%;
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: column;
 }
 
 .hamburger {
@@ -208,6 +217,7 @@ header {
                 position: relative;
         
                 .topNav {
+                        line-height: 1.5em;
                         flex-direction: column;
                         position: absolute;
                         width: 100%;
@@ -219,6 +229,7 @@ header {
                 }
         
                 .mobileNav {
+                        line-height: 1.5em;
                         flex-direction: column;
                         position: absolute;
                         width: 100%;
@@ -232,12 +243,13 @@ header {
 
 }
 
-        header {
-        height: 550px;
+header {
+        min-height: 80vh;
+
 }
 
 .headerBody {
-        margin-top: 120px;
+        min-height: 60vh;
         .wrapper {
                 p {
                 font-size: 5vw;
@@ -261,35 +273,76 @@ header {
 }
 
 .skills {
-        margin: 10% auto;
-        padding: 10% 0;
-       .wrapper {
 
-               .icon {
-                       margin-top: 15px;
-                       margin-left: 15px;
-                       margin-right: 45px;
-                       p {
-                        font-size: 2vw ;
-                       }
-               }
-               .firebaseLogo {
-                width: 90px;
-               }
-       }
-        
+        min-height: 36vh;
+
+        .wrapper {
+                .icon {
+                        width: 25%;
+                        align-content: center;
+
+                        .fa-3x {
+                                font-size: 5em;
+                                align-self: center;
+                        }
+
+                        p {
+                                font-size: 3vw;
+                        }
+
+                        img {
+                                width: 100%;
+                                align-self: center;
+                        }
+                }
+        }
+
 }
 
 
-
-
 .latestWork {
-        margin: 5vh;
+        min-height: 80vh;
+
         .latest {
+                width: 100%;
+                margin: 10% auto;
+
+                h2 {
+                        margin: 5%;
+                }
+
                 .recent {
                         justify-content: center;
+
                         .project {
-                                margin: 5% 5%;
+                                width: 90%;
+                                min-height: 60vh;
+                                .imgContainer {
+                                        width: 90%;
+                                        margin: 5% auto;
+                                        min-height: 55%;
+                                }
+
+                                .projText {
+                                        width: 90%;
+                                        min-height: 20%;
+                                        margin: 2% 2%;
+
+                                        .stack {
+                                                font-style: italic;
+                                                font-size: 0.8rem
+                                        }
+                                }
+
+                                .linkButton {
+                                        margin: 0 0 1% 2%;
+
+                                        a {
+                                                font-size: 1rem;
+                                                width: fit-content;
+
+                                        }
+                                }
                         }
                 }
 
@@ -341,7 +394,7 @@ header {
 }
 
 .headerBody {
-        margin-top: 100px;
+        // margin-top: 100px;
         .wrapper {
                 p {
                         font-size: 30px;
@@ -677,7 +730,7 @@ p {
 }
 
 .about {
-        height: 80vh;
+        min-height: 25vh;
 
         .wrapper {
                 justify-content: center;
@@ -696,21 +749,21 @@ p {
 }
         
 .skills {
-        margin: 5% auto;
-        padding: 0;
-
+        min-height: 36vh;
         .wrapper {
-
                 .icon {
-                        width: 120px;
-                        margin-top: 15px;
-                        margin-left: 15px;
-                        margin-right: 50px;
+                        width:12%;
+                        align-content: center;
                         .fa-3x {
                                 font-size: 4em;
+                                align-self: center;
                         }
                         p {
                                 font-size: 1vw;
+                        }
+                        img {
+                                width: 70%;
+                                align-self: center;
                         }
                 }
         }
@@ -719,38 +772,33 @@ p {
 
         
 .latestWork {
-        margin: 100px;
+        min-height: 75vh;
 
         .latest {
                 width: 100%;
-                padding: 50px auto;
                 h2 {
-                        margin: 0px;
+                        margin: 5%;
                 }
-
                 .recent {
                         justify-content: center;
-
                         .project {
-                                width: 425px;
-                                // margin: 5% 5%;
-
+                                width: 45%;
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
+                                        min-height: 60%;
                                 }
-
                                 .projText {
                                         width: 90%;
+                                        min-height: 20%;
                                         margin: 2% 2%;
                                         .stack {
                                                 font-style: italic;
                                                 font-weight: bold;
                                         }
                                 }
-
                                 .linkButton {
-                                        margin-bottom: 5%;
+                                        margin: 0 0 1% 2%;
 
                                         a {
                                                 font-size: 1rem;
@@ -764,42 +812,42 @@ p {
         }
 }
         
-                .footerSection {
-                        .footFlex {
-                                width: 100%;
-                                // flex-direction: column;
-                                align-items: initial;
-        
-                                .contactMe {
-                                        width: 250px;
-                                        align-items: center;
-        
-                                        h2 {
-                                                font-size: 6vw;
-                                        }
-        
-                                        p {
-                                                width: 90%;
-                                                font-size: 1.3rem;
-                                                margin: 0px;
-                                        }
-        
-                                }
-        
-                                .contactForm {
-                                        width: 35vw;
-                                        margin: 0;
-        
-                                        p {
-                                                font-size: 1.2rem;
-                                                width: 100%;
-        
-        
-                                        }
-                                }
-        
+.footerSection {
+        .footFlex {
+                width: 60%;
+                justify-content: space-between;
+                align-items: initial;
+
+                .contactMe {
+                        width: 15vw;
+                        align-items: center;
+
+                        h2 {
+                                font-size: 6vw;
                         }
-        
+
+                        p {
+                                width: 90%;
+                                font-size: 1.3rem;
+                                margin: 0;
+                        }
+
                 }
+
+                .contactForm {
+                        width: 35vw;
+                        margin: 0;
+
+                        p {
+                                font-size: 1.2rem;
+                                width: 100%;
+
+
+                        }
+                }
+
+        }
+
+}
 
 } // *****  end of @media min 1200px *****

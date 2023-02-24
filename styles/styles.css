@@ -338,9 +338,12 @@ header {
   background-color: #365c46;
   color: whitesmoke;
   padding-bottom: 10%;
-  height: 60vh;
+  min-height: 80vh;
 }
 
+.headerBody {
+  min-height: 55vh;
+}
 .headerBody .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +352,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 5%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .headerBody .wrapper h1 {
   text-align: center;
@@ -728,9 +732,10 @@ header {
     font-size: 5vw;
   }
   header {
-    height: 50vh;
+    min-height: 71vh;
   }
   .headerBody {
+    min-height: 25vh;
     margin-top: 100px;
   }
   .headerBody .wrapper p {
@@ -741,6 +746,7 @@ header {
     position: relative;
   }
   .nav .topNav {
+    line-height: 1.5em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -756,6 +762,7 @@ header {
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .nav .mobileNav {
+    line-height: 1.5em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -778,18 +785,26 @@ header {
     padding: 0px 5px;
     font-size: 4vw;
   }
-  .skills .wrapper {
+  .skills {
+    min-height: 36vh;
+  }
+  .skills .wrapper .icon {
+    width: 17%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .skills .wrapper .icon .fa-3x {
+    font-size: 4em;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .skills .wrapper .icon p {
+    font-size: 3vw;
+  }
+  .skills .wrapper .icon img {
     width: 100%;
-  }
-  .skills .wrapper .iconGroup .icon {
-    width: 18vw;
-    margin: 15px 18px;
-  }
-  .skills .wrapper .iconGroup .icon .fa-brands {
-    width: 100%;
-  }
-  .skills .wrapper .iconGroup .icon p {
-    font-size: 4vw;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .latestWork .project {
     width: 90vw;
@@ -862,6 +877,7 @@ header {
     position: relative;
   }
   .topNavBar .nav .topNav {
+    line-height: 1.5em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -878,6 +894,7 @@ header {
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .topNavBar .nav .mobileNav {
+    line-height: 1.5em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -894,10 +911,10 @@ header {
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   header {
-    height: 550px;
+    min-height: 80vh;
   }
   .headerBody {
-    margin-top: 120px;
+    min-height: 60vh;
   }
   .headerBody .wrapper p {
     font-size: 5vw;
@@ -912,22 +929,35 @@ header {
     font-size: 4vw;
   }
   .skills {
-    margin: 10% auto;
-    padding: 10% 0;
+    min-height: 36vh;
   }
   .skills .wrapper .icon {
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 45px;
+    width: 25%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .skills .wrapper .icon .fa-3x {
+    font-size: 5em;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .skills .wrapper .icon p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
-  .skills .wrapper .firebaseLogo {
-    width: 90px;
+  .skills .wrapper .icon img {
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .latestWork {
-    margin: 5vh;
+    min-height: 80vh;
+  }
+  .latestWork .latest {
+    width: 100%;
+    margin: 10% auto;
+  }
+  .latestWork .latest h2 {
+    margin: 5%;
   }
   .latestWork .latest .recent {
     -webkit-box-pack: center;
@@ -935,7 +965,31 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    margin: 5% 5%;
+    width: 90%;
+    min-height: 60vh;
+  }
+  .latestWork .latest .recent .project .imgContainer {
+    width: 90%;
+    margin: 5% auto;
+    min-height: 55%;
+  }
+  .latestWork .latest .recent .project .projText {
+    width: 90%;
+    min-height: 20%;
+    margin: 2% 2%;
+  }
+  .latestWork .latest .recent .project .projText .stack {
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  .latestWork .latest .recent .project .linkButton {
+    margin: 0 0 1% 2%;
+  }
+  .latestWork .latest .recent .project .linkButton a {
+    font-size: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .footerSection .footFlex {
     width: 95%;
@@ -974,9 +1028,6 @@ header {
   }
   .hamburger {
     display: none;
-  }
-  .headerBody {
-    margin-top: 100px;
   }
   .headerBody .wrapper p {
     font-size: 30px;
@@ -1222,7 +1273,7 @@ header {
     font-size: 50px;
   }
   .about {
-    height: 80vh;
+    min-height: 25vh;
   }
   .about .wrapper {
     -webkit-box-pack: center;
@@ -1238,30 +1289,34 @@ header {
     font-size: 20px;
   }
   .skills {
-    margin: 5% auto;
-    padding: 0;
+    min-height: 36vh;
   }
   .skills .wrapper .icon {
-    width: 120px;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 50px;
+    width: 12%;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .skills .wrapper .icon .fa-3x {
     font-size: 4em;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .skills .wrapper .icon p {
     font-size: 1vw;
   }
+  .skills .wrapper .icon img {
+    width: 70%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
   .latestWork {
-    margin: 100px;
+    min-height: 75vh;
   }
   .latestWork .latest {
     width: 100%;
-    padding: 50px auto;
   }
   .latestWork .latest h2 {
-    margin: 0px;
+    margin: 5%;
   }
   .latestWork .latest .recent {
     -webkit-box-pack: center;
@@ -1269,14 +1324,16 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    width: 425px;
+    width: 45%;
   }
   .latestWork .latest .recent .project .imgContainer {
     width: 90%;
     margin: 5% auto;
+    min-height: 60%;
   }
   .latestWork .latest .recent .project .projText {
     width: 90%;
+    min-height: 20%;
     margin: 2% 2%;
   }
   .latestWork .latest .recent .project .projText .stack {
@@ -1284,7 +1341,7 @@ header {
     font-weight: bold;
   }
   .latestWork .latest .recent .project .linkButton {
-    margin-bottom: 5%;
+    margin: 0 0 1% 2%;
   }
   .latestWork .latest .recent .project .linkButton a {
     font-size: 1rem;
@@ -1293,13 +1350,16 @@ header {
     width: fit-content;
   }
   .footerSection .footFlex {
-    width: 100%;
+    width: 60%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
   }
   .footerSection .footFlex .contactMe {
-    width: 250px;
+    width: 15vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1310,7 +1370,7 @@ header {
   .footerSection .footFlex .contactMe p {
     width: 90%;
     font-size: 1.3rem;
-    margin: 0px;
+    margin: 0;
   }
   .footerSection .footFlex .contactForm {
     width: 35vw;
