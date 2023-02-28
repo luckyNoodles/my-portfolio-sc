@@ -16,19 +16,18 @@ nav,
     z-index: 10;
 }
 
-
 .topNavBar {
     justify-content: space-between;
     .myLogo {
         width: 50%;
         justify-self: left;
-        a {
+            a {
             text-decoration: none;
-
+            display: block;
+            width: fit-content;
             p {
                 font-size: 1.1rem;
                 color: black;
-
                 .dev {
                     color: $button-color;
                 }

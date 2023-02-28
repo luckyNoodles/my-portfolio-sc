@@ -306,6 +306,13 @@ button {
   color: whitesmoke;
 }
 
+@media (hover: none) {
+  .latestWork .project .projText:active {
+    opacity: 0.95;
+    background-color: #b6caa2;
+    color: whitesmoke;
+  }
+}
 nav,
 .topNavBar,
 .nav,
@@ -335,6 +342,10 @@ nav,
 }
 .topNavBar .myLogo a {
   text-decoration: none;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .topNavBar .myLogo a p {
   font-size: 1.1rem;
@@ -804,12 +815,22 @@ header {
     top: 0;
     right: 0;
     text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     background-color: whitesmoke;
     width: 100%;
     z-index: -1;
   }
-  .topNavBar .myLogo p {
+  .topNavBar .myLogo a {
     margin-right: 5%;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .topNavBar .nav {
     position: relative;
@@ -974,12 +995,22 @@ header {
     top: 0;
     right: 0;
     text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     background-color: whitesmoke;
     width: 100%;
     z-index: -1;
   }
-  .topNavBar .myLogo p {
+  .topNavBar .myLogo a {
     margin-right: 5%;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .topNavBar .nav {
     position: relative;
@@ -1172,12 +1203,22 @@ header {
     top: 0;
     right: 0;
     text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     background-color: whitesmoke;
     width: 100%;
     z-index: -1;
   }
-  .topNavBar .myLogo p {
+  .topNavBar .myLogo a {
     margin-right: 5%;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .topNavBar .nav {
     position: relative;
