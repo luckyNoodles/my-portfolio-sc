@@ -19,6 +19,7 @@
         }
     }
     .project {
+        position: relative;
         flex-direction: column;
         justify-content: center;
         background-color: white;
@@ -35,32 +36,48 @@
                 height: 100%;
             }
         }
+        .projText {
+            display: flex;
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5%;
+            h3 {
+                margin: 10px 10px;
+            }
+            .stack {
+                margin: 5px 10px;
+                font-size: .7rem;
+            }
+            .description {
+                margin: 5px 10px;
+                font-size: .9rem;
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+                width: 110px;
+                margin: 50px;
+                padding: 5px;
+                background-color: $button-background;
+                box-shadow: 2px 2px 2px grey;
+            }
+        }
+        // .imgContainer:hover {
+        //     opacity: .1;
+        // }
+        .projText:hover {
+            opacity: .95;
+            background-color: $contact-background;
+            color: whitesmoke;
+            // height: 95%;
+        }
     }
-    .projText {
-        height: 190px;
-        flex-direction: column;
-        h3 {
-            margin: 10px 10px;
-        }
-        .stack {
-            margin: 5px 10px;
-            font-size: .7rem;
-        }
-        .description {
-            margin: 5px 10px;
-            font-size: .9rem;
-        }
-    }
-}
-
-.linkButton > a {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    width: 110px;
-    margin: 10px;
-    padding: 5px;
-    background-color: $button-background;
-    box-shadow: 2px 2px 2px grey;
 }

@@ -13,6 +13,7 @@ nav,
     background-color: whitesmoke;
     position: sticky;
     top: 0%;
+    z-index: 10;
 }
 
 
@@ -25,7 +26,7 @@ nav,
             text-decoration: none;
 
             p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 color: black;
 
                 .dev {
@@ -37,29 +38,26 @@ nav,
     .nav {
         width: 50%;
         justify-self: right;
-        .topNav {
-            justify-content: right;
-            width: 100%;
-            li {
-                margin: 0 8%;
-                
-                a {
-                    color: black;
-                    font-size: 1.2rem;
+            .topNav {
+                justify-content: right;
+                width: 100%;
+                li {
+                    margin: 0 8%;
+                    
+                    a {
+                        color: black;
+                        font-size: 1.2rem;
+                    }
+        
                 }
-    
-            li:hover {
-                transform: scale(1.2);
-                transition: .2s ease-in;
-            }
+                li:hover {
+                    transform: scale(1.2);
+                    transition: .2s ease-in;
+                }
         }
-    }
     }
 
 }
-
-    
-
 
 header {
     background-size: cover;

@@ -81,6 +81,8 @@ const displayProjects = () => {
             projectImage.classList.add('projectImg')
             imageContainer.appendChild(projectImage);
     
+
+
             const projectInfo = document.createElement('div');
             projectInfo.classList.add('projText');
             projectContainer.appendChild(projectInfo);
@@ -101,7 +103,7 @@ const displayProjects = () => {
     
             const linkButtons = document.createElement('div');
             linkButtons.classList.add('linkButton');
-            projectContainer.appendChild(linkButtons);
+            projectInfo.appendChild(linkButtons);
     
             const projectLive = document.createElement('a');
             projectLive.setAttribute('href', project.live);
