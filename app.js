@@ -121,4 +121,14 @@ const displayProjects = () => {
 
 displayProjects();
 
+const touchEffect = document.querySelector('.projText');
+
+touchEffect.addEventListener('touchstart', () => {
+    this.classList.add('active');
+})
+
+touchEffect.addEventListener("touchend", () => {
+  this.classList.remove("active");
+});
+
            

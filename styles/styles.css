@@ -307,7 +307,7 @@ button {
 }
 
 @media (hover: none) {
-  .latestWork .project .projText:active {
+  .latestWork .project .projText.active {
     opacity: 0.95;
     background-color: #b6caa2;
     color: whitesmoke;
