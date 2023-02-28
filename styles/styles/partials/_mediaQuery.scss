@@ -71,11 +71,15 @@ header {
                 top: 0;
                 right: 0;
                 text-align: right;
+                display: flex;
+                justify-content: right;
                 background-color: whitesmoke;
                 width: 100%;
                 z-index: -1;
-                p{
+                a {
                         margin-right: 5%;
+                        display: block;
+                        width: fit-content;
                 }
         }
         .nav {
@@ -234,12 +238,15 @@ header {
                 top: 0;
                 right: 0;
                 text-align: right;
+                display: flex;
+                justify-content: right;
                 background-color: whitesmoke;
                 width: 100%;
                 z-index: -1;
-
-                p {
+                a {
                         margin-right: 5%;
+                        display: block;
+                        width: fit-content;
                 }
         }
 
@@ -449,11 +456,15 @@ header {
                 top: 0;
                 right: 0;
                 text-align: right;
+                display: flex;
+                justify-content: right;
                 background-color: whitesmoke;
                 width: 100%;
                 z-index: -1;
-                p {
+                a {
                         margin-right: 5%;
+                        display: block;
+                        width: fit-content;
                 }
         }
         .nav {
