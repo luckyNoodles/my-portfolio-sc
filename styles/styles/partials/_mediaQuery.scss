@@ -10,56 +10,51 @@
 .wrapper {
         width: 100%;
 }
-
 .hamburger {
         position: relative;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 15px;
         .menu {
                         display: block;
                         position: absolute;
                         top: 5px;
                         left: 5px;
                 }
-        
                 .close {
                         display: block;
                         position: absolute;
                         top: 5px;
                         left: 5px;
                 }
-        
                 .hide {
                         display: none;
                 }
 }
 
-.headerBody{
-        .title {
-                h1 {
-                font-size: 12vw;
-                margin: 65px auto 5px auto;
-                }
-        
-        }
-
-}
-
 h2 {
-font-size: 6.5vw;
+        font-size: 6.5vw;
 }
 
 p {
-font-size: 5vw;
+        font-size: 5vw;
 }
 
 header {
-        min-height: 71vh;
+        min-height: 90vh;
+        display: flex;
+        .headerBody{
+                .title {
+                        h1 {
+                        font-size: 12vw;
+                        margin: 65px auto 5px auto;
+                        }
+                
+                }
+        
+        }
 }
 
 .headerBody {
-        min-height: 25vh;
-        margin-top: 100px;
         .wrapper {
                 p {
                 font-size: 5vw;
@@ -68,27 +63,54 @@ header {
 }
 }
 
-
-.nav {
+.topNavBar {
         position: relative;
-        .topNav {
-                line-height: 1.5em;
-                flex-direction: column;
+        width: 100%;
+        .myLogo {
                 position: absolute;
+                top: 0;
+                right: 0;
+                text-align: right;
+                background-color: whitesmoke;
                 width: 100%;
-                top: 30px;
-                transform: translateX(-165px);
-                transition: transform 0.5s ease-in-out;
+                z-index: -1;
+                p{
+                        margin-right: 5%;
+                }
         }
-
-        .mobileNav {
-                line-height: 1.5em;
-                flex-direction: column;
-                position: absolute;
-                width: 100%;
-                top: 30px;
-                transform: translateX(-50px);
-                transition: transform 0.5s ease-in-out;
+        .nav {
+                position: relative;
+                .topNav {
+                        display: flex;
+                        line-height: 1.5em;
+                        position: absolute;
+                        width: 200%;
+                        top: 30px;
+                        transform: translateX(0%);
+                        transform: translateY(-200%);
+                        transition: transform 0.5s ease-in-out;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        line-height: 2em;
+                        background-color: whitesmoke;
+                        z-index: -2;
+                }
+        
+                .mobileNav {
+                        display: flex;
+                        line-height: 1.5em;
+                        position: absolute;
+                        width: 200%;
+                        top: 30px;
+                        transform: translateX(0%);
+                        transform: translateY(25%);
+                        transition: transform 0.5s ease-in-out;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        line-height: 2em;
+                        background-color: whitesmoke;
+                        z-index: -2;
+                }
         }
 }
 
@@ -100,36 +122,29 @@ header {
                         padding: 0px 5px;
                         font-size: 4vw;
                 }
-
         }
 }
 
 
 .skills {
-
         min-height: 36vh;
-
         .wrapper {
                 .icon {
                         width: 17%;
                         align-content: center;
-
                         .fa-3x {
                                 font-size: 4em;
                                 align-self: center;
                         }
-
                         p {
                                 font-size: 3vw;
                         }
-
                         img {
                                 width: 100%;
                                 align-self: center;
                         }
                 }
         }
-
 }
 
 .latestWork {
@@ -151,25 +166,18 @@ header {
                         h2 {
                                 font-size: 7vw;
                         }
-                        
                 }
                 .contactForm {
                         width: 90vw;
                         margin: 0;
                 }
-                
         }
-
 }
 
 .allRights {
-        // height: 5vh;
         display: flex;
-        // justify-content: space-between;
         align-items: center;
         flex-direction: column;
-
-        // flex-direction: column;
         p {
                 font-size: 0.5rem;
                 line-height: .2rem;
@@ -187,8 +195,8 @@ header {
 
 .hamburger {
         position: relative;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 20px;
 
         .menu {
                 display: block;
@@ -210,59 +218,80 @@ header {
                 
 }
 
-
-
 .topNavBar {
-        .nav {
-                position: relative;
-        
-                .topNav {
-                        line-height: 1.5em;
-                        flex-direction: column;
-                        position: absolute;
-                        width: 100%;
-                        margin-top: 20px;
-                        top: 30px;
-                        transform: translateX(-200px);
-                        transition: transform 0.5s ease-in-out;
-                        
-                }
-        
-                .mobileNav {
-                        line-height: 1.5em;
-                        flex-direction: column;
-                        position: absolute;
-                        width: 100%;
-                        margin-top: 20px;
-                        top: 30px;
-                        transform: translateX(-25px);
-                        transition: transform 0.5s ease-in-out;
-                        
+        position: relative;
+        width: 100%;
+
+        .myLogo {
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-align: right;
+                background-color: whitesmoke;
+                width: 100%;
+                z-index: -1;
+
+                p {
+                        margin-right: 5%;
                 }
         }
 
+        .nav {
+                position: relative;
+
+                .topNav {
+                        display: flex;
+                        line-height: 1.5em;
+                        position: absolute;
+                        width: 200%;
+                        top: 30px;
+                        transform: translateX(0%);
+                        transform: translateY(-200%);
+                        transition: transform 0.5s ease-in-out;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        line-height: 2em;
+                        background-color: whitesmoke;
+                        z-index: -2;
+                }
+
+                .mobileNav {
+                        display: flex;
+                        line-height: 1.5em;
+                        position: absolute;
+                        width: 200%;
+                        top: 30px;
+                        transform: translateX(0%);
+                        transform: translateY(25%);
+                        transition: transform 0.5s ease-in-out;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        line-height: 2em;
+                        background-color: whitesmoke;
+                        z-index: -2;
+                }
+        }
 }
 
 header {
-        min-height: 80vh;
-
-}
-
-.headerBody {
-        min-height: 60vh;
-        .wrapper {
-                p {
-                font-size: 5vw;
-                padding: o 20px;
-                
+        min-height: 95vh;
+        display: flex;
+        .headerBody {
+                .wrapper {
+                        p {
+                        font-size: 5vw;
+                        padding: o 20px;
+                        
+                        }
                 }
         }
+
 }
+
 
 .about {
         margin: 50px auto;
         .wrapper {
-                // margin: 15%;
                 p {
                         width: 100%;
                         padding: 0px 5px;
@@ -384,15 +413,91 @@ header {
 } // *****  end of 481 px to 767px *****
 
 @media (min-width: 768px) and (max-width: 991px) {
+.hamburger {
+        position: relative;
+        top: 20px;
+        left: 20px;
 
-header {
-        height: 80vh;
- }
-           
- .hamburger {
-        display: none;
+        .menu {
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+        }
+
+        .close {
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+        }
+
+        .hide {
+                display: none;
+        }
+
 }
 
+.topNavBar {
+        position: relative;
+        width: 100%;
+        .myLogo {
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-align: right;
+                background-color: whitesmoke;
+                width: 100%;
+                z-index: -1;
+                p {
+                        margin-right: 5%;
+                }
+        }
+        .nav {
+                position: relative;
+                .topNav {
+                        display: flex;
+                        line-height: 1.5em;
+                        // flex-direction: column;
+                        position: absolute;
+                        width: 200%;
+                        top: 30px;
+                        transform: translateX(0%);
+                        transform: translateY(-200%);
+                        transition: transform 0.5s ease-in-out;
+                        // border: 2px solid red;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        line-height: 2em;
+                        background-color: whitesmoke;
+                        z-index: -2;
+                }
+                .mobileNav {
+                        display: flex;
+                        line-height: 1.5em;
+                        // flex-direction: column;
+                        position: absolute;
+                        width: 200%;
+                        top: 30px;
+                        transform: translateX(0%);
+                        transform: translateY(60%);
+                        transition: transform 0.5s ease-in-out;
+                        // border: 2px solid blue;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        line-height: 2em;
+                        background-color: whitesmoke;
+                        z-index: -2;
+                        padding: 0%;
+                }
+        }
+}
+
+header {
+        height: 90vh;
+        display: flex;
+ }
+           
 .headerBody {
 
         .wrapper {
@@ -555,6 +660,12 @@ header {
         }
 .hamburger {
         display: none;
+}
+
+.topNavBar {
+        .myLogo a p {
+                font-size: 1.1rem;
+        }
 }
 
 .headerBody {
