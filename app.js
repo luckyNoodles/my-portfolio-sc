@@ -121,14 +121,15 @@ const displayProjects = () => {
 
 displayProjects();
 
-const touchEffect = document.querySelector('.projText');
+// Get all elements with class "my-class"
+const textOverlay = document.querySelectorAll('.projText');
 
-touchEffect.addEventListener('touchstart', () => {
-    this.classList.add('active');
-})
-
-touchEffect.addEventListener("touchend", () => {
-  this.classList.remove("active");
+// Add touch event listener to each element
+textOverlay.forEach(element => {
+  element.addEventListener('touchend', function() {
+    // Toggle "active" class on element
+    this.classList.toggle('active');
+  });
 });
 
            

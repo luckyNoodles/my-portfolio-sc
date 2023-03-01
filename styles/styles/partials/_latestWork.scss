@@ -79,5 +79,11 @@
             color: whitesmoke;
             // height: 95%;
         }
+        .active {
+            opacity: .95;
+            background-color: $contact-background;
+            color: whitesmoke;
+            // height: 95%;
+        }
     }
 }
