@@ -306,13 +306,12 @@ button {
   color: whitesmoke;
 }
 
-@media (hover: none) {
-  .latestWork .project .projText:active {
-    opacity: 0.95;
-    background-color: #b6caa2;
-    color: whitesmoke;
-  }
+.active {
+  opacity: 0.95;
+  background-color: #b6caa2;
+  color: whitesmoke;
 }
+
 nav,
 .topNavBar,
 .nav,
@@ -568,6 +567,11 @@ header {
           box-shadow: 2px 2px 2px grey;
 }
 .latestWork .project .projText:hover {
+  opacity: 0.95;
+  background-color: #b6caa2;
+  color: whitesmoke;
+}
+.latestWork .project .active {
   opacity: 0.95;
   background-color: #b6caa2;
   color: whitesmoke;

@@ -1,15 +1,16 @@
 @use './variables' as *;
 
-@media (hover: none) {
+// @media (hover: none) {
+//     .projText:active {
+//         opacity: .95;
+//         background-color: $contact-background;
+//         color: whitesmoke;
+//     }
+// }
 
-.latestWork {
-
-        .project {
-            .projText:active {
-                opacity: .95;
-                background-color: $contact-background;
-                color: whitesmoke;
-            }
-        }
-    }
+.active {
+    opacity: .95;
+    background-color: $contact-background;
+    color: whitesmoke;
+    // height: 95%;
 }

@@ -121,4 +121,31 @@ const displayProjects = () => {
 
 displayProjects();
 
-           
+// Get all elements with class "my-class"
+const textOverlay = document.querySelectorAll('.projText');
+
+// Add touch event listener to each element
+// textOverlay.forEach(element => {
+//   element.addEventListener('touchstart', () => {
+//     // Toggle "active" class on element
+//     element.classList.toggle('active');
+//   });
+// });
+
+textOverlay.forEach(element => {
+  let timer;
+  element.addEventListener('touchstart', function() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+      // Remove "active" class on element
+      this.classList.add('active');
+    } else {
+      timer = setTimeout(() => {
+        timer = null;
+        // Toggle "active" class on element
+        this.classList.remove('active');
+      }, 300); 
+    }
+  });
+});
