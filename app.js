@@ -126,9 +126,9 @@ const textOverlay = document.querySelectorAll('.projText');
 
 // Add touch event listener to each element
 textOverlay.forEach(element => {
-  element.addEventListener('touchstart', function() {
+  element.addEventListener('touchstart', () => {
     // Toggle "active" class on element
-    this.classList.toggle('active');
+    element.classList.toggle('active');
   });
 });
 
