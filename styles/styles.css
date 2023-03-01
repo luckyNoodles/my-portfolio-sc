@@ -349,9 +349,15 @@ nav,
 .topNavBar .myLogo a p {
   font-size: 1.1rem;
   color: black;
+  margin: 10%;
 }
 .topNavBar .myLogo a p .dev {
   color: #42a676;
+}
+.topNavBar .myLogo a p .dev:hover {
+  font-size: 1.2rem;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 .topNavBar .nav {
   width: 50%;
@@ -402,7 +408,7 @@ header {
 }
 .headerBody .wrapper h1 {
   text-align: center;
-  margin: 20px auto;
+  margin: 1% auto;
   font-weight: bold;
   text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
@@ -568,12 +574,12 @@ header {
 }
 .latestWork .project .projText:hover {
   opacity: 0.95;
-  background-color: #b6caa2;
+  background-color: #365c46;
   color: whitesmoke;
 }
 .latestWork .project .active {
   opacity: 0.95;
-  background-color: #b6caa2;
+  background-color: #365c46;
   color: whitesmoke;
 }
 
@@ -703,7 +709,7 @@ header {
 }
 
 .copyRights {
-  background-color: #cccccc;
+  background-color: #365c46;
   color: whitesmoke;
 }
 
@@ -720,7 +726,7 @@ header {
           align-items: center;
 }
 .allRights p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-align: center;
   margin: 5px;
 }
