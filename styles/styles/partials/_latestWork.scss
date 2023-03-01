@@ -70,18 +70,15 @@
                 box-shadow: 2px 2px 2px grey;
             }
         }
-        // .imgContainer:hover {
-        //     opacity: .1;
-        // }
         .projText:hover {
             opacity: .95;
-            background-color: $contact-background;
+            background-color: $green-contrast;
             color: whitesmoke;
             // height: 95%;
         }
         .active {
             opacity: .95;
-            background-color: $contact-background;
+            background-color: $green-contrast;
             color: whitesmoke;
             // height: 95%;
         }
