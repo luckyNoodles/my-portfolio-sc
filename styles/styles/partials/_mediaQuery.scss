@@ -305,6 +305,12 @@ header {
 
 .about {
         margin: 50px auto;
+        .wrapper {
+                p {
+                        font-size: 1.1rem;
+                }
+
+        }
 
 }
 
@@ -314,7 +320,7 @@ header {
 
         .wrapper {
                 .icon {
-                        width: 25%;
+                        width: 15%;
                         align-content: center;
 
                         .fa-3x {
@@ -323,7 +329,7 @@ header {
                         }
 
                         p {
-                                font-size: 3vw;
+                                font-size: 2vw;
                         }
 
                         img {
@@ -351,8 +357,8 @@ header {
                         justify-content: center;
 
                         .project {
-                                width: 90%;
-                                min-height: 60vh;
+                                width: 70%;
+                                min-height: 45vh;
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
@@ -363,10 +369,10 @@ header {
                                         width: 98%;
                                         height: 98%;
                                         h3 {
-                                                font-size: 3rem;
+                                                font-size: 1.5rem;
                                         }
                                         .description {
-                                                        font-size: 1.5rem;
+                                                        font-size: 1rem;
                                                 }
 
                                         .stack {
@@ -529,18 +535,18 @@ header {
 }
 
 .about {
-        margin: 50px auto;
+        margin: 5% auto;
 
         .wrapper {
 
                 h2 {
                         margin: 4%;
                 }
-                // p {
-                //         width: 80%;
-                //         padding: 0px 5px;
-                //         font-size: 2vw;
-                // }
+                p {
+                        width: 80%;
+                        padding: 0 2%;
+                        font-size: 1.1rem;
+                }
 
         }
 }
@@ -551,7 +557,7 @@ header {
 
         .wrapper {
                 .icon {
-                        width: 20%;
+                        width: 10%;
                         align-content: center;
 
                         .fa-3x {
@@ -560,7 +566,7 @@ header {
                         }
 
                         p {
-                                font-size: 2vw;
+                                font-size: 0.8rem;
                         }
 
                         img {
@@ -588,12 +594,12 @@ header {
 
                         .project {
                                 width: 45%;
-                                min-height: 55vh;
+                                min-height: 40vh;
 
                                 .imgContainer {
                                         width: 90%;
                                         margin: 5% auto;
-                                        max-height: 47%;
+                                        max-height: 85%;
                                         // border: 1px solid red;
                                 }
 
@@ -602,7 +608,7 @@ header {
                                         height: 98%;
 
                                         h3 {
-                                                font-size: 2rem;
+                                                font-size: 1.5rem;
                                         }
 
                                         .description {
@@ -701,20 +707,12 @@ header {
 }
 
 .about {
-        margin: 50px auto;
-
+        margin: 5% auto;
         .wrapper {
                 h2 {
                         margin: 5%;
                 }
-                // margin: 15%;
-                // p {
-                //         width: 65%;
-                //         padding: 0px 5px;
-                //         font-size: 18px;
-                // }
-
-        }
+}
 }
 
 .skills {
@@ -731,7 +729,7 @@ header {
                         }
 
                         p {
-                                font-size: 1vw;
+                                font-size: 0.8rem;
                         }
 
                         img {
@@ -887,6 +885,9 @@ p {
                 h2 {
                         margin: 5%;
                 }
+                p {
+                        font-size: 1.2rem;
+                }
         }
 }
         
@@ -894,14 +895,14 @@ p {
         min-height: 60vh;
         .wrapper {
                 .icon {
-                        width:12%;
+                        width:15%;
                         align-content: center;
                         .fa-3x {
                                 font-size: 4em;
                                 align-self: center;
                         }
                         p {
-                                font-size: 1vw;
+                                font-size: 1rem;
                         }
                         img {
                                 width: 70%;
