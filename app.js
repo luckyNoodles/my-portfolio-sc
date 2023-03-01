@@ -125,11 +125,27 @@ displayProjects();
 const textOverlay = document.querySelectorAll('.projText');
 
 // Add touch event listener to each element
+// textOverlay.forEach(element => {
+//   element.addEventListener('touchstart', () => {
+//     // Toggle "active" class on element
+//     element.classList.toggle('active');
+//   });
+// });
+
 textOverlay.forEach(element => {
-  element.addEventListener('touchstart', () => {
-    // Toggle "active" class on element
-    element.classList.toggle('active');
+  let timer;
+  element.addEventListener('touchend', function() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+      // Remove "active" class on element
+      this.classList.remove('active');
+    } else {
+      timer = setTimeout(() => {
+        timer = null;
+        // Toggle "active" class on element
+        this.classList.toggle('active');
+      }, 300); // Adjust time in milliseconds for double tap detection
+    }
   });
 });
-
-           
