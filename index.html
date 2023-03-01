@@ -79,74 +79,56 @@
                     <h2>Skills</h2>
                 </div>
                 <div class="iconGroup">
-                    <!-- <div class="group"> -->
                         <div class="icon responsive">
-                            <!-- <i class="fa-brands fa-sass fa-3x"></i> -->
                             <img src="./images/responsive-design.png" alt="logo for responsive design">
                             <p>Responsive Design</p>
                         </div>
                         <div class="icon accessability">
-                            <!-- <i class="fa-brands fa-sass fa-3x"></i> -->
                             <img src="./images/accessability.png" alt="logo for accessability">
                             <p>A11y</p>
                         </div>
                         <div class="icon javaScript">
-                            <!-- <i class="fa-brands fa-square-js --fa-inverse fa-3x"></i> -->
                             <img src="./images/001-js.png" alt="javascript logo">
                             <p>JAVASCRIPT</p>
                         </div>
                         <div class="icon react">
-                            <!-- <i class="fa-brands fa-react fa-3x"></i> -->
                             <img src="./images/005-atom.png" alt="React logo">
                             <P>REACT</P>
                         </div>
                         <div class="icon html">
-                            <!-- <i class="fa-brands fa-html5 fa-3x"></i> -->
                             <img src="./images/002-html-5.png" alt="html logo">
-                            <!-- <p>HTML</p> -->
                         </div>
                         <div class="icon css">
-                            <!-- <i class="fa-brands fa-css3 fa-3x"></i> -->
                             <img src="./images/css-3.png" alt="CSS logo">
-                            <!-- <p>CSS</p> -->
                         </div>
                         <div class="icon Sass">
-                            <!-- <i class="fa-brands fa-sass fa-3x"></i> -->
                             <img src="./images/sass.png" alt="">
                             <p>SASS</p>
                         </div>
-                    <!-- </div>  -->
-                    <!-- <div class="group"> -->
                         <div class="icon firebase">
                             <img src="./images/icons8-google-firebase-console-96.png" class="firebaseLogo" alt="logo for firebase">
                             <P>FIREBASE</P>
                         </div>
                         <div class="icon git">
-                            <!-- <i class="fa-brands fa-github fa-3x"></i> -->
                             <img src="./images/merge.png" alt="git logo">
                             <p>GIT</p>
                         </div>
                         <div class="icon gitHub">
-                            <!-- <i class="fa-brands fa-github fa-3x"></i> -->
                             <img src="./images/007-github.png" alt="github logo">
                             <p>GITHUB</p>
                         </div>
                         <div class="icon">
-                            <!-- <i class="fa-brands fa-confluence fa-3x"></i> -->
                             <img src="./images/009-confluence.png" alt="atlassian confluence logo">
                             <p>CONFLUENCE</p>
                         </div>
                         <div class="icon">
-                            <!-- <i class="fa-brands fa-jira fa-3x"></i> -->
                             <img src="./images/010-jira.png" alt="Atlassian Jira logo">
                             <p>JIRA</p>
                         </div>
                         <div class="icon">
-                            <!-- <i class="fa-brands fa-bitbucket fa-3x"></i> -->
                             <img src="./images/008-bitbucket.png" alt="Atlassian bitbucket logo">
                             <p>BITBUCKET</p>
                         </div>
-                    <!-- </div> -->
                 </div>
             </div>
         </section>
@@ -168,23 +150,23 @@
             <div class="shareIconsGroup">
                 <ul class="ulShare">
                     <li>
-                        <a href="https://www.linkedin.com/in/scott-cheung/">
+                        <a href="https://www.linkedin.com/in/scott-cheung/" aria-label="icon for LinkedIn" role="hyperlink">
                             <i class="fa-brands fa-linkedin-in navIcons"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/luckyNoodles">
+                        <a href="https://github.com/luckyNoodles" aria-label="icon for GitHub repository" role="hyperlink">
                             <i class="fa-brands fa-github navIcons"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:scott@scottcheung.dev">
+                        <a href="mailto:scott@scottcheung.dev" aria-label="icon for email" role="hyperlink">
                             <i class="fa-regular fa-envelope navIcons"></i>
                         </a>
             
                     </li>
                     <li>
-                        <a href="https://medium.com/@scott-cheung">
+                        <a href="https://medium.com/@scott-cheung" aria-label="icon for blog hosted on Medium" role="hyperlink">
                             <i class="fa-brands fa-medium navIcons"></i>
                         </a>
             
@@ -195,17 +177,17 @@
             <div class="contactForm">
                 <form name="contact" method="POST" data-netlify="true">
                     <p>
-                        <label>Your Name:</label>
-                        <input type="text" name="name" class="userInput" />
+                        <label for="userNameInput">Your Name:</label>
+                        <input type="text" id="userNameInput"  name="name" class="userInput" />
                     </p>
                     <p>
-                        <label>Your Email:
-                            <input type="email" name="email" class="userInput" />
+                        <label for="userEmailInput">Your Email:
+                            <input type="email" id="userEmailInput" name="email" class="userInput" />
                         </label>
                     </p>
                    
                     <p>
-                        <label>Message: <textarea name="message" class="userInput"></textarea></label>
+                        <label for="userMessageInput">Message: <textarea id="userMessageInput" name="message" class="userInput"></textarea></label>
                     </p>
                     <p>
                         <button type="submit" class="contactButton">Send</button>
