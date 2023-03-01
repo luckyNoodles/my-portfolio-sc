@@ -134,18 +134,18 @@ const textOverlay = document.querySelectorAll('.projText');
 
 textOverlay.forEach(element => {
   let timer;
-  element.addEventListener('touchend', function() {
+  element.addEventListener('touchstart', function() {
     if (timer) {
       clearTimeout(timer);
       timer = null;
       // Remove "active" class on element
-      this.classList.remove('active');
+      this.classList.add('active');
     } else {
       timer = setTimeout(() => {
         timer = null;
         // Toggle "active" class on element
-        this.classList.toggle('active');
-      }, 300); // Adjust time in milliseconds for double tap detection
+        this.classList.remove('active');
+      }, 300); 
     }
   });
 });
