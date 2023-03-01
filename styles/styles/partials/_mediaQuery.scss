@@ -107,13 +107,14 @@ header {
                         width: 200%;
                         top: 30px;
                         transform: translateX(0%);
-                        transform: translateY(20%);
+                        transform: translateY(0%);
                         transition: transform 0.5s ease-in-out;
                         justify-content: center;
                         flex-wrap: wrap;
                         line-height: 2em;
                         background-color: whitesmoke;
                         z-index: -2;
+                        padding: 5%;
                 }
         }
 }
@@ -276,13 +277,14 @@ header {
                         width: 200%;
                         top: 30px;
                         transform: translateX(0%);
-                        transform: translateY(20%);
+                        transform: translateY(5%);
                         transition: transform 0.5s ease-in-out;
                         justify-content: center;
                         flex-wrap: wrap;
                         line-height: 2em;
                         background-color: whitesmoke;
                         z-index: -2;
+                        padding: 5%;
                 }
         }
 }
@@ -500,7 +502,7 @@ header {
                         width: 200%;
                         top: 30px;
                         transform: translateX(0%);
-                        transform: translateY(40%);
+                        transform: translateY(5%);
                         transition: transform 0.5s ease-in-out;
                         // border: 2px solid blue;
                         justify-content: center;
@@ -508,7 +510,7 @@ header {
                         line-height: 2em;
                         background-color: whitesmoke;
                         z-index: -2;
-                        padding: 0%;
+                        padding: 5%;
                 }
         }
 }

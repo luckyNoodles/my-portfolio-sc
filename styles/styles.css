@@ -349,7 +349,7 @@ nav,
 .topNavBar .myLogo a p {
   font-size: 1.1rem;
   color: black;
-  margin: 10%;
+  margin: 15% 5% 10% 0%;
 }
 .topNavBar .myLogo a p .dev {
   color: #42a676;
@@ -880,8 +880,8 @@ header {
     top: 30px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -894,6 +894,7 @@ header {
     line-height: 2em;
     background-color: whitesmoke;
     z-index: -2;
+    padding: 5%;
   }
   .about {
     margin: 50px auto;
@@ -1060,8 +1061,8 @@ header {
     top: 30px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -1074,6 +1075,7 @@ header {
     line-height: 2em;
     background-color: whitesmoke;
     z-index: -2;
+    padding: 5%;
   }
   header {
     min-height: 95vh;
@@ -1271,8 +1273,8 @@ header {
     top: 30px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -1285,7 +1287,7 @@ header {
     line-height: 2em;
     background-color: whitesmoke;
     z-index: -2;
-    padding: 0%;
+    padding: 5%;
   }
   header {
     height: 90vh;
