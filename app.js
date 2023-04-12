@@ -18,6 +18,14 @@ closeMenu.addEventListener('click', function() {
 
 
 const projects = [
+   {
+        preview: './images/news-app.png',
+        title: 'Daily NYT Headlines',
+        stackUsed: 'React, Sass, CSS Grid, HTML', 
+        description: 'The goal of this project was to create a functional React app. CSS Grid and Flexbox were used for the layout and each content section is fetched from the NYT Headline API\'s.',
+        live: 'https://daily-times-headlines.netlify.app/',
+        code: 'https://github.com/luckyNoodles/my-portfolio-sc'
+    },
     {
         preview: './images/podcastPlanner.png',
         title: 'Podcast Planner',
@@ -27,37 +35,29 @@ const projects = [
         code: 'https://github.com/Podcast-Planner/podcast-planner'
     },
     {
-        preview: './images/news-app.png',
-        title: 'Daily NYT Headlines',
-        stackUsed: 'React, Sass, CSS Grid, HTML', 
-        description: 'The goal of this project was to create a functional React app. CSS Grid and Flexbox were used for the layout and each content section is fetched from the NYT Headline API\'s.',
-        live: 'https://daily-times-headlines.netlify.app/',
-        code: 'https://github.com/luckyNoodles/my-portfolio-sc'
+        preview: './images/project-2.png', 
+        title: 'World Cup 2022',
+        stackUsed: 'JavaScript, HTML, CSS, SASS', 
+        description: 'The goal of this project was to create a dynamic stats website. The Fetch AJAX method is used to retrieve JSON data from an external source.',
+        live: 'https://worldcup-app.netlify.app/',
+        code: 'https://github.com/luckyNoodles/project-2/tree/main'
     },
     // {
-    //     preview: './images/project-2.png', 
-    //     title: 'World Cup 2022',
-    //     stackUsed: 'JavaScript, HTML, CSS, SASS', 
-    //     description: 'The goal of this project was to create a dynamic stats website. The Fetch AJAX method is used to retrieve JSON data from an external source.',
-    //     live: 'https://worldcup-app.netlify.app/',
-    //     code: 'https://github.com/luckyNoodles/project-2/tree/main'
+    //     preview: './images/psd-conversion2.png',
+    //     title: 'Willow\'s Blog',
+    //     stackUsed: 'HTML, CSS, SASS',
+    //     description: 'The was a PSD conversion project using HTML, CSS and SASS. The website is fully responsive and compatible with all modern web browsers.',
+    //     live: 'https://psdconversion-html-css.netlify.app/',
+    //     code: 'https://github.com/luckyNoodles/scottCheung-assigment2'
     // },
-    {
-        preview: './images/psd-conversion2.png',
-        title: 'Willow\'s Blog',
-        stackUsed: 'HTML, CSS, SASS',
-        description: 'The was a PSD conversion project using HTML, CSS and SASS. The website is fully responsive and compatible with all modern web browsers.',
-        live: 'https://psdconversion-html-css.netlify.app/',
-        code: 'https://github.com/luckyNoodles/scottCheung-assigment2'
-    },
-    {
-        preview: './images/psd-conversion1.png',
-        title: 'Galass Handbags',
-        stackUsed: 'HTML, CSS', 
-        description: 'The goal of this project was to convert a PSD (Photoshop) file into a static website that is responsive using only HTML and CSS.',
-        live: 'https://psd-conversion1.netlify.app/',
-        code: 'https://github.com/luckyNoodles/assignment-one-scott-cheung'
-    }
+    // {
+    //     preview: './images/psd-conversion1.png',
+    //     title: 'Galass Handbags',
+    //     stackUsed: 'HTML, CSS', 
+    //     description: 'The goal of this project was to convert a PSD (Photoshop) file into a static website that is responsive using only HTML and CSS.',
+    //     live: 'https://psd-conversion1.netlify.app/',
+    //     code: 'https://github.com/luckyNoodles/assignment-one-scott-cheung'
+    // }
     
 ]
 
