@@ -16,19 +16,21 @@
         .recent {
             flex-wrap: wrap;
             justify-content: space-between;
+            flex-direction: column;
+            align-content: center;
         }
     }
     .project {
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         background-color: white;
         box-shadow: 7px 7px 3px grey;
-        width: 440px;
+        width: 60%;
         margin: 2% 15px;
         .imgContainer {
             width: 90%;
-            margin: 5px auto;
+            margin: 2%;
             align-items: center;
             box-shadow: 5px 5px 3px grey;
             img{
@@ -38,20 +40,22 @@
         }
         .projText {
             display: flex;
-            position: absolute;
-            top: 1%;
-            left: 1%;
-            opacity: 0;
+            // position: absolute;
+            // top: 1%;
+            // left: 1%;
+            // opacity: 0;
             width: 100%;
             height: 100%;
             flex-direction: column;
             justify-content: center;
             padding: 5%;
+            margin: 2%;
+            transition: .5s ease-in-out;
             h3 {
                 margin: 10px 10px;
             }
             .stack {
-                margin: 5px 10px;
+                margin: 20px 10px;
                 font-size: .7rem;
             }
             .description {
@@ -74,6 +78,7 @@
             opacity: .95;
             background-color: $green-contrast;
             color: whitesmoke;
+            margin: 2%;
             // height: 95%;
         }
         .active {
