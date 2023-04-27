@@ -894,24 +894,11 @@ p {
 }
         
 .skills {
-        min-height: 60vh;
-        .wrapper {
-                .icon {
-                        width:15%;
-                        align-content: center;
-                        .fa-3x {
-                                font-size: 4em;
-                                align-self: center;
-                        }
-                        p {
-                                font-size: 1rem;
-                        }
-                        img {
-                                width: 70%;
-                                align-self: center;
-                        }
-                }
-        }
+        // height: 100vh;
+        // .wrapper {
+        //         padding: 2%;
+                
+        // }
         
 }
 
@@ -921,9 +908,9 @@ p {
 
         .latest {
                 width: 100%;
-                margin: 5% auto;
+                margin: 1% auto;
                 h2 {
-                        margin: 5%;
+                        margin: 3%;
                 }
                 .recent {
                         justify-content: center;

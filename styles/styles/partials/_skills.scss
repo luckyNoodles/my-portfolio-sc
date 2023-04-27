@@ -1,36 +1,44 @@
 @use 'variables' as *;
 
-.skills,
-.iconGroup,
-.icon,
-.group {
+.skills {
     display: flex;
     justify-content: center;
-    
-}
-.skills {
-    background-color: $skills-background;
+    background-color: $green-contrast;
+    height: 50vh;
     .wrapper {
+        display: flex;
         padding: 5%;
-        h2 {
-            text-align: center;
-            color: whitesmoke;
-            margin-bottom: 5%;
-            justify-content: center;
-        }
-        .iconGroup {
-            flex-wrap: wrap;
-        }
-        .icon {
-            width: 5vw;
-            flex-direction: column;
-            margin: 15px 35px;
-            p {
+        .skillTitle {
+            width: 30%;
+            h2 {
                 text-align: center;
                 color: whitesmoke;
-                font-size: 1vw;
+                margin-bottom: 5%;
+                justify-content: center;
             }
         }
+        .skillsList {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            .skillItems {
+                width: 30%;
+                li {
+                    margin-bottom: 25px;
+                    background-color: whitesmoke;
+                    border-radius: 15px;
+                    justify-content: center;
+                    width: 80%;
+                    text-align: center;
+                    height: 40px;
+                    padding: 3%;
+                }
+            }
+
+        }
+
     }
 }
 

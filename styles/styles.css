@@ -403,12 +403,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
+}
+.headerBody .wrapper .myPhoto {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.headerBody .wrapper .myPhoto img {
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid whitesmoke;
 }
 .headerBody .wrapper h1 {
   text-align: center;
@@ -417,37 +423,37 @@ header {
   text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 .headerBody .wrapper p {
-  width: 80%;
   font-size: 3vw;
   font-weight: bold;
   text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
   text-align: center;
-  margin: 10px auto;
+  margin: 1%;
 }
 .headerBody .wrapper p span:hover {
   color: #db9999;
   font-size: 1.1em;
 }
 
-.skills,
-.iconGroup,
-.icon,
-.group {
+.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.skills {
-  background-color: #cccccc;
+  background-color: #365c46;
+  height: 50vh;
 }
 .skills .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5%;
 }
-.skills .wrapper h2 {
+.skills .wrapper .skillTitle {
+  width: 30%;
+}
+.skills .wrapper .skillTitle h2 {
   text-align: center;
   color: whitesmoke;
   margin-bottom: 5%;
@@ -455,22 +461,31 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.skills .wrapper .iconGroup {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.skills .wrapper .skillsList {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.skills .wrapper .icon {
-  width: 5vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 15px 35px;
+.skills .wrapper .skillsList .skillItems {
+  width: 30%;
 }
-.skills .wrapper .icon p {
+.skills .wrapper .skillsList .skillItems li {
+  margin-bottom: 25px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
   text-align: center;
-  color: whitesmoke;
-  font-size: 1vw;
+  height: 40px;
+  padding: 3%;
 }
 
 .firebase img {
@@ -524,8 +539,8 @@ header {
   background-color: white;
   -webkit-box-shadow: 7px 7px 3px grey;
           box-shadow: 7px 7px 3px grey;
-  width: 60%;
-  margin: 2% 15px;
+  width: 55%;
+  margin: 1% auto;
 }
 .latestWork .project .imgContainer {
   width: 90%;
@@ -617,16 +632,6 @@ header {
           align-items: center;
   margin: 5% auto;
 }
-.about .wrapper .myPhoto {
-  width: 30%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.about .wrapper .myPhoto img {
-  width: 100%;
-  border-radius: 50%;
-}
 .about .wrapper h2 {
   margin: 7px;
 }
@@ -676,7 +681,7 @@ header {
   text-align: left;
 }
 .footerSection .contactMe p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .footerSection .ulShare {
   display: -webkit-box;
@@ -1567,36 +1572,15 @@ header {
   .about .wrapper p {
     font-size: 1.2rem;
   }
-  .skills {
-    min-height: 60vh;
-  }
-  .skills .wrapper .icon {
-    width: 15%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .skills .wrapper .icon .fa-3x {
-    font-size: 4em;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .skills .wrapper .icon p {
-    font-size: 1rem;
-  }
-  .skills .wrapper .icon img {
-    width: 70%;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
   .latestWork {
     min-height: 75vh;
   }
   .latestWork .latest {
     width: 100%;
-    margin: 5% auto;
+    margin: 1% auto;
   }
   .latestWork .latest h2 {
-    margin: 5%;
+    margin: 3%;
   }
   .latestWork .latest .recent {
     -webkit-box-pack: center;
