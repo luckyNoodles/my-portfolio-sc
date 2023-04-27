@@ -849,7 +849,7 @@ header {
 
 h2 {
         font-family: $roboto-bold;
-        font-size: 3em;
+        // font-size: 3em;
 }
 
 p {
@@ -893,14 +893,7 @@ p {
         }
 }
         
-.skills {
-        // height: 100vh;
-        // .wrapper {
-        //         padding: 2%;
-                
-        // }
-        
-}
+
 
         
 .latestWork {
@@ -964,9 +957,9 @@ p {
                         width: 15vw;
                         align-items: center;
 
-                        h2 {
-                                font-size: 6vw;
-                        }
+                        // h2 {
+                        //         font-size: 6vw;
+                        // }
 
                         p {
                                 width: 90%;

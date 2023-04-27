@@ -265,8 +265,9 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 5.5vw;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 4.3rem;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(81, 67, 21, 0.8);
 }
@@ -1537,7 +1538,6 @@ header {
 @media (min-width: 1200px) {
   h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 3em;
   }
   p {
     font-size: 2vw;
@@ -1624,9 +1624,6 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .footerSection .footFlex .contactMe h2 {
-    font-size: 6vw;
   }
   .footerSection .footFlex .contactMe p {
     width: 90%;
