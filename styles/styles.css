@@ -565,7 +565,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 97%;
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -607,11 +607,6 @@ header {
   background-color: #365c46;
   color: whitesmoke;
   margin: 2%;
-}
-.latestWork .project .active {
-  opacity: 0.95;
-  background-color: #365c46;
-  color: whitesmoke;
 }
 
 .about,
@@ -822,7 +817,7 @@ header {
     display: none;
   }
   h2 {
-    font-size: 6.5vw;
+    font-size: 2rem;
   }
   p {
     font-size: 5vw;
@@ -837,7 +832,16 @@ header {
     font-size: 12vw;
     margin: 65px auto 5px auto;
   }
-  .headerBody .wrapper p {
+  .headerBody .headerBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .headerBody .headerBlock .myPhoto img {
+    width: 75%;
+  }
+  .headerBody .headerBlock p {
     font-size: 5vw;
     padding: o 20px;
   }
@@ -930,35 +934,56 @@ header {
     font-size: 1rem;
   }
   .skills {
-    min-height: 36vh;
+    height: 80vh;
   }
-  .skills .wrapper .icon {
-    width: 17%;
-    -ms-flex-line-pack: center;
-        align-content: center;
+  .skills .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .skills .wrapper .icon .fa-3x {
-    font-size: 4em;
-    -ms-flex-item-align: center;
-        align-self: center;
+  .skills .wrapper .skillsList {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .skills .wrapper .icon p {
-    font-size: 3vw;
-  }
-  .skills .wrapper .icon img {
+  .skills .wrapper .skillsList .skillItems {
     width: 100%;
-    -ms-flex-item-align: center;
-        align-self: center;
+    margin: 2%;
+  }
+  .skills .wrapper .skillsList .skillItems li {
+    margin-bottom: 5px;
+    width: 85%;
+    height: 30px;
+    padding: 2%;
+    background-color: transparent;
+    text-align: left;
+    color: whitesmoke;
+    list-style: disc;
   }
   .latestWork .project {
     width: 90vw;
     margin: 5% 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .latestWork .projText {
-    height: auto;
+  .latestWork .project .imgContainer {
+    width: 95%;
   }
-  .latestWork .projText .linkButton a {
-    margin: 5% 0 0 10%;
+  .latestWork .project .projText {
+    padding: 1%;
+  }
+  .latestWork .project .projText .stack {
+    margin: 10px 10px;
+  }
+  .latestWork .project .projText .linkButton a {
+    margin: 5% 0 5% 10%;
     width: 35%;
     padding: 0;
   }
@@ -973,11 +998,14 @@ header {
     margin: 0;
   }
   .footerSection .footFlex .contactMe h2 {
-    font-size: 7vw;
+    font-size: 2.7rem;
+  }
+  .footerSection .footFlex .contactMe .contactMeText {
+    margin-top: 10%;
   }
   .footerSection .footFlex .contactForm {
-    width: 90vw;
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
   }
   .allRights {
     display: -webkit-box;
@@ -1002,9 +1030,15 @@ header {
   .wrapper {
     width: 95%;
   }
+  h2 {
+    font-size: 3rem;
+    -ms-flex-item-align: start;
+        align-self: start;
+    padding-left: 5%;
+  }
   .hamburger {
     position: relative;
-    top: 20px;
+    top: 8px;
     left: 20px;
   }
   .hamburger .menu {
@@ -1086,8 +1120,8 @@ header {
     top: 30px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -1108,7 +1142,18 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
-  header .headerBody .wrapper p {
+  header .headerBody .headerBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .headerBody .headerBlock .myPhoto {
+    width: 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  header .headerBody .headerBlock p {
     font-size: 5vw;
     padding: o 20px;
   }
@@ -1119,68 +1164,61 @@ header {
     font-size: 1.1rem;
   }
   .skills {
-    min-height: 36vh;
+    height: 90vh;
   }
-  .skills .wrapper .icon {
-    width: 15%;
-    -ms-flex-line-pack: center;
-        align-content: center;
+  .skills .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .skills .wrapper .icon .fa-3x {
-    font-size: 5em;
-    -ms-flex-item-align: center;
-        align-self: center;
+  .skills .wrapper .skillsList {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .skills .wrapper .icon p {
-    font-size: 2vw;
-  }
-  .skills .wrapper .icon img {
+  .skills .wrapper .skillsList .skillItems {
     width: 100%;
-    -ms-flex-item-align: center;
-        align-self: center;
+    margin: 2%;
   }
-  .latestWork {
-    min-height: 80vh;
-  }
-  .latestWork .latest {
-    width: 100%;
-    margin: 10% auto;
+  .skills .wrapper .skillsList .skillItems li {
+    margin-bottom: 5px;
+    width: 85%;
+    height: 30px;
+    padding: 2%;
+    background-color: transparent;
+    text-align: left;
+    color: whitesmoke;
+    list-style: disc;
   }
   .latestWork .latest h2 {
-    margin: 5%;
+    margin: 10% 0 5% 0;
   }
-  .latestWork .latest .recent {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .latestWork .project {
+    width: 80vw;
+    margin: 5% 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .latestWork .latest .recent .project {
-    width: 70%;
-    min-height: 45vh;
+  .latestWork .project .imgContainer {
+    width: 95%;
   }
-  .latestWork .latest .recent .project .imgContainer {
-    width: 90%;
-    margin: 5% auto;
-    min-height: 55%;
+  .latestWork .project .projText {
+    padding: 1%;
   }
-  .latestWork .latest .recent .project .projText {
-    width: 98%;
-    height: 98%;
+  .latestWork .project .projText .stack {
+    margin: 10px 10px;
   }
-  .latestWork .latest .recent .project .projText h3 {
-    font-size: 1.5rem;
-  }
-  .latestWork .latest .recent .project .projText .description {
-    font-size: 1rem;
-  }
-  .latestWork .latest .recent .project .projText .stack {
-    font-style: italic;
-    font-size: 1rem;
-  }
-  .latestWork .latest .recent .project .linkButton a {
-    margin: 5% 0 0 10%;
+  .latestWork .project .projText .linkButton a {
+    margin: 5% 0 5% 10%;
     width: 35%;
-    padding: 2%;
+    padding: 0;
   }
   .footerSection .footFlex {
     width: 95%;
@@ -1199,10 +1237,12 @@ header {
             align-items: center;
   }
   .footerSection .footFlex .contactMe h2 {
-    font-size: 7vw;
+    font-size: 3rem;
+    padding: 0;
   }
-  .footerSection .footFlex .contactMe p {
+  .footerSection .footFlex .contactMe .contactMeText {
     width: 100%;
+    margin: 10% 0 0 0;
   }
   .footerSection .footFlex .contactForm {
     width: 95vw;
@@ -1216,7 +1256,7 @@ header {
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger {
     position: relative;
-    top: 20px;
+    top: 5px;
     left: 20px;
   }
   .hamburger .menu {
@@ -1298,8 +1338,8 @@ header {
     top: 30px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
