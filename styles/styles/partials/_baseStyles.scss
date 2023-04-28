@@ -1,17 +1,16 @@
 @use './variables' as *;
 html {
     scroll-behavior: smooth;
+    background-color: whitesmoke;
+    font-size: 125%;
+    font-family: $nunito-font;
 }
 .wrapper {
     max-width: 1920px;
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
 }
 
-html {
-    background-color: whitesmoke;
-    font-size: 125%;
-}
 
 li {
     list-style: none;

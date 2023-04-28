@@ -847,14 +847,14 @@ header {
 @media (min-width: 1200px) {
 
 
-h2 {
-        font-family: $roboto-bold;
-        // font-size: 3em;
-}
+// h2 {
+//         font-family: $roboto-bold;
+//         font-size: 3em;
+// }
 
 p {
         font-size: 2vw;
-        font-family: $lora-font;
+        font-family: $nunito-font;
         }
 
 .hamburger {
@@ -862,10 +862,10 @@ p {
 }
 
 .headerBody {
-        min-height: 70vh;
+        // min-height: 70vh;
 
         .wrapper {
-                width: 100%;
+                // width: 100%;
                 h1 {
                                 font-size: 5.5em;
                         }
@@ -884,9 +884,9 @@ p {
 
         .wrapper {
                 justify-content: center;
-                h2 {
-                        margin: 5%;
-                }
+                // h2 {
+                //         margin: 5%;
+                // }
                 p {
                         font-size: 1.2rem;
                 }
@@ -900,13 +900,13 @@ p {
         min-height: 75vh;
 
         .latest {
-                width: 100%;
-                margin: 1% auto;
-                h2 {
-                        margin: 3%;
-                }
+                // width: 100%;
+                // margin: 1% auto;
+                // h2 {
+                //         margin: 3%;
+                // }
                 .recent {
-                        justify-content: center;
+                        // justify-content: center;
                         .project {
                                 // width: 45%;
                                 .imgContainer {
@@ -961,11 +961,7 @@ p {
                         //         font-size: 6vw;
                         // }
 
-                        p {
-                                width: 90%;
-                                font-size: 1.3rem;
-                                margin: 0;
-                        }
+                        
 
                 }
 
