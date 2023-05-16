@@ -289,9 +289,10 @@ html {
   margin: 0 auto;
 }
 
-li {
+ul {
   list-style: none;
 }
+
 li a {
   text-decoration: none;
 }
@@ -440,13 +441,19 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #365c46;
-  height: 50vh;
 }
 .skills .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .skills .wrapper .skillTitle {
   width: 30%;
@@ -460,21 +467,14 @@ header {
           justify-content: center;
 }
 .skills .wrapper .skillsList {
-  width: 100%;
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.skills .wrapper .skillsList .skillItems {
-  width: 30%;
 }
 .skills .wrapper .skillsList .skillItems li {
   margin-bottom: 25px;
@@ -483,10 +483,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 85%;
   text-align: center;
-  height: 40px;
   padding: 3%;
+  width: 230px;
+}
+.skills .wrapper .skillsList .skillItems li p {
+  white-space: nowrap;
+  font-size: clamp(11px, 3vw, 24px);
+  margin: 0;
 }
 
 .firebase img {
@@ -505,19 +509,16 @@ header {
 
 .latestWork {
   background-color: #f8f4f3;
-  padding: 5% 0;
+  padding: 2% 0;
 }
 .latestWork .latest {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-.latestWork .latest h2 {
-  margin-left: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .latestWork .latest .recent {
   -ms-flex-wrap: wrap;
@@ -529,8 +530,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: start;
-      align-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .latestWork .project {
   position: relative;
@@ -546,7 +547,6 @@ header {
           box-shadow: 7px 7px 3px grey;
   width: 75%;
   margin-bottom: 3%;
-  margin-left: 10%;
 }
 .latestWork .project .imgContainer {
   width: 90%;
@@ -566,7 +566,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 97%;
-  height: 100%;
+  height: 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -606,6 +606,7 @@ header {
   opacity: 0.95;
   background-color: #365c46;
   color: whitesmoke;
+  padding: 5%;
   margin: 2%;
 }
 
@@ -839,7 +840,7 @@ header {
             flex-direction: column-reverse;
   }
   .headerBody .headerBlock .myPhoto img {
-    width: 75%;
+    width: 55%;
   }
   .headerBody .headerBlock p {
     font-size: 5vw;
@@ -934,13 +935,16 @@ header {
     font-size: 1rem;
   }
   .skills {
-    height: 80vh;
+    height: 90vh;
   }
   .skills .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .skills .wrapper .skillsList {
     -webkit-box-align: start;
@@ -953,17 +957,18 @@ header {
   }
   .skills .wrapper .skillsList .skillItems {
     width: 100%;
-    margin: 2%;
+    margin: 0%;
+    padding: 0;
   }
   .skills .wrapper .skillsList .skillItems li {
     margin-bottom: 5px;
-    width: 85%;
-    height: 30px;
+    width: 250px;
+    height: 35px;
     padding: 2%;
-    background-color: transparent;
-    text-align: left;
-    color: whitesmoke;
-    list-style: disc;
+    text-align: center;
+  }
+  .skills .wrapper .skillsList .skillItems li p {
+    font-size: 5vw;
   }
   .latestWork .project {
     width: 90vw;
@@ -983,8 +988,8 @@ header {
     margin: 10px 10px;
   }
   .latestWork .project .projText .linkButton a {
-    margin: 5% 0 5% 10%;
-    width: 35%;
+    margin: 5% 0 5% 5%;
+    width: 40%;
     padding: 0;
   }
   .footerSection .footFlex {
@@ -1160,17 +1165,24 @@ header {
   .about {
     margin: 50px auto;
   }
+  .about .wrapper h2 {
+    margin-bottom: 5%;
+  }
   .about .wrapper p {
     font-size: 1.1rem;
+    text-align: start;
   }
   .skills {
-    height: 90vh;
+    height: 100vh;
   }
   .skills .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .skills .wrapper .skillsList {
     -webkit-box-align: start;
@@ -1183,20 +1195,23 @@ header {
   }
   .skills .wrapper .skillsList .skillItems {
     width: 100%;
-    margin: 2%;
+    margin: 0%;
+    padding: 0;
   }
   .skills .wrapper .skillsList .skillItems li {
-    margin-bottom: 5px;
-    width: 85%;
-    height: 30px;
+    margin-bottom: 10px;
+    width: 45vw;
+    height: 5vh;
     padding: 2%;
-    background-color: transparent;
-    text-align: left;
-    color: whitesmoke;
-    list-style: disc;
+    text-align: center;
+  }
+  .skills .wrapper .skillsList .skillItems li p {
+    font-size: 3.5vw;
   }
   .latestWork .latest h2 {
     margin: 10% 0 5% 0;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .latestWork .project {
     width: 80vw;
@@ -1328,6 +1343,9 @@ header {
     background-color: whitesmoke;
     z-index: -2;
   }
+  .topNavBar .nav .topNav li {
+    margin: 0 5%;
+  }
   .topNavBar .nav .mobileNav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1355,16 +1373,28 @@ header {
     padding: 5%;
   }
   header {
-    height: 90vh;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .headerBody .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .headerBody .wrapper .title h1 {
-    font-size: 12vw;
+    font-size: 10vw;
+  }
+  .headerBody .wrapper .myPhoto {
+    width: 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .headerBody .wrapper p {
-    font-size: 1.8rem;
+    font-size: 5vw;
+    padding: o 20px;
   }
   .about {
     margin: 5% auto;
@@ -1380,30 +1410,15 @@ header {
   .skills {
     min-height: 36vh;
   }
-  .skills .wrapper .icon {
-    width: 10%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .skills .wrapper .icon .fa-3x {
-    font-size: 4em;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .skills .wrapper .icon p {
-    font-size: 0.8rem;
-  }
-  .skills .wrapper .icon img {
-    width: 100%;
-    -ms-flex-item-align: center;
-        align-self: center;
+  .skills .wrapper .skillsList .skillItems {
+    margin: -1%;
   }
   .latestWork {
     min-height: 80vh;
   }
   .latestWork .latest {
     width: 100%;
-    margin: 10% auto;
+    margin: 2% auto;
   }
   .latestWork .latest h2 {
     margin: 5%;
@@ -1414,17 +1429,16 @@ header {
             justify-content: center;
   }
   .latestWork .latest .recent .project {
-    width: 45%;
-    min-height: 40vh;
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .latestWork .latest .recent .project .imgContainer {
     width: 90%;
     margin: 5% auto;
     max-height: 85%;
-  }
-  .latestWork .latest .recent .project .projText {
-    width: 98%;
-    height: 98%;
   }
   .latestWork .latest .recent .project .projText h3 {
     font-size: 1.5rem;
@@ -1460,6 +1474,9 @@ header {
     font-size: 1.3rem;
     margin: 0;
   }
+  .footerSection .footFlex .contactMe .shareIconsGroup .ulShare li {
+    margin-right: 8%;
+  }
   .footerSection .footFlex .contactForm {
     width: 40vw;
     margin: 0;
@@ -1488,8 +1505,14 @@ header {
   .about {
     margin: 5% auto;
   }
+  .about .wrapper {
+    width: 85%;
+  }
   .about .wrapper h2 {
     margin: 5%;
+  }
+  .about .wrapper p {
+    font-size: 1.2rem;
   }
   .skills {
     min-height: 65vh;
@@ -1526,18 +1549,16 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .latestWork .latest .recent .project {
-    width: 45%;
-    max-height: 45%;
-  }
   .latestWork .latest .recent .project .imgContainer {
     width: 90%;
-    margin: 5% auto;
+    margin: 5% 2%;
     max-height: 90%;
   }
   .latestWork .latest .recent .project .projText {
     width: 98%;
     height: 98%;
+    padding: 2%;
+    margin: 5% 1%;
   }
   .latestWork .latest .recent .project .projText h3 {
     font-size: 2rem;
@@ -1619,7 +1640,6 @@ header {
   }
   .latestWork .latest .recent .project .projText {
     width: 98%;
-    height: 98%;
   }
   .latestWork .latest .recent .project .projText h3 {
     font-size: 2rem;
