@@ -11,8 +11,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8d8e6107ab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -44,24 +43,28 @@
     <header>
        
         <section class="headerBody">
-            <div class="wrapper">
-                <div class="title">
-                    <h1 id="home">Scott Cheung</h1>
+            <div class="wrapper headerBlock">
+                <div class="headerText">
+                    <div class="title">
+                        <h1 id="home">Scott Cheung</h1>
+                    </div>
+                    <p>Web Developer based in the Greater Toronto Area.</p>
                 </div>
-                <p>Web Developer based in the Greater Toronto Area.</p>
+                <div class="myPhoto">
+                    <img src="./images/scott.jpg" alt="profile photo of scott">
+                </div>
             </div>
         </section>
     </header>
     <main>
         <section class="about" id="about">
             <div class="wrapper">
-                
-                <div class="myPhoto">
-                    <img src="./images/scott.jpg" alt="profile photo of scott">
-                </div>
+
                 <h2>About Me</h2>
                 <p>
-                    Hey there, I'm Scott Cheung and I'm excited to share a little about myself with you. As a web developer, my goal is to create digital experiences that are technically sound and user friendly. I enjoy using an ever-growing tech stack to develop visually stunning websites that are accessible and responsive for everyone. As a former product manager for web products, I have gained valuable experiences and perspectives that I hope to bring to a team that values impactful work, healthy relationships, and diversity of thought. I'm always looking for ways to push the boundaries of web development and make a positive impact through my work.
+                    Hey there, I'm Scott Cheung and I'm excited to share a little about myself with you. As a web developer, my goal is to create digital experiences that are technically sound and user friendly. I enjoy using an ever-growing tech stack to develop visually stunning websites that are accessible and responsive for everyone. 
+                    </p>
+                <p>As a former product manager for web products, I have gained valuable experiences and perspectives that I hope to bring to a team that values impactful work, healthy relationships, and diversity of thought. I'm always looking for ways to push the boundaries of web development and make a positive impact through my work.
                 </p>
                 <p>
                     As a human, I love spending time with my family, playing with our dog, and training for another running event. Lately I've been resurrecting family recipes that I enjoyed while growing up. Ask me about about my favourite cast iron wok. 
@@ -76,57 +79,25 @@
                 <div class="skillTitle">
                     <h2>Skills</h2>
                 </div>
-                <div class="iconGroup">
-                        <div class="icon responsive">
-                            <img src="./images/responsive-design.png" alt="logo for responsive design">
-                            <p>Responsive Design</p>
-                        </div>
-                        <div class="icon accessability">
-                            <img src="./images/accessability.png" alt="logo for accessability">
-                            <p>A11y</p>
-                        </div>
-                        <div class="icon javaScript">
-                            <img src="./images/001-js.png" alt="javascript logo">
-                            <p>JAVASCRIPT</p>
-                        </div>
-                        <div class="icon react">
-                            <img src="./images/005-atom.png" alt="React logo">
-                            <P>REACT</P>
-                        </div>
-                        <div class="icon html">
-                            <img src="./images/002-html-5.png" alt="html logo">
-                        </div>
-                        <div class="icon css">
-                            <img src="./images/css-3.png" alt="CSS logo">
-                        </div>
-                        <div class="icon Sass">
-                            <img src="./images/sass.png" alt="">
-                            <p>SASS</p>
-                        </div>
-                        <div class="icon firebase">
-                            <img src="./images/icons8-google-firebase-console-96.png" class="firebaseLogo" alt="logo for firebase">
-                            <P>FIREBASE</P>
-                        </div>
-                        <div class="icon git">
-                            <img src="./images/merge.png" alt="git logo">
-                            <p>GIT</p>
-                        </div>
-                        <div class="icon gitHub">
-                            <img src="./images/007-github.png" alt="github logo">
-                            <p>GITHUB</p>
-                        </div>
-                        <div class="icon">
-                            <img src="./images/009-confluence.png" alt="atlassian confluence logo">
-                            <p>CONFLUENCE</p>
-                        </div>
-                        <div class="icon">
-                            <img src="./images/010-jira.png" alt="Atlassian Jira logo">
-                            <p>JIRA</p>
-                        </div>
-                        <div class="icon">
-                            <img src="./images/008-bitbucket.png" alt="Atlassian bitbucket logo">
-                            <p>BITBUCKET</p>
-                        </div>
+                <div class="skillsList">
+                    <ul class="skillItems">
+                        <li><p>JavaScript</p></li>
+                        <li><p>React</p></li>
+                        <li><p>RESTful APIs</p></li>
+                        <li><p>Git & Github</p></li>
+                    </ul>
+                    <ul class="skillItems">
+                        <li><p>HTML</p></li>
+                        <li><p>CSS</p></li>
+                        <li><p>Sass</p></li>
+                        <li><p>Firebase</p></li>
+                    </ul>
+                    <ul class="skillItems">
+                        <li><p>Web Accessibility</p></li>
+                        <li><p>Responsive Design</p></li>
+                        <li><p>Paired Programming</p></li>
+                        <li><p>Agile Methodology</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -149,23 +120,23 @@
                 <ul class="ulShare">
                     <li>
                         <a href="https://www.linkedin.com/in/scott-cheung/" aria-label="icon for LinkedIn" role="link">
-                            <i class="fa-brands fa-linkedin-in navIcons"></i>
+                            <i class="fa-brands fa-linkedin-in fa-2x navIcons"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/luckyNoodles" aria-label="icon for GitHub repository" role="link">
-                            <i class="fa-brands fa-github navIcons"></i>
+                            <i class="fa-brands fa-github fa-2x navIcons"></i>
                         </a>
                     </li>
                     <li>
                         <a href="mailto:scott@scottcheung.dev" aria-label="icon for email" role="link">
-                            <i class="fa-regular fa-envelope navIcons"></i>
+                            <i class="fa-regular fa-envelope fa-2x navIcons"></i>
                         </a>
             
                     </li>
                     <li>
                         <a href="https://medium.com/@scott-cheung" aria-label="icon for blog hosted on Medium" role="link">
-                            <i class="fa-brands fa-medium navIcons"></i>
+                            <i class="fa-brands fa-medium fa-2x navIcons"></i>
                         </a>
             
                     </li>
