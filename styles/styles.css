@@ -404,6 +404,9 @@ header {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .headerBody .wrapper .myPhoto {
   -webkit-box-pack: center;
@@ -1627,11 +1630,17 @@ header {
   .hamburger {
     display: none;
   }
-  .headerBody .wrapper h1 {
+  .headerBody .wrapper .headerText {
+    width: 60%;
+  }
+  .headerBody .wrapper .headerText h1 {
     font-size: 5.5em;
   }
-  .headerBody .wrapper p {
+  .headerBody .wrapper .headerText p {
     font-size: 50px;
+  }
+  .headerBody .wrapper .myPhoto {
+    width: 40%;
   }
   .about {
     min-height: 25vh;
@@ -1647,12 +1656,16 @@ header {
   .latestWork {
     min-height: 75vh;
   }
+  .latestWork .latest .recent .project {
+    width: 100%;
+  }
   .latestWork .latest .recent .project .imgContainer {
-    width: 90%;
+    width: 50%;
     max-height: 90%;
   }
   .latestWork .latest .recent .project .projText {
-    width: 98%;
+    width: 50%;
+    height: initial;
   }
   .latestWork .latest .recent .project .projText h3 {
     font-size: 2rem;

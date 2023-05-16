@@ -884,12 +884,18 @@
 
     .wrapper {
       // width: 100%;
-      h1 {
-        font-size: 5.5em;
+      .headerText {
+        width: 60%;
+        h1 {
+          font-size: 5.5em;
+        }
+        p {
+          font-size: 50px;
+          // padding: 0 20px;
+        }
       }
-      p {
-        font-size: 50px;
-        // padding: 0 20px;
+      .myPhoto {
+        width: 40%;
       }
     }
   }
@@ -920,17 +926,17 @@
       .recent {
         // justify-content: center;
         .project {
-          // width: 45%;
+          width: 100%;
           .imgContainer {
-            width: 90%;
+            width: 50%;
 
             max-height: 90%;
             // border: 1px solid red;
           }
 
           .projText {
-            width: 98%;
-            // height: 90%;
+            width: 50%;
+            height: initial;
 
             h3 {
               font-size: 2rem;
