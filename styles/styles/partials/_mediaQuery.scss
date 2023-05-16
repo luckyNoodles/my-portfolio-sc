@@ -136,7 +136,7 @@
   }
 
   .skills {
-    height: 90vh;
+    height: 75vh;
     .wrapper {
         flex-direction: column;
         align-items: center;
@@ -176,7 +176,7 @@
       }
       .projText {
         // height: auto;
-        padding: 1%;
+        // padding: 1%;
         .stack {
          margin: 10px 10px;
         }
@@ -297,6 +297,9 @@
         line-height: 2em;
         background-color: whitesmoke;
         z-index: -2;
+        li {
+          margin: 0 5%;
+        }
       }
 
       .mobileNav {
@@ -314,6 +317,9 @@
         background-color: whitesmoke;
         z-index: -2;
         padding: 5%;
+        li {
+          margin: 0 5%;
+        }
       }
     }
   }
@@ -339,6 +345,7 @@
   .about {
     margin: 50px auto;
     .wrapper {
+      width: 80%;
       h2 {
         margin-bottom: 5%;
       }
@@ -350,7 +357,7 @@
   }
 
  .skills {
-    height: 100vh;
+    height: 95vh;
     .wrapper {
       flex-direction: column;
       align-items: center;
@@ -365,7 +372,7 @@
               li {
                       margin-bottom: 10px;
                       width: 45vw;
-                      height: 5vh;
+                      height: 4vh;
                       padding: 2%;
                       // background-color: transparent;
                       text-align: center;
@@ -388,7 +395,7 @@
                 }
         }
     .project {
-      width: 80vw;
+      width: 60vw;
       margin: 5% 15px;
       flex-direction: column;
       .imgContainer {
@@ -396,7 +403,7 @@
       }
       .projText {
         // height: auto;
-        padding: 1%;
+        // padding: 1%;
         .stack {
          margin: 10px 10px;
         }
@@ -413,11 +420,11 @@
 
   .footerSection {
     .footFlex {
-      width: 95%;
+      width: 70%;
       flex-direction: column;
       align-items: initial;
       .contactMe {
-        width: 80vw;
+        width: 55vw;
         align-items: center;
 
         h2 {
@@ -431,7 +438,7 @@
       }
 
       .contactForm {
-        width: 95vw;
+        width: 70vw;
         margin: 0;
         p {
           font-size: 1.3rem;
@@ -440,6 +447,13 @@
       }
     }
   }
+
+.allRights {
+  p {
+    font-size: 0.6rem;
+  }
+}
+
 } // *****  end of 481 px to 767px *****
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -573,12 +587,21 @@
   }
 
   .skills {
-    min-height: 36vh;
-
+    height: 70vh;
     .wrapper {
+      .skillTitle {
+        h2 {
+
+          margin: 50% auto;
+        }
+      }
       .skillsList {
         .skillItems{
           margin: -1%;
+          li {
+            height: 4vh;
+            padding: 2%;
+          }
         }
       }
     }
