@@ -284,7 +284,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1920px;
+  max-width: 1250px;
   width: 75%;
   margin: 0 auto;
 }
@@ -1128,8 +1128,8 @@ header {
     top: 30px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    -webkit-transform: translateY(-12%);
+            transform: translateY(-12%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
