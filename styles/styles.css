@@ -935,7 +935,7 @@ header {
     font-size: 1rem;
   }
   .skills {
-    height: 90vh;
+    height: 75vh;
   }
   .skills .wrapper {
     -webkit-box-orient: vertical;
@@ -980,9 +980,6 @@ header {
   }
   .latestWork .project .imgContainer {
     width: 95%;
-  }
-  .latestWork .project .projText {
-    padding: 1%;
   }
   .latestWork .project .projText .stack {
     margin: 10px 10px;
@@ -1115,6 +1112,9 @@ header {
     background-color: whitesmoke;
     z-index: -2;
   }
+  .topNavBar .nav .topNav li {
+    margin: 0 5%;
+  }
   .topNavBar .nav .mobileNav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1141,6 +1141,9 @@ header {
     z-index: -2;
     padding: 5%;
   }
+  .topNavBar .nav .mobileNav li {
+    margin: 0 5%;
+  }
   header {
     min-height: 95vh;
     display: -webkit-box;
@@ -1165,6 +1168,9 @@ header {
   .about {
     margin: 50px auto;
   }
+  .about .wrapper {
+    width: 80%;
+  }
   .about .wrapper h2 {
     margin-bottom: 5%;
   }
@@ -1173,7 +1179,7 @@ header {
     text-align: start;
   }
   .skills {
-    height: 100vh;
+    height: 95vh;
   }
   .skills .wrapper {
     -webkit-box-orient: vertical;
@@ -1201,7 +1207,7 @@ header {
   .skills .wrapper .skillsList .skillItems li {
     margin-bottom: 10px;
     width: 45vw;
-    height: 5vh;
+    height: 4vh;
     padding: 2%;
     text-align: center;
   }
@@ -1214,7 +1220,7 @@ header {
         align-self: center;
   }
   .latestWork .project {
-    width: 80vw;
+    width: 60vw;
     margin: 5% 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1223,9 +1229,6 @@ header {
   }
   .latestWork .project .imgContainer {
     width: 95%;
-  }
-  .latestWork .project .projText {
-    padding: 1%;
   }
   .latestWork .project .projText .stack {
     margin: 10px 10px;
@@ -1236,7 +1239,7 @@ header {
     padding: 0;
   }
   .footerSection .footFlex {
-    width: 95%;
+    width: 70%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1246,7 +1249,7 @@ header {
             align-items: initial;
   }
   .footerSection .footFlex .contactMe {
-    width: 80vw;
+    width: 55vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1260,12 +1263,15 @@ header {
     margin: 10% 0 0 0;
   }
   .footerSection .footFlex .contactForm {
-    width: 95vw;
+    width: 70vw;
     margin: 0;
   }
   .footerSection .footFlex .contactForm p {
     font-size: 1.3rem;
     width: 100%;
+  }
+  .allRights p {
+    font-size: 0.6rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1408,10 +1414,17 @@ header {
     font-size: 1.1rem;
   }
   .skills {
-    min-height: 36vh;
+    height: 70vh;
+  }
+  .skills .wrapper .skillTitle h2 {
+    margin: 50% auto;
   }
   .skills .wrapper .skillsList .skillItems {
     margin: -1%;
+  }
+  .skills .wrapper .skillsList .skillItems li {
+    height: 4vh;
+    padding: 2%;
   }
   .latestWork {
     min-height: 80vh;
