@@ -24,7 +24,7 @@ const projects = [
         stackUsed: 'React, Sass, CSS Grid, HTML', 
         description: 'The goal of this project was to create a functional React app. CSS Grid and Flexbox were used for the layout and each content section is fetched from the NYT Headline API\'s.',
         live: 'https://daily-times-headlines.netlify.app/',
-        code: 'https://github.com/luckyNoodles/my-portfolio-sc'
+        code: 'https://github.com/luckyNoodles/news-app'
     },
     {
         preview: './images/podcastPlanner.png',
