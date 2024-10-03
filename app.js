@@ -26,14 +26,14 @@ const projects = [
         live: 'https://daily-times-headlines.netlify.app/',
         code: 'https://github.com/luckyNoodles/news-app'
     },
-    {
-        preview: './images/podcastPlanner.png',
-        title: 'Podcast Planner',
-        stackUsed: 'React, Sass, Firebase, Axios, Sweet Alerts2, Framer Motion', 
-        description: 'Create your perfect podcast playlist for every walk. Search for podcasts by duration and topic to curate a personalized playlist for your journey.',
-        live: 'https://podcast-planner-app.netlify.app/',
-        code: 'https://github.com/Podcast-Planner/podcast-planner'
-    },
+    // {
+    //     preview: './images/podcastPlanner.png',
+    //     title: 'Podcast Planner',
+    //     stackUsed: 'React, Sass, Firebase, Axios, Sweet Alerts2, Framer Motion', 
+    //     description: 'Create your perfect podcast playlist for every walk. Search for podcasts by duration and topic to curate a personalized playlist for your journey.',
+    //     live: 'https://podcast-planner-app.netlify.app/',
+    //     code: 'https://github.com/Podcast-Planner/podcast-planner'
+    // },
     {
         preview: './images/project-2.png', 
         title: 'World Cup 2022',
